@@ -1,0 +1,24 @@
+{
+  "name": "airline-logos",
+  "version": "1.0.0",
+  "description": "A Curated Collection of Airline Logos & Icons in SVG",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/anhthang/airline-logos.git"
+  },
+  "keywords": [
+    "airline",
+    "logo",
+    "icon"
+  ],
+  "author": "Anh Thang Bui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anhthang/airline-logos/issues"
+  },
+  "homepage": "https://github.com/anhthang/airline-logos#readme"
+}
