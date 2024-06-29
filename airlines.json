@@ -1,0 +1,172 @@
+[
+    {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA",
+        "country": "CA",
+        "flag_carrier": true,
+        "website": "https://www.aircanada.com",
+        "alliance": "Star Alliance"
+    },
+    {
+        "name": "Alaska Airlines",
+        "iata": "AS",
+        "icao": "ASA",
+        "country": "US",
+        "website": "https://www.alaskaair.com",
+        "alliance": "oneworld"
+    },
+    {
+        "name": "avianca",
+        "iata": "AV",
+        "icao": "AVA",
+        "country": "CO",
+        "flag_carrier": true,
+        "website": "https://www.avianca.com",
+        "alliance": "Star Alliance"
+    },
+    {
+        "name": "British Airways",
+        "iata": "BA",
+        "icao": "BAW",
+        "country": "GB",
+        "flag_carrier": true,
+        "website": "https://www.britishairways.com",
+        "alliance": "oneworld"
+    },
+    {
+        "name": "Cathay Pacific",
+        "iata": "CX",
+        "icao": "CPA",
+        "country": "HK",
+        "flag_carrier": true,
+        "website": "https://www.cathaypacific.com",
+        "alliance": "oneworld"
+    },
+    {
+        "name": "Emirates",
+        "iata": "EK",
+        "icao": "UAE",
+        "flag_carrier": true,
+        "country": "AE",
+        "website": "https://www.emirates.com"
+    },
+    {
+        "name": "Etihad",
+        "iata": "EY",
+        "icao": "ETD",
+        "flag_carrier": true,
+        "country": "AE",
+        "website": "https://www.etihad.com"
+    },
+    {
+        "name": "flynas",
+        "iata": "XY",
+        "icao": "KNE",
+        "country": "SA",
+        "website": "https://www.flynas.com"
+    },
+    {
+        "name": "Iberia",
+        "iata": "IB",
+        "icao": "IBE",
+        "flag_carrier": true,
+        "country": "ES",
+        "website": "https://www.iberia.com",
+        "alliance": "oneworld"
+    },
+    {
+        "name": "IndiGo",
+        "iata": "6E",
+        "icao": "IGO",
+        "country": "IN",
+        "website": "https://www.goindigo.in"
+    },
+    {
+        "name": "Japan Airlines",
+        "iata": "JL",
+        "icao": "JAL",
+        "flag_carrier": true,
+        "country": "JP",
+        "website": "https://www.jal.co.jp",
+        "alliance": "oneworld"
+    },
+    {
+        "name": "Oman Air",
+        "iata": "WY",
+        "icao": "OMA",
+        "flag_carrier": true,
+        "country": "OM",
+        "website": "https://www.omanair.com",
+        "alliance": "oneworld"
+    },
+    {
+        "name": "Qantas",
+        "iata": "QF",
+        "icao": "QFA",
+        "flag_carrier": true,
+        "country": "AU",
+        "website": "https://www.qantas.com",
+        "alliance": "oneworld"
+    },
+    {
+        "name": "Qatar Airways",
+        "iata": "QR",
+        "icao": "QTR",
+        "flag_carrier": true,
+        "country": "QA",
+        "guidelines": "https://www.qatarairways.com/content/dam/tradepartners/pdf-files/Brand-Elements_Section-1.pdf",
+        "website": "https://www.qatarairways.com",
+        "alliance": "oneworld"
+    },
+    {
+        "name": "Ryanair",
+        "iata": "FR",
+        "icao": "RYR",
+        "country": "IE",
+        "website": "https://www.ryanair.com"
+    },
+    {
+        "name": "Singapore Airlines",
+        "iata": "SQ",
+        "icao": "SIA",
+        "flag_carrier": true,
+        "country": "SG",
+        "website": "https://www.singaporeair.com",
+        "alliance": "Star Alliance"
+    },
+    {
+        "name": "SWISS",
+        "iata": "LX",
+        "icao": "SWR",
+        "flag_carrier": true,
+        "country": "CH",
+        "website": "https://www.swiss.com",
+        "alliance": "Star Alliance"
+    },
+    {
+        "name": "TAROM",
+        "iata": "RO",
+        "icao": "ROT",
+        "flag_carrier": true,
+        "country": "RO",
+        "website": "https://www.tarom.ro",
+        "alliance": "SkyTeam"
+    },
+    {
+        "name": "United Airlines",
+        "iata": "UA",
+        "icao": "UAL",
+        "country": "US",
+        "website": "https://www.united.com",
+        "alliance": "Star Alliance"
+    },
+    {
+        "name": "Virgin Atlantic",
+        "iata": "VS",
+        "icao": "VIR",
+        "country": "GB",
+        "website": "https://www.virginatlantic.com",
+        "alliance": "SkyTeam"
+    }
+]

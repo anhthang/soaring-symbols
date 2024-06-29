@@ -11,26 +11,37 @@ We welcome contributions from the community to enrich the Soaring Symbols collec
 
 ### 1. File Naming
 
-* **Color Logos/Icons:** Use the airline's IATA code in lowercase for the filename (e.g., `qr.svg` for Qatar Airways).
-* **Monochrome Logos/Icons:** Append "_mono" to the filename after the IATA code for monochrome versions (e.g., `qr_mono.svg`).
+* Use a slugified version of the airline's full name in lowercase for color logos (e.g., `qatar-airways.svg` for Qatar Airways).
+
+    **Here's how to create a slug:**
+
+    * Convert the airline name to lowercase.
+    * Replace all whitespace characters (spaces, tabs, etc.) with hyphens (`-`).
+    * Remove any characters that aren't letters, numbers, or hyphens.
+
+* For monochrome logos, append `_mono` after the slugified name (e.g., `qatar-airways_mono.svg`).
 
 ### 2. SVG Specifications
 
-- **SVG Optimization**: All logos and icons will be optimized using SVGO tools to ensure efficient file size and performance.
+* **SVG Optimization**: All logos and icons will be optimized using SVGO tools to ensure efficient file size and performance.
 
-    - Command Line: [SVGO](https://github.com/svg/svgo)
-    - Online Tool: [SVGOMG](https://svgomg.net)
+    * Command Line: [SVGO](https://github.com/svg/svgo)
+    * Online Tool: [SVGOMG](https://svgomg.net)
 
-- **ViewBox Dimensions**: Logos will utilize a viewBox of `0 0 64 64`, while icons/symbols will use `0 0 24 24`.
+* **ViewBox Dimensions**: Logos will utilize a viewBox of `0 0 64 64`, while icons/symbols will use `0 0 24 24`.
 
-- **Accessibility Attributes**: Logos and icons will be annotated with essential attributes to enhance accessibility for users with assistive technologies
+* **Accessibility Attributes**: Logos and icons will be annotated with essential attributes to enhance accessibility for users with assistive technologies
 
-    - `role="img"`: This attribute identifies the element as an image to screen readers and other assistive tools.
-    - `viewBox="0 0 64 64"` or `viewBox="0 0 24 24"`: This attribute defines the visible area of the SVG content and ensures consistent scaling across different platforms as specified earlier.
-    - `xmlns="http://www.w3.org/2000/svg"`: This attribute specifies the SVG namespace, ensuring proper interpretation by browsers.
-    - `<title>Airline Name</title>`: A title element containing the brand name will be included to provide a text description of the logo or icon for screen readers and other assistive technologies.
+    * `role="img"`: This attribute identifies the element as an image to screen readers and other assistive tools.
+    * `viewBox="0 0 64 64"` or `viewBox="0 0 24 24"`: This attribute defines the visible area of the SVG content and ensures consistent scaling across different platforms as specified earlier.
+    * `xmlns="http://www.w3.org/2000/svg"`: This attribute specifies the SVG namespace, ensuring proper interpretation by browsers.
+    * `<title>Airline Name</title>`: A title element containing the brand name will be included to provide a text description of the logo or icon for screen readers and other assistive technologies.
 
 > [!WARNING]
+> **Note for Color Logos:**
+>
+> * Please ensure that white paths within the logo design are preserved during SVG creation. White paths often represent negative space or transparent areas and should not be filled with a color. This is crucial for maintaining the visual integrity of the logo according to brand guidelines.
+>
 > **Note on ViewBox and Multi-Colored SVGs:**
 >
 > * Some logos and icons may require multiple SVG paths to accurately represent the original colors or adhere to brand guidelines.
@@ -57,6 +68,8 @@ Here's a description of the required fields:
 | guidelines | No | Link to the airline's brand guidelines or press/media kit. |
 | website | Yes | Official website of the airline. |
 | alliance | No | Name of the airline alliance the airline belongs to (e.g., "oneworld", "SkyTeam", "Star Alliance"). |
+| defunct | No | Boolean value indicating if the airline is defunct (ceased operations) (true) or operational (false). |
+| vectorized | No | Boolean value indicating if the SVG logo has been manually vectorized (true) or not (false). This is useful for identifying logos that might require additional work. |
 
 > [!NOTE]
 > Ensure the airline names in the `airlines.json` file are sorted alphabetically by their full names. This facilitates easier navigation and data management.
@@ -66,7 +79,7 @@ Here's a description of the required fields:
 * Once you have prepared the SVG logo(s) and updated the `airlines.json` file, submit a pull request to the project repository.
 * Please ensure your pull request includes a clear description of the changes you've made.
 
-### Example JSON Data:
+### Example JSON Data
 
 Here's an example of JSON data for a single airline:
 
