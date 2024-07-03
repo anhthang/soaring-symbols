@@ -1,5 +1,22 @@
 [
     {
+        "name": "Aegean Airlines",
+        "iata": "A3",
+        "icao": "AEE",
+        "country": "GR",
+        "flag_carrier": true,
+        "website": "https://en.aegeanair.com",
+        "alliance": "Star Alliance"
+    },
+    {
+        "name": "Air Albania",
+        "iata": "ZB",
+        "icao": "ABN",
+        "country": "AL",
+        "flag_carrier": true,
+        "website": "https://www.airalbania.com.al"
+    },
+    {
         "name": "Air Canada",
         "iata": "AC",
         "icao": "ACA",
@@ -7,6 +24,38 @@
         "flag_carrier": true,
         "website": "https://www.aircanada.com",
         "alliance": "Star Alliance"
+    },
+    {
+        "name": "Air India",
+        "iata": "AI",
+        "icao": "AIC",
+        "country": "IN",
+        "flag_carrier": true,
+        "website": "https://www.airindia.com",
+        "alliance": "Star Alliance"
+    },
+    {
+        "name": "Air New Zealand",
+        "iata": "NZ",
+        "icao": "ANZ",
+        "country": "NZ",
+        "flag_carrier": true,
+        "website": "https://www.airnewzealand.co.nz",
+        "alliance": "Star Alliance"
+    },
+    {
+        "name": "AirAsia",
+        "iata": "AK",
+        "icao": "AXM",
+        "country": "MY",
+        "website": "https://www.airasia.com"
+    },
+    {
+        "name": "Akasa Air",
+        "iata": "QP",
+        "icao": "AKJ",
+        "country": "IN",
+        "website": "https://www.akasaair.com"
     },
     {
         "name": "Alaska Airlines",
@@ -17,6 +66,15 @@
         "alliance": "oneworld"
     },
     {
+        "name": "Asiana Airlines",
+        "iata": "OZ",
+        "icao": "AAR",
+        "country": "KR",
+        "guidelines": "https://flyasiana.com/C/VN/EN/contents/ci",
+        "website": "https://flyasiana.com",
+        "alliance": "Star Alliance"
+    },
+    {
         "name": "avianca",
         "iata": "AV",
         "icao": "AVA",
@@ -24,6 +82,13 @@
         "flag_carrier": true,
         "website": "https://www.avianca.com",
         "alliance": "Star Alliance"
+    },
+    {
+        "name": "Bangkok Airways",
+        "iata": "PG",
+        "icao": "BKP",
+        "country": "TH",
+        "website": "https://www.bangkokair.com"
     },
     {
         "name": "British Airways",
@@ -42,6 +107,15 @@
         "flag_carrier": true,
         "website": "https://www.cathaypacific.com",
         "alliance": "oneworld"
+    },
+    {
+        "name": "COPA Airlines",
+        "iata": "CM",
+        "icao": "CMP",
+        "country": "PA",
+        "flag_carrier": true,
+        "website": "https://www.copaair.com",
+        "alliance": "Star Alliance"
     },
     {
         "name": "Emirates",
@@ -92,6 +166,31 @@
         "alliance": "oneworld"
     },
     {
+        "name": "LATAM Airlines",
+        "iata": "LA",
+        "icao": "LAN",
+        "country": "CL",
+        "website": "https://www.latamairlines.com"
+    },
+    {
+        "name": "LOT Polish Airlines",
+        "iata": "LO",
+        "icao": "LOT",
+        "flag_carrier": true,
+        "country": "PL",
+        "website": "https://www.lot.com",
+        "alliance": "Star Alliance"
+    },
+    {
+        "name": "Lufthansa",
+        "iata": "LH",
+        "icao": "DLH",
+        "flag_carrier": true,
+        "country": "DE",
+        "website": "https://www.lufthansa.com",
+        "alliance": "Star Alliance"
+    },
+    {
         "name": "Oman Air",
         "iata": "WY",
         "icao": "OMA",
@@ -99,6 +198,14 @@
         "country": "OM",
         "website": "https://www.omanair.com",
         "alliance": "oneworld"
+    },
+    {
+        "name": "Philippine Airlines",
+        "iata": "PR",
+        "icao": "PAL",
+        "flag_carrier": true,
+        "country": "PH",
+        "website": "https://www.philippineairlines.com"
     },
     {
         "name": "Qantas",
@@ -120,11 +227,26 @@
         "alliance": "oneworld"
     },
     {
+        "name": "Royal Brunei Airlines",
+        "iata": "BI",
+        "icao": "RBA",
+        "country": "BN",
+        "website": "https://www.flyroyalbrunei.com"
+    },
+    {
         "name": "Ryanair",
         "iata": "FR",
         "icao": "RYR",
         "country": "IE",
         "website": "https://www.ryanair.com"
+    },
+    {
+        "name": "Scoot",
+        "iata": "TR",
+        "icao": "TGW",
+        "country": "SG",
+        "website": "https://www.flyscoot.com",
+        "alliance": "Value Alliance"
     },
     {
         "name": "Singapore Airlines",
@@ -152,6 +274,16 @@
         "country": "RO",
         "website": "https://www.tarom.ro",
         "alliance": "SkyTeam"
+    },
+    {
+        "name": "Turkish Airlines",
+        "iata": "TK",
+        "icao": "THY",
+        "flag_carrier": true,
+        "country": "TR",
+        "website": "https://www.turkishairlines.com",
+        "guidelines": "https://www.turkishairlines.com/en-int/press-room/logo-archive",
+        "alliance": "Star Alliance"
     },
     {
         "name": "United Airlines",
