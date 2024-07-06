@@ -26,6 +26,15 @@
         "alliance": "Star Alliance"
     },
     {
+        "name": "Air France",
+        "iata": "AF",
+        "icao": "AFR",
+        "country": "FR",
+        "flag_carrier": true,
+        "website": "https://airfrance.com",
+        "alliance": "SkyTeam"
+    },
+    {
         "name": "Air India",
         "iata": "AI",
         "icao": "AIC",
@@ -33,6 +42,15 @@
         "flag_carrier": true,
         "website": "https://www.airindia.com",
         "alliance": "Star Alliance"
+    },
+    {
+        "name": "Air Mauritius",
+        "iata": "MK",
+        "icao": "MAU",
+        "country": "MU",
+        "flag_carrier": true,
+        "website": "https://www.airmauritius.com",
+        "alliance": "Vanilla Alliance"
     },
     {
         "name": "Air New Zealand",
@@ -82,6 +100,14 @@
         "flag_carrier": true,
         "website": "https://www.avianca.com",
         "alliance": "Star Alliance"
+    },
+    {
+        "name": "Azerbaijan Airlines",
+        "iata": "J2",
+        "icao": "AHY",
+        "country": "AZ",
+        "flag_carrier": true,
+        "website": "https://azal.az"
     },
     {
         "name": "Bangkok Airways",
@@ -134,11 +160,27 @@
         "website": "https://www.etihad.com"
     },
     {
+        "name": "Firefly",
+        "iata": "FY",
+        "icao": "FFM",
+        "country": "MY",
+        "website": "https://www.fireflyz.com.my"
+    },
+    {
         "name": "flynas",
         "iata": "XY",
         "icao": "KNE",
         "country": "SA",
         "website": "https://www.flynas.com"
+    },
+    {
+        "name": "Garuda Indonesia",
+        "iata": "GA",
+        "icao": "GIA",
+        "flag_carrier": true,
+        "country": "ID",
+        "website": "https://www.garuda-indonesia.com",
+        "alliance": "SkyTeam"
     },
     {
         "name": "Iberia",
@@ -166,6 +208,32 @@
         "alliance": "oneworld"
     },
     {
+        "name": "Kuwait Airways",
+        "iata": "KU",
+        "icao": "KAC",
+        "country": "KW",
+        "flag_carrier": true,
+        "website": "https://www.kuwaitairways.com"
+    },
+    {
+        "name": "Kenya Airways",
+        "iata": "KQ",
+        "icao": "KQA",
+        "country": "KE",
+        "flag_carrier": true,
+        "website": "https://www.kenya-airways.com",
+        "alliance": "SkyTeam"
+    },
+    {
+        "name": "KLM",
+        "iata": "KL",
+        "icao": "KLM",
+        "country": "NL",
+        "flag_carrier": true,
+        "website": "https://www.klm.com",
+        "alliance": "SkyTeam"
+    },
+    {
         "name": "LATAM Airlines",
         "iata": "LA",
         "icao": "LAN",
@@ -191,6 +259,15 @@
         "alliance": "Star Alliance"
     },
     {
+        "name": "Malaysia Airlines",
+        "iata": "MH",
+        "icao": "MAS",
+        "flag_carrier": true,
+        "country": "MY",
+        "website": "https://www.malaysiaairlines.com",
+        "alliance": "oneworld"
+    },
+    {
         "name": "Oman Air",
         "iata": "WY",
         "icao": "OMA",
@@ -198,6 +275,13 @@
         "country": "OM",
         "website": "https://www.omanair.com",
         "alliance": "oneworld"
+    },
+    {
+        "name": "Peach Aviation",
+        "iata": "MM",
+        "icao": "APJ",
+        "country": "JP",
+        "website": "https://www.flypeach.com"
     },
     {
         "name": "Philippine Airlines",
@@ -258,12 +342,35 @@
         "alliance": "Star Alliance"
     },
     {
+        "name": "Southwest Airlines",
+        "iata": "WN",
+        "icao": "SWA",
+        "country": "US",
+        "website": "https://www.southwest.com"
+    },
+    {
+        "name": "Starlux Airlines",
+        "iata": "JX",
+        "icao": "SJX",
+        "country": "TW",
+        "website": "https://www.starlux-airlines.com"
+    },
+    {
         "name": "SWISS",
         "iata": "LX",
         "icao": "SWR",
         "flag_carrier": true,
         "country": "CH",
         "website": "https://www.swiss.com",
+        "alliance": "Star Alliance"
+    },
+    {
+        "name": "TAP Air Portugal",
+        "iata": "TP",
+        "icao": "TAP",
+        "country": "PT",
+        "flag_carrier": true,
+        "website": "https://www.tapairportugal.com",
         "alliance": "Star Alliance"
     },
     {
@@ -274,6 +381,13 @@
         "country": "RO",
         "website": "https://www.tarom.ro",
         "alliance": "SkyTeam"
+    },
+    {
+        "name": "Transavia",
+        "iata": "HV",
+        "icao": "TRA",
+        "country": "NL",
+        "website": "https://www.transavia.com"
     },
     {
         "name": "Turkish Airlines",
@@ -300,5 +414,12 @@
         "country": "GB",
         "website": "https://www.virginatlantic.com",
         "alliance": "SkyTeam"
+    },
+    {
+        "name": "Virgin Australia",
+        "iata": "VA",
+        "icao": "VOZ",
+        "country": "AU",
+        "website": "https://www.virginaustralia.com"
     }
 ]

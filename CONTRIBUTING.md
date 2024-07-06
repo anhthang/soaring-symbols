@@ -70,9 +70,18 @@ Here's a description of the required fields:
 | alliance | No | Name of the airline alliance the airline belongs to (e.g., "oneworld", "SkyTeam", "Star Alliance"). |
 | defunct | No | Boolean value indicating if the airline is defunct (ceased operations) (true) or operational (false). |
 | vectorized | No | Boolean value indicating if the SVG logo has been manually vectorized (true) or not (false). This is useful for identifying logos that might require additional work. |
+<!-- | subsidiaries | No | An array of objects representing subsidiary airlines (see details below). | -->
 
 > [!NOTE]
 > Ensure the airline names in the `airlines.json` file are sorted alphabetically by their full names. This facilitates easier navigation and data management.
+
+<!-- **Subsidiary Airline Data:**
+
+The `subsidiaries` field is an optional array containing objects for each subsidiary airline of the parent airline. Each subsidiary object should include the following fields:
+
+* `name`: Full name of the subsidiary airline.
+* `iata`: Two-character IATA code of the subsidiary airline (if applicable).
+* `icao`: Three-character ICAO code of the subsidiary airline (if applicable). -->
 
 ### 4. Pull Requests
 
