@@ -7,7 +7,12 @@
         "flag_carrier": true,
         "website": "https://en.aegeanair.com",
         "alliance": "Star Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Air Albania",
@@ -16,16 +21,24 @@
         "country": "AL",
         "flag_carrier": true,
         "website": "https://www.airalbania.com.al",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Air Astana",
         "iata": "KC",
         "icao": "KZR",
-        "flag_carrier": true,
         "country": "KZ",
+        "flag_carrier": true,
         "website": "https://airastana.com",
-        "variations": ["icon", "icon_mono"]
+        "variations": [
+            "icon",
+            "icon_mono"
+        ]
     },
     {
         "name": "Air Canada",
@@ -35,7 +48,12 @@
         "flag_carrier": true,
         "website": "https://www.aircanada.com",
         "alliance": "Star Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Air Dolomiti",
@@ -43,7 +61,10 @@
         "icao": "DLA",
         "country": "IT",
         "website": "https://www.airdolomiti.eu",
-        "variations": ["icon", "icon_mono"]
+        "variations": [
+            "icon",
+            "icon_mono"
+        ]
     },
     {
         "name": "Air France",
@@ -53,7 +74,12 @@
         "flag_carrier": true,
         "website": "https://airfrance.com",
         "alliance": "SkyTeam",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Air India",
@@ -63,7 +89,12 @@
         "flag_carrier": true,
         "website": "https://www.airindia.com",
         "alliance": "Star Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Air Mauritius",
@@ -73,7 +104,12 @@
         "flag_carrier": true,
         "website": "https://www.airmauritius.com",
         "alliance": "Vanilla Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Air New Zealand",
@@ -83,7 +119,12 @@
         "flag_carrier": true,
         "website": "https://www.airnewzealand.co.nz",
         "alliance": "Star Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Air Transat",
@@ -91,7 +132,12 @@
         "icao": "TSC",
         "country": "CA",
         "website": "https://airtransat.com",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "AirAsia",
@@ -99,16 +145,22 @@
         "icao": "AXM",
         "country": "MY",
         "website": "https://www.airasia.com",
-        "variations": ["logo", "logo_mono"]
+        "variations": [
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "airBaltic",
         "iata": "BT",
         "icao": "BTI",
-        "flag_carrier": true,
         "country": "LV",
+        "flag_carrier": true,
         "website": "https://www.airbaltic.com",
-        "variations": ["logo", "logo_mono"]
+        "variations": [
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Akasa Air",
@@ -116,7 +168,12 @@
         "icao": "AKJ",
         "country": "IN",
         "website": "https://www.akasaair.com",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Alaska Airlines",
@@ -125,7 +182,10 @@
         "country": "US",
         "website": "https://www.alaskaair.com",
         "alliance": "oneworld",
-        "variations": ["logo", "logo_mono"]
+        "variations": [
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Asiana Airlines",
@@ -135,7 +195,12 @@
         "guidelines": "https://flyasiana.com/C/VN/EN/contents/ci",
         "website": "https://flyasiana.com",
         "alliance": "Star Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "avianca",
@@ -145,7 +210,12 @@
         "flag_carrier": true,
         "website": "https://www.avianca.com",
         "alliance": "Star Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Azerbaijan Airlines",
@@ -154,7 +224,12 @@
         "country": "AZ",
         "flag_carrier": true,
         "website": "https://azal.az",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Bamboo Airways",
@@ -162,7 +237,10 @@
         "icao": "BAV",
         "country": "VN",
         "website": "https://www.bambooairways.com",
-        "variations": ["icon", "logo"]
+        "variations": [
+            "icon",
+            "logo"
+        ]
     },
     {
         "name": "Bangkok Airways",
@@ -170,7 +248,12 @@
         "icao": "BKP",
         "country": "TH",
         "website": "https://www.bangkokair.com",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "British Airways",
@@ -180,7 +263,12 @@
         "flag_carrier": true,
         "website": "https://www.britishairways.com",
         "alliance": "oneworld",
-        "variations": ["icon", "icon_mono", "logo"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Brussels Airlines",
@@ -190,7 +278,12 @@
         "flag_carrier": true,
         "website": "https://www.brusselsairlines.com",
         "alliance": "Star Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Cathay Pacific",
@@ -200,45 +293,66 @@
         "flag_carrier": true,
         "website": "https://www.cathaypacific.com",
         "alliance": "oneworld",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
-        "name": "COPA Airlines",
+        "name": "Copa Airlines",
         "iata": "CM",
         "icao": "CMP",
         "country": "PA",
         "flag_carrier": true,
         "website": "https://www.copaair.com",
         "alliance": "Star Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Emirates",
         "iata": "EK",
         "icao": "UAE",
-        "flag_carrier": true,
         "country": "AE",
+        "flag_carrier": true,
         "website": "https://www.emirates.com",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
-        "name": "Etihad",
+        "name": "Etihad Airways",
         "iata": "EY",
         "icao": "ETD",
-        "flag_carrier": true,
         "country": "AE",
+        "flag_carrier": true,
         "website": "https://www.etihad.com",
-        "variations": ["logo", "logo_mono"]
+        "variations": [
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Fiji Airways",
         "iata": "FJ",
         "icao": "FJI",
-        "flag_carrier": true,
         "country": "FJ",
+        "flag_carrier": true,
         "website": "https://www.fijiairways.com",
         "alliance": "oneworld",
-        "variations": ["icon", "icon_mono"]
+        "variations": [
+            "icon",
+            "icon_mono"
+        ]
     },
     {
         "name": "Firefly",
@@ -246,7 +360,12 @@
         "icao": "FFM",
         "country": "MY",
         "website": "https://www.fireflyz.com.my",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "flynas",
@@ -254,27 +373,40 @@
         "icao": "KNE",
         "country": "SA",
         "website": "https://www.flynas.com",
-        "variations": ["logo", "logo_mono"]
+        "variations": [
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Garuda Indonesia",
         "iata": "GA",
         "icao": "GIA",
-        "flag_carrier": true,
         "country": "ID",
+        "flag_carrier": true,
         "website": "https://www.garuda-indonesia.com",
         "alliance": "SkyTeam",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Iberia",
         "iata": "IB",
         "icao": "IBE",
-        "flag_carrier": true,
         "country": "ES",
+        "flag_carrier": true,
         "website": "https://www.iberia.com",
         "alliance": "oneworld",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "IndiGo",
@@ -282,17 +414,27 @@
         "icao": "IGO",
         "country": "IN",
         "website": "https://www.goindigo.in",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Japan Airlines",
         "iata": "JL",
         "icao": "JAL",
-        "flag_carrier": true,
         "country": "JP",
+        "flag_carrier": true,
         "website": "https://www.jal.co.jp",
         "alliance": "oneworld",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Jetstar",
@@ -300,7 +442,12 @@
         "icao": "JST",
         "country": "AU",
         "website": "https://www.jetstar.com",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Kenya Airways",
@@ -310,7 +457,12 @@
         "flag_carrier": true,
         "website": "https://www.kenya-airways.com",
         "alliance": "SkyTeam",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "KLM",
@@ -320,7 +472,12 @@
         "flag_carrier": true,
         "website": "https://www.klm.com",
         "alliance": "SkyTeam",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Kuwait Airways",
@@ -329,7 +486,12 @@
         "country": "KW",
         "flag_carrier": true,
         "website": "https://www.kuwaitairways.com",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "LATAM Airlines",
@@ -337,47 +499,72 @@
         "icao": "LAN",
         "country": "CL",
         "website": "https://www.latamairlines.com",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "LOT Polish Airlines",
         "iata": "LO",
         "icao": "LOT",
-        "flag_carrier": true,
         "country": "PL",
+        "flag_carrier": true,
         "website": "https://www.lot.com",
         "alliance": "Star Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Lufthansa",
         "iata": "LH",
         "icao": "DLH",
-        "flag_carrier": true,
         "country": "DE",
+        "flag_carrier": true,
         "website": "https://www.lufthansa.com",
         "alliance": "Star Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Malaysia Airlines",
         "iata": "MH",
         "icao": "MAS",
-        "flag_carrier": true,
         "country": "MY",
+        "flag_carrier": true,
         "website": "https://www.malaysiaairlines.com",
         "alliance": "oneworld",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Oman Air",
         "iata": "WY",
         "icao": "OMA",
-        "flag_carrier": true,
         "country": "OM",
+        "flag_carrier": true,
         "website": "https://www.omanair.com",
         "alliance": "oneworld",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Peach Aviation",
@@ -385,37 +572,53 @@
         "icao": "APJ",
         "country": "JP",
         "website": "https://www.flypeach.com",
-        "variations": ["logo", "logo_mono"]
+        "variations": [
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Philippine Airlines",
         "iata": "PR",
         "icao": "PAL",
-        "flag_carrier": true,
         "country": "PH",
+        "flag_carrier": true,
         "website": "https://www.philippineairlines.com",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Qantas",
         "iata": "QF",
         "icao": "QFA",
-        "flag_carrier": true,
         "country": "AU",
+        "flag_carrier": true,
         "website": "https://www.qantas.com",
         "alliance": "oneworld",
-        "variations": ["icon_mono", "logo_mono"]
+        "variations": [
+            "icon_mono",
+            "logo_mono"
+        ]
     },
     {
         "name": "Qatar Airways",
         "iata": "QR",
         "icao": "QTR",
-        "flag_carrier": true,
         "country": "QA",
+        "flag_carrier": true,
         "guidelines": "https://www.qatarairways.com/content/dam/tradepartners/pdf-files/Brand-Elements_Section-1.pdf",
         "website": "https://www.qatarairways.com",
         "alliance": "oneworld",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Royal Brunei Airlines",
@@ -423,7 +626,9 @@
         "icao": "RBA",
         "country": "BN",
         "website": "https://www.flyroyalbrunei.com",
-        "variations": ["logo"]
+        "variations": [
+            "logo"
+        ]
     },
     {
         "name": "Ryanair",
@@ -431,27 +636,38 @@
         "icao": "RYR",
         "country": "IE",
         "website": "https://www.ryanair.com",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Saudia",
         "iata": "SV",
         "icao": "SVA",
-        "flag_carrier": true,
         "country": "SA",
+        "flag_carrier": true,
         "website": "https://www.saudia.com",
         "alliance": "SkyTeam",
-        "variations": ["icon", "icon_mono"]
+        "variations": [
+            "icon",
+            "icon_mono"
+        ]
     },
     {
         "name": "Scandinavian Airlines",
         "iata": "SK",
         "icao": "SAS",
+        "country": "DK,NO,SE",
         "flag_carrier": true,
-        "country": "DK",
         "website": "https://www.flysas.com",
         "alliance": "Star Alliance",
-        "variations": ["logo", "logo_mono"]
+        "variations": [
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Scoot",
@@ -460,17 +676,25 @@
         "country": "SG",
         "website": "https://www.flyscoot.com",
         "alliance": "Value Alliance",
-        "variations": ["icon", "logo"]
+        "variations": [
+            "icon",
+            "logo"
+        ]
     },
     {
         "name": "Singapore Airlines",
         "iata": "SQ",
         "icao": "SIA",
-        "flag_carrier": true,
         "country": "SG",
+        "flag_carrier": true,
         "website": "https://www.singaporeair.com",
         "alliance": "Star Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Southwest Airlines",
@@ -478,7 +702,10 @@
         "icao": "SWA",
         "country": "US",
         "website": "https://www.southwest.com",
-        "variations": ["icon", "logo"]
+        "variations": [
+            "icon",
+            "logo"
+        ]
     },
     {
         "name": "Starlux Airlines",
@@ -486,17 +713,27 @@
         "icao": "SJX",
         "country": "TW",
         "website": "https://www.starlux-airlines.com",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "SWISS",
         "iata": "LX",
         "icao": "SWR",
-        "flag_carrier": true,
         "country": "CH",
+        "flag_carrier": true,
         "website": "https://www.swiss.com",
         "alliance": "Star Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "TAP Air Portugal",
@@ -506,17 +743,25 @@
         "flag_carrier": true,
         "website": "https://www.tapairportugal.com",
         "alliance": "Star Alliance",
-        "variations": ["icon", "logo"]
+        "variations": [
+            "icon",
+            "logo"
+        ]
     },
     {
         "name": "TAROM",
         "iata": "RO",
         "icao": "ROT",
-        "flag_carrier": true,
         "country": "RO",
+        "flag_carrier": true,
         "website": "https://www.tarom.ro",
         "alliance": "SkyTeam",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Transavia",
@@ -524,18 +769,28 @@
         "icao": "TRA",
         "country": "NL",
         "website": "https://www.transavia.com",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Turkish Airlines",
         "iata": "TK",
         "icao": "THY",
-        "flag_carrier": true,
         "country": "TR",
+        "flag_carrier": true,
         "website": "https://www.turkishairlines.com",
         "guidelines": "https://www.turkishairlines.com/en-int/press-room/logo-archive",
         "alliance": "Star Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "United Airlines",
@@ -544,7 +799,12 @@
         "country": "US",
         "website": "https://www.united.com",
         "alliance": "Star Alliance",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "VietJet Air",
@@ -552,17 +812,25 @@
         "icao": "VJC",
         "country": "VN",
         "website": "https://www.vietjetair.com",
-        "variations": ["logo", "logo_mono"]
+        "variations": [
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Vietnam Airlines",
         "iata": "VN",
         "icao": "HVN",
-        "flag_carrier": true,
         "country": "VN",
+        "flag_carrier": true,
         "website": "https://www.vietnamairlines.com",
         "alliance": "SkyTeam",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Virgin Atlantic",
@@ -571,7 +839,12 @@
         "country": "GB",
         "website": "https://www.virginatlantic.com",
         "alliance": "SkyTeam",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "Virgin Australia",
@@ -579,7 +852,12 @@
         "icao": "VOZ",
         "country": "AU",
         "website": "https://www.virginaustralia.com",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     },
     {
         "name": "WestJet",
@@ -587,6 +865,11 @@
         "icao": "WJA",
         "country": "CA",
         "website": "https://www.westjet.com",
-        "variations": ["icon", "icon_mono", "logo", "logo_mono"]
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
     }
 ]

@@ -85,8 +85,11 @@ The `subsidiaries` field is an optional array containing objects for each subsid
 
 ### 4. Pull Requests
 
-* Once you have prepared the SVG logo(s) and updated the `airlines.json` file, submit a pull request to the project repository.
-* Please ensure your pull request includes a clear description of the changes you've made.
+* Once you have prepared the SVG logo(s) and updated the `airlines.json` file, **run the** `generate.js` **script** to ensure the data is formatted and validated correctly.
+* This script will automatically update `AIRLINES.md` file based on the corrected `airlines.json` data.
+* Submit a pull request that includes:
+    * The updated `airlines.json`, `AIRLINES.md` file.
+    * A clear description of the changes you've made, including any additions, deletions, or modifications to airline data.
 
 ### Example JSON Data
 

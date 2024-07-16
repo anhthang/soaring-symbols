@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/anhthang/soaring-symbols/issues"
   },
-  "homepage": "https://github.com/anhthang/soaring-symbols#readme"
+  "homepage": "https://github.com/anhthang/soaring-symbols#readme",
+  "devDependencies": {
+    "lodash.sortby": "^4.7.0",
+    "slugify": "^1.6.6"
+  },
+  "packageManager": "yarn@4.3.1"
 }
