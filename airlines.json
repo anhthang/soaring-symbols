@@ -127,6 +127,20 @@
         ]
     },
     {
+        "name": "Air Serbia",
+        "iata": "JU",
+        "icao": "ASL",
+        "country": "RS",
+        "flag_carrier": true,
+        "website": "https://www.airserbia.com",
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
+    },
+    {
         "name": "Air Transat",
         "iata": "TS",
         "icao": "TSC",
@@ -337,6 +351,19 @@
         "flag_carrier": true,
         "website": "https://www.etihad.com",
         "variations": [
+            "logo",
+            "logo_mono"
+        ]
+    },
+    {
+        "name": "Eurowings",
+        "iata": "EW",
+        "icao": "EWG",
+        "country": "DE",
+        "website": "https://www.eurowings.com",
+        "variations": [
+            "icon",
+            "icon_mono",
             "logo",
             "logo_mono"
         ]
@@ -613,6 +640,20 @@
         "guidelines": "https://www.qatarairways.com/content/dam/tradepartners/pdf-files/Brand-Elements_Section-1.pdf",
         "website": "https://www.qatarairways.com",
         "alliance": "oneworld",
+        "variations": [
+            "icon",
+            "icon_mono",
+            "logo",
+            "logo_mono"
+        ]
+    },
+    {
+        "name": "Riyadh Air",
+        "iata": "RX",
+        "icao": "RXI",
+        "country": "SA",
+        "flag_carrier": true,
+        "website": "https://www.riyadhair.com",
         "variations": [
             "icon",
             "icon_mono",

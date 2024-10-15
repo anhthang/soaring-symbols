@@ -17,6 +17,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Air India](https://www.airindia.com) 🇮🇳 | AI | AIC | IN | Star Alliance | ✓ | ✓ | ✓ | ✓ |
 | [Air Mauritius](https://www.airmauritius.com) 🇲🇺 | MK | MAU | MU | Vanilla Alliance | ✓ | ✓ | ✓ | ✓ |
 | [Air New Zealand](https://www.airnewzealand.co.nz) 🇳🇿 | NZ | ANZ | NZ | Star Alliance | ✓ | ✓ | ✓ | ✓ |
+| [Air Serbia](https://www.airserbia.com) 🇷🇸 | JU | ASL | RS |  | ✓ | ✓ | ✓ | ✓ |
 | [Air Transat](https://airtransat.com) | TS | TSC | CA |  | ✓ | ✓ | ✓ | ✓ |
 | [AirAsia](https://www.airasia.com) | AK | AXM | MY |  |  |  | ✓ | ✓ |
 | [airBaltic](https://www.airbaltic.com) 🇱🇻 | BT | BTI | LV |  |  |  | ✓ | ✓ |
@@ -30,9 +31,10 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [British Airways](https://www.britishairways.com) 🇬🇧 | BA | BAW | GB | oneworld | ✓ | ✓ | ✓ | ✓ |
 | [Brussels Airlines](https://www.brusselsairlines.com) 🇧🇪 | SN | BEL | BE | Star Alliance | ✓ | ✓ | ✓ | ✓ |
 | [Cathay Pacific](https://www.cathaypacific.com) 🇭🇰 | CX | CPA | HK | oneworld | ✓ | ✓ | ✓ | ✓ |
-| [COPA Airlines](https://www.copaair.com) 🇵🇦 | CM | CMP | PA | Star Alliance | ✓ | ✓ | ✓ | ✓ |
+| [Copa Airlines](https://www.copaair.com) 🇵🇦 | CM | CMP | PA | Star Alliance | ✓ | ✓ | ✓ | ✓ |
 | [Emirates](https://www.emirates.com) 🇦🇪 | EK | UAE | AE |  | ✓ | ✓ | ✓ | ✓ |
 | [Etihad Airways](https://www.etihad.com) 🇦🇪 | EY | ETD | AE |  |  |  | ✓ | ✓ |
+| [Eurowings](https://www.eurowings.com) | EW | EWG | DE |  | ✓ | ✓ | ✓ | ✓ |
 | [Fiji Airways](https://www.fijiairways.com) 🇫🇯 | FJ | FJI | FJ | oneworld | ✓ | ✓ |  |  |
 | [Firefly](https://www.fireflyz.com.my) | FY | FFM | MY |  | ✓ | ✓ | ✓ | ✓ |
 | [flynas](https://www.flynas.com) | XY | KNE | SA |  |  |  | ✓ | ✓ |
@@ -53,6 +55,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Philippine Airlines](https://www.philippineairlines.com) 🇵🇭 | PR | PAL | PH |  | ✓ | ✓ | ✓ | ✓ |
 | [Qantas](https://www.qantas.com) 🇦🇺 | QF | QFA | AU | oneworld |  | ✓ |  | ✓ |
 | [Qatar Airways](https://www.qatarairways.com) 🇶🇦 | QR | QTR | QA | oneworld | ✓ | ✓ | ✓ | ✓ |
+| [Riyadh Air](https://www.riyadhair.com) 🇸🇦 | RX | RXI | SA |  | ✓ | ✓ | ✓ | ✓ |
 | [Royal Brunei Airlines](https://www.flyroyalbrunei.com) | BI | RBA | BN |  |  |  | ✓ |  |
 | [Ryanair](https://www.ryanair.com) | FR | RYR | IE |  | ✓ | ✓ | ✓ | ✓ |
 | [Saudia](https://www.saudia.com) 🇸🇦 | SV | SVA | SA | SkyTeam | ✓ | ✓ |  |  |

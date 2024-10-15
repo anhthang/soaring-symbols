@@ -95,5 +95,5 @@ sorted.forEach((airline) => {
     } | ${includedStates.join(' | ')} |\n`
 })
 
-fs.writeFileSync('airlines.json', JSON.stringify(airlines, null, 4))
+fs.writeFileSync('airlines.json', JSON.stringify(sorted, null, 4))
 fs.writeFileSync('AIRLINES.md', md)
