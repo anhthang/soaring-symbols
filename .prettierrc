@@ -5,5 +5,5 @@
     "semi": false,
     "singleQuote": true,
     "bracketSpacing": true,
-    "printWidth": 48
+    "printWidth": 32
 }
