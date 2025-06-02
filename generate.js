@@ -4,10 +4,16 @@ const { default: slugify } = require('slugify')
 
 const airlines = require('./airlines.json')
 
-const icons = fs.readdirSync(__dirname + '/icons')
-const logos = fs.readdirSync(__dirname + '/logos')
+const icons = fs.readdirSync(
+    __dirname + '/icons'
+)
+const logos = fs.readdirSync(
+    __dirname + '/logos'
+)
 
-const sorted = sortBy(airlines, (a) => a.name.toLowerCase())
+const sorted = sortBy(airlines, (a) =>
+    a.name.toLowerCase()
+)
 
 const getFlagEmoji = (isoCode) => {
     if (!isoCode) return '🏴'
@@ -29,7 +35,9 @@ const getFlagEmoji = (isoCode) => {
     return isoCode
         .toUpperCase()
         .replace(/./g, (char) =>
-            String.fromCodePoint(127397 + char.charCodeAt(0))
+            String.fromCodePoint(
+                127397 + char.charCodeAt(0)
+            )
         )
 }
 
@@ -41,12 +49,14 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 > * This list is not exhaustive and will be updated as new airlines are added to the project.
 > * Flag next to airline name often means it's the national carrier.
 
-| Airline | IATA | ICAO | Country | Alliance | Icon | Mono Icon | Logo | Mono Logo |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Airline | IATA | ICAO | Country | Alliance | Primary color | Icon | Mono Icon | Logo | Mono Logo |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 `
 
 sorted.forEach((airline) => {
-    const slug = slugify(airline.name, { lower: true })
+    const slug = slugify(airline.name, {
+        lower: true
+    })
 
     const variations = []
     const includedStates = []
@@ -78,22 +88,42 @@ sorted.forEach((airline) => {
 
     airline.variations = variations
 
-    const { name, iata, website, icao, country, alliance, flag_carrier } =
-        airline
+    const {
+        name,
+        iata,
+        website,
+        icao,
+        country,
+        alliance,
+        flag_carrier,
+        primary_color
+    } = airline
 
-    let airlineName = website ? `[${name}](${website})` : name
+    let airlineName = website
+        ? `[${name}](${website})`
+        : name
 
     if (flag_carrier) {
         const countries = country.split(',')
         countries.forEach((code) => {
-            airlineName += ` ${getFlagEmoji(code)}`
+            airlineName += ` ${getFlagEmoji(
+                code
+            )}`
         })
     }
 
     md += `| ${airlineName} | ${iata} | ${icao} | ${country} | ${
         alliance || ''
-    } | ${includedStates.join(' | ')} |\n`
+    } | ${`![${primary_color}](https://place-hold.it/10x10/${primary_color.replace(
+        '#',
+        ''
+    )}?text=)`} | ${includedStates.join(
+        ' | '
+    )} |\n`
 })
 
-fs.writeFileSync('airlines.json', JSON.stringify(sorted, null, 4))
+fs.writeFileSync(
+    'airlines.json',
+    JSON.stringify(sorted, null, 4)
+)
 fs.writeFileSync('AIRLINES.md', md)
