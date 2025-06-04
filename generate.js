@@ -33,20 +33,23 @@ const getFlagEmoji = (isoCode) => {
         )
 }
 
-let md = `## Soaring Symbols: Airlines
+let md = `# Soaring Symbols: Airlines
 
 This file provides an overview of the airlines included in the Soaring Symbols project and the types of logos available for each one.
 
 > [!NOTE]
+>
 > * This list is not exhaustive and will be updated as new airlines are added to the project.
 > * Flag next to airline name often means it's the national carrier.
 
-| Airline | IATA | ICAO | Country | Alliance | Icon | Mono Icon | Logo | Mono Logo |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Airline | IATA | ICAO | Country | Alliance | Primary Color | Icon | Mono Icon | Logo | Mono Logo |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 `
 
 sorted.forEach((airline) => {
-    const slug = slugify(airline.name, { lower: true })
+    const slug = slugify(airline.name, {
+        lower: true,
+    })
 
     const variations = []
     const includedStates = []
@@ -78,8 +81,16 @@ sorted.forEach((airline) => {
 
     airline.variations = variations
 
-    const { name, iata, website, icao, country, alliance, flag_carrier } =
-        airline
+    const {
+        name,
+        iata,
+        website,
+        icao,
+        country,
+        alliance,
+        flag_carrier,
+        primary_color,
+    } = airline
 
     let airlineName = website ? `[${name}](${website})` : name
 
@@ -92,7 +103,10 @@ sorted.forEach((airline) => {
 
     md += `| ${airlineName} | ${iata} | ${icao} | ${country} | ${
         alliance || ''
-    } | ${includedStates.join(' | ')} |\n`
+    } | ${`![${primary_color}](https://place-hold.it/10x10/${primary_color.replace(
+        '#',
+        ''
+    )}?text=)`} | ${includedStates.join(' | ')} |\n`
 })
 
 fs.writeFileSync('airlines.json', JSON.stringify(sorted, null, 4))
