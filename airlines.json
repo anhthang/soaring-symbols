@@ -7,7 +7,7 @@
         "flag_carrier": true,
         "website": "https://en.aegeanair.com",
         "alliance": "Star Alliance",
-        "primary_color": "#002677",
+        "primary_color": "#00217A",
         "variations": [
             "icon",
             "icon_mono",
@@ -51,7 +51,7 @@
         "flag_carrier": true,
         "website": "https://www.aircanada.com",
         "alliance": "Star Alliance",
-        "primary_color": "#FF333A",
+        "primary_color": "#F01428",
         "variations": [
             "icon",
             "icon_mono",
@@ -79,7 +79,7 @@
         "flag_carrier": true,
         "website": "https://airfrance.com",
         "alliance": "SkyTeam",
-        "primary_color": "#051039",
+        "primary_color": "#051040",
         "variations": [
             "icon",
             "icon_mono",
@@ -95,7 +95,7 @@
         "flag_carrier": true,
         "website": "https://www.airindia.com",
         "alliance": "Star Alliance",
-        "primary_color": "#B61032",
+        "primary_color": "#DA0E29",
         "variations": [
             "icon",
             "icon_mono",
@@ -127,7 +127,7 @@
         "flag_carrier": true,
         "website": "https://www.airnewzealand.co.nz",
         "alliance": "Star Alliance",
-        "primary_color": "#008392",
+        "primary_color": "#231F20",
         "variations": [
             "icon",
             "icon_mono",
@@ -142,7 +142,7 @@
         "country": "RS",
         "flag_carrier": true,
         "website": "https://www.airserbia.com",
-        "primary_color": "#2687D5",
+        "primary_color": "#0E2040",
         "variations": [
             "icon",
             "icon_mono",
@@ -156,7 +156,7 @@
         "icao": "TSC",
         "country": "CA",
         "website": "https://airtransat.com",
-        "primary_color": "#002855",
+        "primary_color": "#00B3F0",
         "variations": [
             "icon",
             "icon_mono",
@@ -170,7 +170,7 @@
         "icao": "AXM",
         "country": "MY",
         "website": "https://www.airasia.com",
-        "primary_color": "#01EA6B",
+        "primary_color": "#FF0000",
         "variations": [
             "logo",
             "logo_mono"
@@ -210,7 +210,7 @@
         "country": "US",
         "website": "https://www.alaskaair.com",
         "alliance": "oneworld",
-        "primary_color": "#0074C8",
+        "primary_color": "#01426A",
         "variations": [
             "logo",
             "logo_mono"
@@ -224,7 +224,7 @@
         "guidelines": "https://flyasiana.com/C/VN/EN/contents/ci",
         "website": "https://flyasiana.com",
         "alliance": "Star Alliance",
-        "primary_color": "#D60815",
+        "primary_color": "#E30613",
         "variations": [
             "icon",
             "icon_mono",
@@ -297,7 +297,7 @@
         "flag_carrier": true,
         "website": "https://www.britishairways.com",
         "alliance": "oneworld",
-        "primary_color": "#2D5E9D",
+        "primary_color": "#0035AD",
         "variations": [
             "icon",
             "icon_mono",
@@ -313,7 +313,7 @@
         "flag_carrier": true,
         "website": "https://www.brusselsairlines.com",
         "alliance": "Star Alliance",
-        "primary_color": "#E5002B",
+        "primary_color": "#051446",
         "variations": [
             "icon",
             "icon_mono",
@@ -329,7 +329,7 @@
         "flag_carrier": true,
         "website": "https://www.cathaypacific.com",
         "alliance": "oneworld",
-        "primary_color": "#2C4036",
+        "primary_color": "#005D63",
         "variations": [
             "icon",
             "icon_mono",
@@ -345,7 +345,7 @@
         "flag_carrier": true,
         "website": "https://www.copaair.com",
         "alliance": "Star Alliance",
-        "primary_color": "#0032A0",
+        "primary_color": "#0060A9",
         "variations": [
             "icon",
             "icon_mono",
@@ -360,7 +360,7 @@
         "country": "AE",
         "flag_carrier": true,
         "website": "https://www.emirates.com",
-        "primary_color": "#D71921",
+        "primary_color": "#D71A21",
         "variations": [
             "icon",
             "icon_mono",
@@ -375,7 +375,7 @@
         "country": "AE",
         "flag_carrier": true,
         "website": "https://www.etihad.com",
-        "primary_color": "#B08747",
+        "primary_color": "#C4921B",
         "variations": [
             "logo",
             "logo_mono"
@@ -387,7 +387,7 @@
         "icao": "EWG",
         "country": "DE",
         "website": "https://www.eurowings.com",
-        "primary_color": "#AF1E65",
+        "primary_color": "#B4175E",
         "variations": [
             "icon",
             "icon_mono",
@@ -415,7 +415,7 @@
         "icao": "FFM",
         "country": "MY",
         "website": "https://www.fireflyz.com.my",
-        "primary_color": "#C4500E",
+        "primary_color": "#F79515",
         "variations": [
             "icon",
             "icon_mono",
@@ -429,7 +429,7 @@
         "icao": "KNE",
         "country": "SA",
         "website": "https://www.flynas.com",
-        "primary_color": "#00BBB4",
+        "primary_color": "#00B7AC",
         "variations": [
             "logo",
             "logo_mono"
@@ -443,7 +443,7 @@
         "flag_carrier": true,
         "website": "https://www.garuda-indonesia.com",
         "alliance": "SkyTeam",
-        "primary_color": "#0069B3",
+        "primary_color": "#202D5C",
         "variations": [
             "icon",
             "icon_mono",
@@ -459,7 +459,7 @@
         "flag_carrier": true,
         "website": "https://www.iberia.com",
         "alliance": "oneworld",
-        "primary_color": "#D7192D",
+        "primary_color": "#B11C25",
         "variations": [
             "icon",
             "icon_mono",
@@ -473,7 +473,7 @@
         "icao": "IGO",
         "country": "IN",
         "website": "https://www.goindigo.in",
-        "primary_color": "#000099",
+        "primary_color": "#001B94",
         "variations": [
             "icon",
             "icon_mono",
@@ -535,7 +535,7 @@
         "flag_carrier": true,
         "website": "https://www.klm.com",
         "alliance": "SkyTeam",
-        "primary_color": "#0077CD",
+        "primary_color": "#00A1DE",
         "variations": [
             "icon",
             "icon_mono",
@@ -550,7 +550,7 @@
         "country": "KW",
         "flag_carrier": true,
         "website": "https://www.kuwaitairways.com",
-        "primary_color": "#1C2A5B",
+        "primary_color": "#1C285B",
         "variations": [
             "icon",
             "icon_mono",
@@ -580,7 +580,7 @@
         "flag_carrier": true,
         "website": "https://www.lot.com",
         "alliance": "Star Alliance",
-        "primary_color": "#0B57AD",
+        "primary_color": "#252668",
         "variations": [
             "icon",
             "icon_mono",
@@ -596,7 +596,7 @@
         "flag_carrier": true,
         "website": "https://www.lufthansa.com",
         "alliance": "Star Alliance",
-        "primary_color": "#05164D",
+        "primary_color": "#0A1D3D",
         "variations": [
             "icon",
             "icon_mono",
@@ -628,7 +628,7 @@
         "flag_carrier": true,
         "website": "https://www.omanair.com",
         "alliance": "oneworld",
-        "primary_color": "#00728E",
+        "primary_color": "#B4975A",
         "variations": [
             "icon",
             "icon_mono",
@@ -655,7 +655,7 @@
         "country": "PH",
         "flag_carrier": true,
         "website": "https://www.philippineairlines.com",
-        "primary_color": "#0047BB",
+        "primary_color": "#001F60",
         "variations": [
             "icon",
             "icon_mono",
@@ -671,7 +671,7 @@
         "flag_carrier": true,
         "website": "https://www.qantas.com",
         "alliance": "oneworld",
-        "primary_color": "#E40000",
+        "primary_color": "#BE0000",
         "variations": [
             "icon_mono",
             "logo_mono"
@@ -686,7 +686,7 @@
         "guidelines": "https://www.qatarairways.com/content/dam/tradepartners/pdf-files/Brand-Elements_Section-1.pdf",
         "website": "https://www.qatarairways.com",
         "alliance": "oneworld",
-        "primary_color": "#8E2157",
+        "primary_color": "#660033",
         "variations": [
             "icon",
             "icon_mono",
@@ -726,7 +726,7 @@
         "icao": "RYR",
         "country": "IE",
         "website": "https://www.ryanair.com",
-        "primary_color": "#073590",
+        "primary_color": "#2B4779",
         "variations": [
             "icon",
             "icon_mono",
@@ -756,7 +756,7 @@
         "flag_carrier": true,
         "website": "https://www.flysas.com",
         "alliance": "Star Alliance",
-        "primary_color": "#000099",
+        "primary_color": "#2B3087",
         "variations": [
             "logo",
             "logo_mono"
@@ -769,7 +769,7 @@
         "country": "SG",
         "website": "https://www.flyscoot.com",
         "alliance": "Value Alliance",
-        "primary_color": "#F1D600",
+        "primary_color": "#FFE900",
         "variations": [
             "icon",
             "logo"
@@ -783,7 +783,7 @@
         "flag_carrier": true,
         "website": "https://www.singaporeair.com",
         "alliance": "Star Alliance",
-        "primary_color": "#003494",
+        "primary_color": "#1D4886",
         "variations": [
             "icon",
             "icon_mono",
@@ -797,7 +797,7 @@
         "icao": "SWA",
         "country": "US",
         "website": "https://www.southwest.com",
-        "primary_color": "#FFBF27",
+        "primary_color": "#304CB2",
         "variations": [
             "icon",
             "logo"
@@ -825,7 +825,7 @@
         "flag_carrier": true,
         "website": "https://www.swiss.com",
         "alliance": "Star Alliance",
-        "primary_color": "#CC0000",
+        "primary_color": "#E60005",
         "variations": [
             "icon",
             "icon_mono",
@@ -841,7 +841,7 @@
         "flag_carrier": true,
         "website": "https://www.tapairportugal.com",
         "alliance": "Star Alliance",
-        "primary_color": "#B3ED49",
+        "primary_color": "#BFD730",
         "variations": [
             "icon",
             "logo"
@@ -886,7 +886,7 @@
         "website": "https://www.turkishairlines.com",
         "guidelines": "https://www.turkishairlines.com/en-int/press-room/logo-archive",
         "alliance": "Star Alliance",
-        "primary_color": "#E81932",
+        "primary_color": "#C70A0C",
         "variations": [
             "icon",
             "icon_mono",
@@ -901,7 +901,7 @@
         "country": "US",
         "website": "https://www.united.com",
         "alliance": "Star Alliance",
-        "primary_color": "#1414D2",
+        "primary_color": "#0033A0",
         "variations": [
             "icon",
             "icon_mono",
@@ -958,7 +958,7 @@
         "icao": "VOZ",
         "country": "AU",
         "website": "https://www.virginaustralia.com",
-        "primary_color": "#E10A0A",
+        "primary_color": "#E31E23",
         "variations": [
             "icon",
             "icon_mono",
@@ -972,7 +972,7 @@
         "icao": "WJA",
         "country": "CA",
         "website": "https://www.westjet.com",
-        "primary_color": "#047675",
+        "primary_color": "#1A3F70",
         "variations": [
             "icon",
             "icon_mono",
