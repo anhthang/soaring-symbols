@@ -14,6 +14,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Air Astana](https://airastana.com) 🇰🇿 | KC | KZR | KZ |  | ![#A48C5D](https://place-hold.it/10x10/A48C5D?text=) | ✓ | ✓ |  |  |
 | [Air Canada](https://www.aircanada.com) 🇨🇦 | AC | ACA | CA | Star Alliance | ![#F01428](https://place-hold.it/10x10/F01428?text=) | ✓ | ✓ | ✓ | ✓ |
 | [Air Dolomiti](https://www.airdolomiti.eu) | EN | DLA | IT |  | ![#009EB3](https://place-hold.it/10x10/009EB3?text=) | ✓ | ✓ |  |  |
+| [Air Europa](https://www.aireuropa.com) | UX | AEA | ES | SkyTeam | ![#006FDE](https://place-hold.it/10x10/006FDE?text=) | ✓ | ✓ | ✓ | ✓ |
 | [Air France](https://airfrance.com) 🇫🇷 | AF | AFR | FR | SkyTeam | ![#051039](https://place-hold.it/10x10/051039?text=) | ✓ | ✓ | ✓ | ✓ |
 | [Air India](https://www.airindia.com) 🇮🇳 | AI | AIC | IN | Star Alliance | ![#DA0E29](https://place-hold.it/10x10/DA0E29?text=) | ✓ | ✓ | ✓ | ✓ |
 | [Air Mauritius](https://www.airmauritius.com) 🇲🇺 | MK | MAU | MU | Vanilla Alliance | ![#BE2239](https://place-hold.it/10x10/BE2239?text=) | ✓ | ✓ | ✓ | ✓ |
@@ -76,3 +77,4 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Virgin Atlantic](https://www.virginatlantic.com) | VS | VIR | GB | SkyTeam | ![#DA0530](https://place-hold.it/10x10/DA0530?text=) | ✓ | ✓ | ✓ | ✓ |
 | [Virgin Australia](https://www.virginaustralia.com) | VA | VOZ | AU |  | ![#E31E23](https://place-hold.it/10x10/E31E23?text=) | ✓ | ✓ | ✓ | ✓ |
 | [WestJet](https://www.westjet.com) | WS | WJA | CA |  | ![#00AAA6](https://place-hold.it/10x10/00AAA6?text=) | ✓ | ✓ | ✓ | ✓ |
+| [XiamenAir](https://www.xiamenair.com) | MF | CXA | CN | SkyTeam | ![#008CD5](https://place-hold.it/10x10/008CD5?text=) | ✓ | ✓ | ✓ | ✓ |

@@ -79,7 +79,7 @@ sorted.forEach((airline) => {
         includedStates.push('')
     }
 
-    airline.variations = variations
+    airline.branding.variations = variations
 
     const {
         name,
@@ -89,7 +89,7 @@ sorted.forEach((airline) => {
         country,
         alliance,
         flag_carrier,
-        primary_color,
+        branding: { primary_color },
     } = airline
 
     let airlineName = website ? `[${name}](${website})` : name
