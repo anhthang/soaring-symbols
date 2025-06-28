@@ -10,6 +10,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | Airline | IATA | ICAO | Country | Alliance | Primary Color | Icon | Mono Icon | Logo | Mono Logo |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [Aegean Airlines](https://en.aegeanair.com) 🇬🇷 | A3 | AEE | GR | Star Alliance | ![#002677](https://place-hold.it/10x10/002677?text=) | ✓ | ✓ | ✓ | ✓ |
+| [Aeroméxico](https://www.aeromexico.com) 🇲🇽 | AM | AMX | MX | SkyTeam | ![#020C41](https://place-hold.it/10x10/020C41?text=) | ✓ | ✓ | ✓ | ✓ |
 | [Air Albania](https://www.airalbania.com.al) 🇦🇱 | ZB | ABN | AL |  | ![#CE1F2E](https://place-hold.it/10x10/CE1F2E?text=) | ✓ | ✓ | ✓ | ✓ |
 | [Air Astana](https://airastana.com) 🇰🇿 | KC | KZR | KZ |  | ![#A48C5D](https://place-hold.it/10x10/A48C5D?text=) | ✓ | ✓ |  |  |
 | [Air Canada](https://www.aircanada.com) 🇨🇦 | AC | ACA | CA | Star Alliance | ![#F01428](https://place-hold.it/10x10/F01428?text=) | ✓ | ✓ | ✓ | ✓ |
@@ -47,6 +48,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Jetstar](https://www.jetstar.com) | JQ | JST | AU |  | ![#FF5111](https://place-hold.it/10x10/FF5111?text=) | ✓ | ✓ | ✓ | ✓ |
 | [Kenya Airways](https://www.kenya-airways.com) 🇰🇪 | KQ | KQA | KE | SkyTeam | ![#ED1C24](https://place-hold.it/10x10/ED1C24?text=) | ✓ | ✓ | ✓ | ✓ |
 | [KLM](https://www.klm.com) 🇳🇱 | KL | KLM | NL | SkyTeam | ![#009FD9](https://place-hold.it/10x10/009FD9?text=) | ✓ | ✓ | ✓ | ✓ |
+| [Korean Air](https://www.koreanair.com) 🇰🇷 | KE | KAL | KR |  | ![#051766](https://place-hold.it/10x10/051766?text=) | ✓ | ✓ | ✓ | ✓ |
 | [Kuwait Airways](https://www.kuwaitairways.com) 🇰🇼 | KU | KAC | KW |  | ![#1C285B](https://place-hold.it/10x10/1C285B?text=) | ✓ | ✓ | ✓ | ✓ |
 | [LATAM Airlines](https://www.latamairlines.com) | LA | LAN | CL |  | ![#1B0088](https://place-hold.it/10x10/1B0088?text=) | ✓ | ✓ | ✓ | ✓ |
 | [LOT Polish Airlines](https://www.lot.com) 🇵🇱 | LO | LOT | PL | Star Alliance | ![#252668](https://place-hold.it/10x10/252668?text=) | ✓ | ✓ | ✓ | ✓ |
@@ -77,4 +79,5 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Virgin Atlantic](https://www.virginatlantic.com) | VS | VIR | GB | SkyTeam | ![#DA0530](https://place-hold.it/10x10/DA0530?text=) | ✓ | ✓ | ✓ | ✓ |
 | [Virgin Australia](https://www.virginaustralia.com) | VA | VOZ | AU |  | ![#E31E23](https://place-hold.it/10x10/E31E23?text=) | ✓ | ✓ | ✓ | ✓ |
 | [WestJet](https://www.westjet.com) | WS | WJA | CA |  | ![#00AAA6](https://place-hold.it/10x10/00AAA6?text=) | ✓ | ✓ | ✓ | ✓ |
+| [Wizz Air](https://www.wizzair.com) | W6 | WZZ | HU |  | ![#C6007E](https://place-hold.it/10x10/C6007E?text=) |  |  | ✓ | ✓ |
 | [XiamenAir](https://www.xiamenair.com) | MF | CXA | CN | SkyTeam | ![#008CD5](https://place-hold.it/10x10/008CD5?text=) | ✓ | ✓ | ✓ | ✓ |

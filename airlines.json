@@ -18,6 +18,24 @@
         }
     },
     {
+        "name": "Aeroméxico",
+        "iata": "AM",
+        "icao": "AMX",
+        "country": "MX",
+        "flag_carrier": true,
+        "website": "https://www.aeromexico.com",
+        "alliance": "SkyTeam",
+        "branding": {
+            "primary_color": "#020C41",
+            "variations": [
+                "icon",
+                "icon_mono",
+                "logo",
+                "logo_mono"
+            ]
+        }
+    },
+    {
         "name": "Air Albania",
         "iata": "ZB",
         "icao": "ABN",
@@ -635,6 +653,23 @@
         }
     },
     {
+        "name": "Korean Air",
+        "iata": "KE",
+        "icao": "KAL",
+        "country": "KR",
+        "flag_carrier": true,
+        "website": "https://www.koreanair.com",
+        "branding": {
+            "primary_color": "#051766",
+            "variations": [
+                "icon",
+                "icon_mono",
+                "logo",
+                "logo_mono"
+            ]
+        }
+    },
+    {
         "name": "Kuwait Airways",
         "iata": "KU",
         "icao": "KAC",
@@ -1126,6 +1161,20 @@
             "variations": [
                 "icon",
                 "icon_mono",
+                "logo",
+                "logo_mono"
+            ]
+        }
+    },
+    {
+        "name": "Wizz Air",
+        "iata": "W6",
+        "icao": "WZZ",
+        "country": "HU",
+        "website": "https://www.wizzair.com",
+        "branding": {
+            "primary_color": "#C6007E",
+            "variations": [
                 "logo",
                 "logo_mono"
             ]
