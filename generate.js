@@ -1,11 +1,23 @@
 const fs = require('fs')
 const sortBy = require('lodash.sortby')
 const { default: slugify } = require('slugify')
+const path = require('path')
 
 const airlines = require('./airlines.json')
 
-const icons = fs.readdirSync(__dirname + '/icons')
-const logos = fs.readdirSync(__dirname + '/logos')
+const extractColorsFromSvg = (filePath) => {
+    const content = fs.readFileSync(filePath, 'utf8')
+    const colorRegex = /#[0-9A-Fa-f]{6}|#[0-9A-Fa-f]{3}/g
+    const colors = [...new Set(content.match(colorRegex) || [])]
+    return colors.length > 0 ? colors : null
+}
+
+const determineColorMode = (colors) => {
+    if (!colors) return null
+    return colors.length > 1 ? 'multi' : 'single'
+}
+
+const assetsDir = __dirname + '/assets'
 
 const sorted = sortBy(airlines, (a) => a.name.toLowerCase())
 
@@ -42,7 +54,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 > * This list is not exhaustive and will be updated as new airlines are added to the project.
 > * Flag next to airline name often means it's the national carrier.
 
-| Airline | IATA | ICAO | Country | Alliance | Primary Color | Icon | Mono Icon | Logo | Mono Logo |
+| Airline | IATA | ICAO | Country | Alliance | Primary Color | Icon | Color Icon | Logo | Color Logo |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 `
 
@@ -51,35 +63,68 @@ sorted.forEach((airline) => {
         lower: true,
     })
 
-    const variations = []
     const includedStates = []
+    const airlineDir = `${assetsDir}/${slug}`
+    const assets = {}
 
-    if (icons.includes(`${slug}.svg`)) {
-        variations.push('icon')
-        includedStates.push('✓')
-    } else {
-        includedStates.push('')
+    if (!fs.existsSync(airlineDir)) {
+        includedStates.push('', '', '', '')
+        return
     }
-    if (icons.includes(`${slug}_mono.svg`)) {
-        variations.push('icon_mono')
-        includedStates.push('✓')
-    } else {
-        includedStates.push('')
-    }
-    if (logos.includes(`${slug}.svg`)) {
-        variations.push('logo')
-        includedStates.push('✓')
-    } else {
-        includedStates.push('')
-    }
-    if (logos.includes(`${slug}_mono.svg`)) {
-        variations.push('logo_mono')
+
+    // Check and process icon
+    const iconPath = path.join(airlineDir, 'icon.svg')
+    if (fs.existsSync(iconPath)) {
+        assets.icon = true
         includedStates.push('✓')
     } else {
         includedStates.push('')
     }
 
-    airline.branding.variations = variations
+    // Check and process icon_color
+    const iconColorPath = path.join(airlineDir, 'icon_color.svg')
+    if (fs.existsSync(iconColorPath)) {
+        const colors = extractColorsFromSvg(iconColorPath)
+        if (colors) {
+            assets.icon_color = {
+                color_mode: determineColorMode(colors),
+                colors: colors
+            }
+        }
+
+        assets.icon_color = !!colors?.length // FIXME: remove later once model is stable
+        includedStates.push('✓')
+    } else {
+        includedStates.push('')
+    }
+
+    // Check and process logo
+    const logoPath = path.join(airlineDir, 'logo.svg')
+    if (fs.existsSync(logoPath)) {
+        assets.logo = true
+        includedStates.push('✓')
+    } else {
+        includedStates.push('')
+    }
+
+    // Check and process logo_color
+    const logoColorPath = path.join(airlineDir, 'logo_color.svg')
+    if (fs.existsSync(logoColorPath)) {
+        const colors = extractColorsFromSvg(logoColorPath)
+        if (colors) {
+            assets.logo_color = {
+                color_mode: determineColorMode(colors),
+                colors: colors
+            }
+        }
+
+        assets.logo_color = !!colors?.length // FIXME: remove later once model is stable
+        includedStates.push('✓')
+    } else {
+        includedStates.push('')
+    }
+
+    airline.branding.assets = assets
 
     const {
         name,
