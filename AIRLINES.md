@@ -29,7 +29,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Asiana Airlines](https://flyasiana.com) | OZ | AAR | KR | Star Alliance | ![#4A4F54](https://place-hold.it/10x10/4A4F54/4A4F54.png) | ✓ | ✓ | ✓ | ✓ |
 | [avianca](https://www.avianca.com) 🇨🇴 | AV | AVA | CO | Star Alliance | ![#FF0000](https://place-hold.it/10x10/FF0000/FF0000.png) | ✓ | ✓ | ✓ | ✓ |
 | [Azerbaijan Airlines](https://azal.az) 🇦🇿 | J2 | AHY | AZ |  | ![#082E6A](https://place-hold.it/10x10/082E6A/082E6A.png) | ✓ | ✓ | ✓ | ✓ |
-| [Bamboo Airways](https://www.bambooairways.com) | QH | BAV | VN |  | ![#64AE53](https://place-hold.it/10x10/64AE53/64AE53.png) |  |  |  |  |
+| [Bamboo Airways](https://www.bambooairways.com) | QH | BAV | VN |  | ![#64AE53](https://place-hold.it/10x10/64AE53/64AE53.png) | ✓ |  | ✓ |  |
 | [Bangkok Airways](https://www.bangkokair.com) | PG | BKP | TH |  | ![#000F8F](https://place-hold.it/10x10/000F8F/000F8F.png) | ✓ | ✓ | ✓ | ✓ |
 | [British Airways](https://www.britishairways.com) 🇬🇧 | BA | BAW | GB | oneworld | ![#2E5C99](https://place-hold.it/10x10/2E5C99/2E5C99.png) | ✓ | ✓ | ✓ | ✓ |
 | [Brussels Airlines](https://www.brusselsairlines.com) 🇧🇪 | SN | BEL | BE | Star Alliance | ![#051446](https://place-hold.it/10x10/051446/051446.png) | ✓ | ✓ | ✓ | ✓ |
@@ -64,12 +64,12 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Ryanair](https://www.ryanair.com) | FR | RYR | IE |  | ![#073590](https://place-hold.it/10x10/073590/073590.png) | ✓ | ✓ | ✓ | ✓ |
 | [Saudia](https://www.saudia.com) 🇸🇦 | SV | SVA | SA | SkyTeam | ![#0A6937](https://place-hold.it/10x10/0A6937/0A6937.png) | ✓ | ✓ |  |  |
 | [Scandinavian Airlines](https://www.flysas.com) 🇩🇰 🇳🇴 🇸🇪 | SK | SAS | DK,NO,SE | Star Alliance | ![#000099](https://place-hold.it/10x10/000099/000099.png) |  |  | ✓ | ✓ |
-| [Scoot](https://www.flyscoot.com) | TR | TGW | SG | Value Alliance | ![#FFE900](https://place-hold.it/10x10/FFE900/FFE900.png) |  |  |  |  |
+| [Scoot](https://www.flyscoot.com) | TR | TGW | SG | Value Alliance | ![#FFE900](https://place-hold.it/10x10/FFE900/FFE900.png) |  |  | ✓ | ✓ |
 | [Singapore Airlines](https://www.singaporeair.com) 🇸🇬 | SQ | SIA | SG | Star Alliance | ![#232F67](https://place-hold.it/10x10/232F67/232F67.png) | ✓ | ✓ | ✓ | ✓ |
-| [Southwest Airlines](https://www.southwest.com) | WN | SWA | US |  | ![#304CB2](https://place-hold.it/10x10/304CB2/304CB2.png) |  |  |  |  |
+| [Southwest Airlines](https://www.southwest.com) | WN | SWA | US |  | ![#304CB2](https://place-hold.it/10x10/304CB2/304CB2.png) | ✓ | ✓ | ✓ |  |
 | [Starlux Airlines](https://www.starlux-airlines.com) | JX | SJX | TW |  | ![#996A4E](https://place-hold.it/10x10/996A4E/996A4E.png) | ✓ | ✓ | ✓ | ✓ |
 | [SWISS](https://www.swiss.com) 🇨🇭 | LX | SWR | CH | Star Alliance | ![#CF0A2C](https://place-hold.it/10x10/CF0A2C/CF0A2C.png) | ✓ | ✓ | ✓ | ✓ |
-| [TAP Air Portugal](https://www.tapairportugal.com) 🇵🇹 | TP | TAP | PT | Star Alliance | ![#BFD730](https://place-hold.it/10x10/BFD730/BFD730.png) |  |  |  |  |
+| [TAP Air Portugal](https://www.tapairportugal.com) 🇵🇹 | TP | TAP | PT | Star Alliance | ![#BFD730](https://place-hold.it/10x10/BFD730/BFD730.png) | ✓ |  | ✓ |  |
 | [TAROM](https://www.tarom.ro) 🇷🇴 | RO | ROT | RO | SkyTeam | ![#003366](https://place-hold.it/10x10/003366/003366.png) | ✓ | ✓ | ✓ | ✓ |
 | [Transavia](https://www.transavia.com) | HV | TRA | NL |  | ![#00D66C](https://place-hold.it/10x10/00D66C/00D66C.png) | ✓ | ✓ | ✓ | ✓ |
 | [Turkish Airlines](https://www.turkishairlines.com) 🇹🇷 | TK | THY | TR | Star Alliance | ![#C90019](https://place-hold.it/10x10/C90019/C90019.png) | ✓ | ✓ | ✓ | ✓ |

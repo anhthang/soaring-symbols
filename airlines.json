@@ -523,7 +523,26 @@
         "website": "https://www.bambooairways.com",
         "branding": {
             "primary_color": "#64AE53",
-            "assets": {}
+            "assets": {
+                "icon": {
+                    "has_mono_file": false,
+                    "color_model": "multi",
+                    "colors": [
+                        "#00558E",
+                        "#4EBCEC",
+                        "#64AE53"
+                    ]
+                },
+                "logo": {
+                    "has_mono_file": false,
+                    "color_model": "multi",
+                    "colors": [
+                        "#00558E",
+                        "#4EBCEC",
+                        "#64AE53"
+                    ]
+                }
+            }
         }
     },
     {
@@ -1421,7 +1440,15 @@
         "alliance": "Value Alliance",
         "branding": {
             "primary_color": "#FFE900",
-            "assets": {}
+            "assets": {
+                "logo": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#FFE900"
+                    ]
+                }
+            }
         }
     },
     {
@@ -1461,7 +1488,23 @@
         "website": "https://www.southwest.com",
         "branding": {
             "primary_color": "#304CB2",
-            "assets": {}
+            "assets": {
+                "icon": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#CCCCCC"
+                    ]
+                },
+                "logo": {
+                    "has_mono_file": false,
+                    "color_model": "multi",
+                    "colors": [
+                        "#304CB2",
+                        "#CCCCCC"
+                    ]
+                }
+            }
         }
     },
     {
@@ -1531,7 +1574,29 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#BFD730",
-            "assets": {}
+            "assets": {
+                "icon": {
+                    "has_mono_file": false,
+                    "color_model": "multi",
+                    "colors": [
+                        "#ED1C24",
+                        "#B82025",
+                        "#BFD730",
+                        "#72BF44"
+                    ]
+                },
+                "logo": {
+                    "has_mono_file": false,
+                    "color_model": "multi",
+                    "colors": [
+                        "#ED1C24",
+                        "#B82025",
+                        "#BFD730",
+                        "#72BF44",
+                        "#1D1D1B"
+                    ]
+                }
+            }
         }
     },
     {
