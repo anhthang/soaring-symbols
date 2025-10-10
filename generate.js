@@ -7,36 +7,28 @@ const airlines = require('./airlines.json')
 
 const extractColorsFromSvg = (filePath) => {
     const content = fs.readFileSync(filePath, 'utf8')
-    const colorRegex = /#[0-9A-Fa-f]{6}|#[0-9A-Fa-f]{3}/g
-    const colors = [...new Set(content.match(colorRegex) || [])]
+    const colorRegex = /fill="(#[0-9A-Fa-f]{6}|#[0-9A-Fa-f]{3})"/gi
+    const matches = [...content.matchAll(colorRegex)]
+    const colors = [...new Set(matches.map((match) => match[1].toUpperCase()))]
     return colors.length > 0 ? colors : null
 }
 
-const determineColorMode = (colors) => {
+const determineColorModel = (colors) => {
     if (!colors) return null
     return colors.length > 1 ? 'multi' : 'single'
 }
 
-const assetsDir = __dirname + '/assets'
+const assetsDir = path.join(__dirname, 'assets')
 
 const sorted = sortBy(airlines, (a) => a.name.toLowerCase())
 
 const getFlagEmoji = (isoCode) => {
     if (!isoCode) return '🏴'
 
-    if (isoCode === 'GB-ENG') {
-        return '🏴󠁧󠁢󠁥󠁮󠁧󠁿'
-    }
-    if (isoCode === 'GB-WLS') {
-        return '🏴󠁧󠁢󠁷󠁬󠁳󠁿'
-    }
-    if (isoCode === 'GB-SCT') {
-        return '🏴󠁧󠁢󠁳󠁣󠁴󠁿'
-    }
-    if (isoCode === 'GB-NIR') {
-        // The only official flag in Northern Ireland is the Union Flag of the United Kingdom.
-        return '🇬🇧'
-    }
+    if (isoCode === 'GB-ENG') return '🏴󠁧󠁢󠁥󠁮󠁧󠁿'
+    if (isoCode === 'GB-WLS') return '🏴󠁧󠁢󠁷󠁬󠁳󠁿'
+    if (isoCode === 'GB-SCT') return '🏴󠁧󠁢󠁳󠁣󠁴󠁿'
+    if (isoCode === 'GB-NIR') return '🇬🇧'
 
     return isoCode
         .toUpperCase()
@@ -54,75 +46,61 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 > * This list is not exhaustive and will be updated as new airlines are added to the project.
 > * Flag next to airline name often means it's the national carrier.
 
-| Airline | IATA | ICAO | Country | Alliance | Primary Color | Icon | Color Icon | Logo | Color Logo |
+| Airline | IATA | ICAO | Country | Alliance | Primary Color | Icon | Mono Icon | Logo | Mono Logo |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 `
+
+const assetTypes = ['icon', 'logo']
 
 sorted.forEach((airline) => {
     const slug = slugify(airline.name, {
         lower: true,
+        strict: true,
     })
 
-    const includedStates = []
-    const airlineDir = `${assetsDir}/${slug}`
+    const airlineDir = path.join(assetsDir, slug)
     const assets = {}
+    const includedStates = []
 
     if (!fs.existsSync(airlineDir)) {
-        includedStates.push('', '', '', '')
+        md += `| ${airline.name} | ${airline.iata} | ${airline.icao} | ${
+            airline.country
+        } | ${airline.alliance || ''} | | | | | |\n`
         return
     }
 
-    // Check and process icon
-    const iconPath = path.join(airlineDir, 'icon.svg')
-    if (fs.existsSync(iconPath)) {
-        assets.icon = true
-        includedStates.push('✓')
-    } else {
-        includedStates.push('')
-    }
+    assetTypes.forEach((assetType) => {
+        const colorAssetPath = path.join(airlineDir, `${assetType}.svg`)
+        const monoAssetPath = path.join(airlineDir, `${assetType}-mono.svg`)
 
-    // Check and process icon_color
-    const iconColorPath = path.join(airlineDir, 'icon_color.svg')
-    if (fs.existsSync(iconColorPath)) {
-        const colors = extractColorsFromSvg(iconColorPath)
-        if (colors) {
-            assets.icon_color = {
-                color_mode: determineColorMode(colors),
-                colors: colors
-            }
+        const colorAssetExists = fs.existsSync(colorAssetPath)
+        const monoAssetExists = fs.existsSync(monoAssetPath)
+
+        let color_model = null
+        let colors = null
+
+        if (colorAssetExists) {
+            colors = extractColorsFromSvg(colorAssetPath)
+            color_model = determineColorModel(colors)
         }
 
-        assets.icon_color = !!colors?.length // FIXME: remove later once model is stable
-        includedStates.push('✓')
-    } else {
-        includedStates.push('')
-    }
+        // A mono version is available if a mono file exists OR if the asset is a single-color model.
+        const isMonoAvailable =
+            monoAssetExists || (colorAssetExists && color_model === 'single')
 
-    // Check and process logo
-    const logoPath = path.join(airlineDir, 'logo.svg')
-    if (fs.existsSync(logoPath)) {
-        assets.logo = true
-        includedStates.push('✓')
-    } else {
-        includedStates.push('')
-    }
+        includedStates.push(colorAssetExists ? '✓' : '')
+        includedStates.push(isMonoAvailable ? '✓' : '')
 
-    // Check and process logo_color
-    const logoColorPath = path.join(airlineDir, 'logo_color.svg')
-    if (fs.existsSync(logoColorPath)) {
-        const colors = extractColorsFromSvg(logoColorPath)
-        if (colors) {
-            assets.logo_color = {
-                color_mode: determineColorMode(colors),
-                colors: colors
+        if (colorAssetExists) {
+            assets[assetType] = {
+                has_mono_file: monoAssetExists,
+            }
+            if (color_model) {
+                assets[assetType].color_model = color_model
+                assets[assetType].colors = colors
             }
         }
-
-        assets.logo_color = !!colors?.length // FIXME: remove later once model is stable
-        includedStates.push('✓')
-    } else {
-        includedStates.push('')
-    }
+    })
 
     airline.branding.assets = assets
 
@@ -146,13 +124,19 @@ sorted.forEach((airline) => {
         })
     }
 
-    md += `| ${airlineName} | ${iata} | ${icao} | ${country} | ${
-        alliance || ''
-    } | ${`![${primary_color}](https://place-hold.it/10x10/${primary_color.replace(
-        '#',
-        ''
-    )}?text=)`} | ${includedStates.join(' | ')} |\n`
+    const colorSquare = primary_color
+        ? `![${primary_color}](https://place-hold.it/10x10/${primary_color.replace(
+              '#',
+              ''
+          )}/${primary_color.replace('#', '')}.png)`
+        : ''
+
+    md += `| ${airlineName} | ${iata || ''} | ${icao || ''} | ${
+        country || ''
+    } | ${alliance || ''} | ${colorSquare} | ${includedStates.join(' | ')} |\n`
 })
 
 fs.writeFileSync('airlines.json', JSON.stringify(sorted, null, 4))
 fs.writeFileSync('AIRLINES.md', md)
+
+console.log('✅ Successfully generated airlines.json and AIRLINES.md')
