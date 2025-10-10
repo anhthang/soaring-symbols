@@ -1537,6 +1537,33 @@
         }
     },
     {
+        "name": "Sun PhuQuoc Airways",
+        "iata": "9G",
+        "icao": "SPQ",
+        "country": "VN",
+        "website": "https://www.sunphuquocairways.com",
+        "branding": {
+            "primary_color": "#CA1C2A",
+            "assets": {
+                "icon": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#F1C217"
+                    ]
+                },
+                "logo": {
+                    "has_mono_file": true,
+                    "color_model": "multi",
+                    "colors": [
+                        "#CA1C2A",
+                        "#F1C217"
+                    ]
+                }
+            }
+        }
+    },
+    {
         "name": "SWISS",
         "iata": "LX",
         "icao": "SWR",

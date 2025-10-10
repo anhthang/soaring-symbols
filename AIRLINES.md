@@ -68,6 +68,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Singapore Airlines](https://www.singaporeair.com) 🇸🇬 | SQ | SIA | SG | Star Alliance | ![#232F67](https://place-hold.it/10x10/232F67/232F67.png) | ✓ | ✓ | ✓ | ✓ |
 | [Southwest Airlines](https://www.southwest.com) | WN | SWA | US |  | ![#304CB2](https://place-hold.it/10x10/304CB2/304CB2.png) | ✓ | ✓ | ✓ |  |
 | [Starlux Airlines](https://www.starlux-airlines.com) | JX | SJX | TW |  | ![#996A4E](https://place-hold.it/10x10/996A4E/996A4E.png) | ✓ | ✓ | ✓ | ✓ |
+| [Sun PhuQuoc Airways](https://www.sunphuquocairways.com) | 9G | SPQ | VN |  | ![#CA1C2A](https://place-hold.it/10x10/CA1C2A/CA1C2A.png) | ✓ | ✓ | ✓ | ✓ |
 | [SWISS](https://www.swiss.com) 🇨🇭 | LX | SWR | CH | Star Alliance | ![#CF0A2C](https://place-hold.it/10x10/CF0A2C/CF0A2C.png) | ✓ | ✓ | ✓ | ✓ |
 | [TAP Air Portugal](https://www.tapairportugal.com) 🇵🇹 | TP | TAP | PT | Star Alliance | ![#BFD730](https://place-hold.it/10x10/BFD730/BFD730.png) | ✓ |  | ✓ |  |
 | [TAROM](https://www.tarom.ro) 🇷🇴 | RO | ROT | RO | SkyTeam | ![#003366](https://place-hold.it/10x10/003366/003366.png) | ✓ | ✓ | ✓ | ✓ |
