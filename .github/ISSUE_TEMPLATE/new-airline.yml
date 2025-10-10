@@ -1,0 +1,47 @@
+name: "Add New Airline"
+description: Request to add a brand new airline icon or logo to the Soaring Symbols library.
+title: "Add: [Name of Airline] (e.g., Vietnam Airlines)"
+labels: ["new airline"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the Soaring Symbols library! This form is for **NEW** icons only. We require official, direct sources for all assets.
+  
+  - type: input
+    id: airline_name
+    attributes:
+      label: Full Airline Name
+      description: The official name of the airline.
+      placeholder: e.g., Vietnam Airlines
+    validations:
+      required: true
+
+  - type: input
+    id: official_website_link
+    attributes:
+      label: Official Airline Website Link
+      description: The main URL for the airline's website. This is required for validation.
+      placeholder: https://www.vietnamairlines.com/
+
+  - type: textarea
+    id: source_file_link
+    attributes:
+      label: Direct Link to SVG File or Brand/Press Kit Page
+      description: |
+        **Crucial:** Provide the direct URL to the SVG file, or a specific **brand guideline** or **press kit** page on the official website. **Do NOT use non-official sources.**
+        - If linking to a brand/press kit page, ensure it contains a downloadable SVG file.
+        - If the SVG is not available, provide a high-quality PNG or JPG link, but note that vectorization may be needed.
+      placeholder: |
+        https://www.airline.com/assets/logo.svg
+        OR
+        https://www.airline.com/about/brand-guide-download-page
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: vector_status
+    attributes:
+      label: Vector File Status
+      options:
+        - label: SVG file is **NOT** provided. (Please manually apply the **needs vectorization** label.)
