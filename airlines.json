@@ -1344,6 +1344,43 @@
         }
     },
     {
+        "name": "Royal Air Maroc",
+        "iata": "AT",
+        "icao": "RAM",
+        "country": "MA",
+        "flag_carrier": true,
+        "website": "https://www.royalairmaroc.com",
+        "alliance": "SkyTeam",
+        "branding": {
+            "primary_color": "#C20831",
+            "assets": {
+                "icon": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#C20831"
+                    ]
+                },
+                "logo": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#C20831"
+                    ]
+                },
+                "tail": {
+                    "has_mono_file": false,
+                    "color_model": "multi",
+                    "colors": [
+                        "#F7F7F7",
+                        "#00875D",
+                        "#C20831"
+                    ]
+                }
+            }
+        }
+    },
+    {
         "name": "Royal Brunei Airlines",
         "iata": "BI",
         "icao": "RBA",

@@ -46,11 +46,11 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 > * This list is not exhaustive and will be updated as new airlines are added to the project.
 > * Flag next to airline name often means it's the national carrier.
 
-| Airline | IATA | ICAO | Country | Alliance | Primary Color | Icon | Mono Icon | Logo | Mono Logo |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Airline | IATA | ICAO | Country | Alliance | Primary Color | Icon | Mono Icon | Logo | Mono Logo | Tail | Mono Tail |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 `
 
-const assetTypes = ['icon', 'logo']
+const assetTypes = ['icon', 'logo', 'tail']
 
 sorted.forEach((airline) => {
     const slug = slugify(airline.name, {
