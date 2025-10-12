@@ -4,15 +4,34 @@ const { JSDOM } = require('jsdom')
 
 // --- CONFIGURATION ---
 const ASSETS_DIR = 'assets'
-const DRY_RUN = false
+const DRY_RUN = false // Set to false to actually apply fixes.
 // ---------------------
 
 const HEX_REGEX = /^#(?:[0-9A-F]{3}){1,2}$/i
 
 /**
+ * A stylistic rule to ensure 'fill' comes before 'd' on path elements.
+ * This is done via string replacement as DOM parsers don't preserve attribute order.
+ * @param {string} svgString - The SVG content as a string.
+ * @returns {{content: string, reordered: boolean}} - The modified content and a flag indicating if a change was made.
+ */
+const reorderPathAttributes = (svgString) => {
+    let reordered = false
+    const reorderedContent = svgString.replace(
+        /<path([^>]*?) (d="[^"]*?")([^>]*?) (fill="[^"]*?")/g,
+        (match, before, dAttr, after, fillAttr) => {
+            reordered = true
+            // Reconstruct the tag with fill moved before d
+            return `<path${before} ${fillAttr} ${dAttr}${after}`
+        }
+    )
+    return { content: reorderedContent, reordered }
+}
+
+/**
  * Lints an SVG file and returns a report of issues.
  * @param {string} filePath - The full path to the SVG file.
- * @returns {object} - An object containing a list of issues found.
+ * @returns {object} - An object containing a list of issues and the fixed content.
  */
 const lintSvgFile = (filePath) => {
     const content = fs.readFileSync(filePath, 'utf8')
@@ -74,7 +93,28 @@ const lintSvgFile = (filePath) => {
         }
     }
 
-    const fixedContent = issues.length > 0 ? svgElement.outerHTML : null
+    let fixedContent = issues.length > 0 ? svgElement.outerHTML : null
+
+    // RULE 3: Stylistic attribute order
+    if (fixedContent) {
+        const reorderResult = reorderPathAttributes(fixedContent)
+        if (reorderResult.reordered) {
+            issues.push(
+                'Stylistic: `fill` attribute on <path> moved before `d`.'
+            )
+            fixedContent = reorderResult.content
+        }
+    } else {
+        // Check even if no other issues were found
+        const reorderResult = reorderPathAttributes(content)
+        if (reorderResult.reordered) {
+            issues.push(
+                'Stylistic: `fill` attribute on <path> moved before `d`.'
+            )
+            fixedContent = reorderResult.content
+        }
+    }
+
     return { issues, fixedContent }
 }
 
@@ -87,7 +127,7 @@ const main = () => {
     }
 
     let filesChecked = 0
-    let issuesFound = 0
+    let filesWithIssues = 0
     let filesFixed = 0
 
     const airlineDirs = fs
@@ -97,6 +137,9 @@ const main = () => {
 
     for (const dir of airlineDirs) {
         const airlinePath = path.join(ASSETS_DIR, dir)
+        const issuesInDir = []
+        let wasFixedInDir = false
+
         fs.readdirSync(airlinePath)
             .filter((f) => f.endsWith('.svg'))
             .forEach((file) => {
@@ -105,27 +148,35 @@ const main = () => {
                 const result = lintSvgFile(fullPath)
 
                 if (result.issues.length > 0) {
-                    issuesFound++
+                    filesWithIssues++
+                    result.issues.forEach((issue) => {
+                        issuesInDir.push(`${file}: ${issue}`)
+                    })
 
-                    // --- UPDATED LOGGING FORMAT ---
-                    console.log(`\n📁 Checking "${path.join(dir, file)}"...\n`)
-                    result.issues.forEach((issue) =>
-                        console.log(`  - ${issue}`)
-                    )
-
-                    if (!DRY_RUN) {
+                    if (!DRY_RUN && result.fixedContent) {
                         fs.writeFileSync(fullPath, result.fixedContent)
+                        wasFixedInDir = true
                         filesFixed++
-                        console.log('\n  🔧 All issues fixed.')
                     }
                 }
             })
+
+        if (issuesInDir.length > 0) {
+            console.log(`📁 Checking "${dir}"...`)
+            console.log()
+            issuesInDir.forEach((issue) => console.log(`  ${issue}`))
+            console.log()
+            if (wasFixedInDir) {
+                console.log('  🔧 Issues fixed.')
+                console.log()
+            }
+        }
     }
 
     console.log('\n--- ✨ Linter finished! ---')
     console.log(`Checked ${filesChecked} files.`)
-    if (issuesFound > 0) {
-        console.log(`Found issues in ${issuesFound} file(s).`)
+    if (filesWithIssues > 0) {
+        console.log(`Found issues in ${filesWithIssues} file(s).`)
         if (!DRY_RUN) {
             console.log(`Fixed ${filesFixed} file(s).`)
         }
