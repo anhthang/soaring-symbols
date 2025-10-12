@@ -3,7 +3,7 @@ const sortBy = require('lodash.sortby')
 const { default: slugify } = require('slugify')
 const path = require('path')
 
-const airlines = require('./airlines.json')
+const airlines = require('../airlines.json')
 
 const extractColorsFromSvg = (filePath) => {
     const content = fs.readFileSync(filePath, 'utf8')
@@ -18,7 +18,7 @@ const determineColorModel = (colors) => {
     return colors.length > 1 ? 'multi' : 'single'
 }
 
-const assetsDir = path.join(__dirname, 'assets')
+const assetsDir = path.join(__dirname, '..', 'assets')
 
 const sorted = sortBy(airlines, (a) => a.name.toLowerCase())
 
@@ -39,15 +39,10 @@ const getFlagEmoji = (isoCode) => {
 
 let md = `# Soaring Symbols: Airlines
 
-This file provides an overview of the airlines included in the Soaring Symbols project and the types of logos available for each one.
+This file provides an overview of the airlines included in the Soaring Symbols project.
 
-> [!NOTE]
->
-> * This list is not exhaustive and will be updated as new airlines are added to the project.
-> * Flag next to airline name often means it's the national carrier.
-
-| Airline | IATA | ICAO | Country | Alliance | Primary Color | Icon | Mono Icon | Logo | Mono Logo | Tail | Mono Tail |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Airline | Country | IATA | ICAO | Alliance | Primary Color | Icon | Logo | Tail |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 `
 
 const assetTypes = ['icon', 'logo', 'tail']
@@ -62,36 +57,15 @@ sorted.forEach((airline) => {
     const assets = {}
     const includedStates = []
 
-    if (!fs.existsSync(airlineDir)) {
-        md += `| ${airline.name} | ${airline.iata} | ${airline.icao} | ${
-            airline.country
-        } | ${airline.alliance || ''} | | | | | |\n`
-        return
-    }
-
     assetTypes.forEach((assetType) => {
         const colorAssetPath = path.join(airlineDir, `${assetType}.svg`)
         const monoAssetPath = path.join(airlineDir, `${assetType}-mono.svg`)
-
         const colorAssetExists = fs.existsSync(colorAssetPath)
         const monoAssetExists = fs.existsSync(monoAssetPath)
 
-        let color_model = null
-        let colors = null
-
         if (colorAssetExists) {
-            colors = extractColorsFromSvg(colorAssetPath)
-            color_model = determineColorModel(colors)
-        }
-
-        // A mono version is available if a mono file exists OR if the asset is a single-color model.
-        const isMonoAvailable =
-            monoAssetExists || (colorAssetExists && color_model === 'single')
-
-        includedStates.push(colorAssetExists ? '✓' : '')
-        includedStates.push(isMonoAvailable ? '✓' : '')
-
-        if (colorAssetExists) {
+            const colors = extractColorsFromSvg(colorAssetPath)
+            const color_model = determineColorModel(colors)
             assets[assetType] = {
                 has_mono_file: monoAssetExists,
             }
@@ -124,6 +98,24 @@ sorted.forEach((airline) => {
         })
     }
 
+    assetTypes.forEach((type) => {
+        const assetInfo = assets[type]
+
+        if (!assetInfo) {
+            includedStates.push('')
+            return
+        }
+
+        const isComplete =
+            assetInfo.has_mono_file || assetInfo.color_model === 'single'
+
+        if (isComplete) {
+            includedStates.push('✅')
+        } else {
+            includedStates.push('☑️')
+        }
+    })
+
     const colorSquare = primary_color
         ? `![${primary_color}](https://place-hold.it/10x10/${primary_color.replace(
               '#',
@@ -131,12 +123,12 @@ sorted.forEach((airline) => {
           )}/${primary_color.replace('#', '')}.png)`
         : ''
 
-    md += `| ${airlineName} | ${iata || ''} | ${icao || ''} | ${
-        country || ''
+    md += `| ${airlineName} | ${country || ''} | ${iata || ''} | ${
+        icao || ''
     } | ${alliance || ''} | ${colorSquare} | ${includedStates.join(' | ')} |\n`
 })
 
 fs.writeFileSync('airlines.json', JSON.stringify(sorted, null, 4))
-fs.writeFileSync('AIRLINES.md', md)
+fs.writeFileSync('OVERVIEW.md', md)
 
-console.log('✅ Successfully generated airlines.json and AIRLINES.md')
+console.log('✅ Successfully generated airlines.json and OVERVIEW.md')
