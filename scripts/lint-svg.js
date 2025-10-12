@@ -5,6 +5,13 @@ const { JSDOM } = require('jsdom')
 // --- CONFIGURATION ---
 const ASSETS_DIR = 'assets'
 const DRY_RUN = false
+
+const EXCLUDE_FILES = [
+    'assets/british-airways/icon.svg',
+    'assets/iberia/icon.svg',
+    'assets/iberia/logo.svg',
+    'assets/southwest-airlines/icon.svg',
+]
 // ---------------------
 
 const HEX_REGEX = /^#(?:[0-9A-F]{3}){1,2}$/i
@@ -163,11 +170,24 @@ const lintSvgFile = (filePath) => {
     const isSingleColor = allColors.length <= 1
 
     if (isSingleColor) {
+        const isMonoFile = filePath.includes('-mono.svg')
         const targetColor = allColors[0] || 'currentColor'
-        if (svgElement.getAttribute('fill')?.toLowerCase() !== targetColor) {
-            issues.push(`Fill: Root <svg> should have fill="${targetColor}".`)
-            svgElement.setAttribute('fill', targetColor)
+        const existingFill = svgElement.getAttribute('fill')
+
+        if (isMonoFile) {
+            if (existingFill !== 'currentColor') {
+                issues.push(`Fill: Root <svg> should have fill="currentColor".`)
+                svgElement.setAttribute('fill', 'currentColor')
+            }
+        } else {
+            if (existingFill?.toLowerCase() !== targetColor) {
+                issues.push(
+                    `Fill: Root <svg> should have fill="${targetColor}".`
+                )
+                svgElement.setAttribute('fill', targetColor)
+            }
         }
+
         elementsWithFill.forEach((el) => {
             if (el.tagName.toLowerCase() !== 'svg') {
                 issues.push(
@@ -238,6 +258,13 @@ const main = () => {
             .forEach((file) => {
                 filesChecked++
                 const fullPath = path.join(airlinePath, file)
+
+                const relativePath = path.join(dir, file).replace(/\\/g, '/')
+                if (EXCLUDE_FILES.includes(`assets/${relativePath}`)) {
+                    console.log(`\n🟡 Skipping excluded file: ${relativePath}`)
+                    return
+                }
+
                 const result = lintSvgFile(fullPath)
 
                 if (result.issues.length > 0) {

@@ -126,9 +126,10 @@
                 },
                 "logo": {
                     "has_mono_file": true,
-                    "color_model": "single",
+                    "color_model": "multi",
                     "colors": [
-                        "#F01428"
+                        "#F01428",
+                        "#000000"
                     ]
                 }
             }
@@ -195,13 +196,14 @@
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#051039"
+                        "#F00"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
-                    "color_model": "single",
+                    "color_model": "multi",
                     "colors": [
+                        "#F00",
                         "#051039"
                     ]
                 }
@@ -277,10 +279,18 @@
             "primary_color": "",
             "assets": {
                 "icon": {
-                    "has_mono_file": false
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#000000"
+                    ]
                 },
                 "logo": {
-                    "has_mono_file": false
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#000000"
+                    ]
                 }
             }
         }
@@ -966,9 +976,10 @@
                 },
                 "logo": {
                     "has_mono_file": true,
-                    "color_model": "single",
+                    "color_model": "multi",
                     "colors": [
-                        "#E50012"
+                        "#E50012",
+                        "#000000"
                     ]
                 }
             }
@@ -992,8 +1003,9 @@
                 },
                 "logo": {
                     "has_mono_file": true,
-                    "color_model": "single",
+                    "color_model": "multi",
                     "colors": [
+                        "#000000",
                         "#FF5111"
                     ]
                 }
@@ -1423,9 +1435,10 @@
             "assets": {
                 "logo": {
                     "has_mono_file": false,
-                    "color_model": "single",
+                    "color_model": "multi",
                     "colors": [
-                        "#FFE600"
+                        "#FFE600",
+                        "#000000"
                     ]
                 }
             }
@@ -1512,9 +1525,10 @@
             "assets": {
                 "logo": {
                     "has_mono_file": false,
-                    "color_model": "single",
+                    "color_model": "multi",
                     "colors": [
-                        "#FFE900"
+                        "#FFE900",
+                        "#000000"
                     ]
                 }
             }
