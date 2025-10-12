@@ -717,6 +717,38 @@
         }
     },
     {
+        "name": "Ethiopian Airlines",
+        "iata": "ET",
+        "icao": "ETH",
+        "country": "ET",
+        "flag_carrier": true,
+        "alliance": "Star Alliance",
+        "website": "https://www.ethiopianairlines.com",
+        "branding": {
+            "primary_color": "#B71D20",
+            "assets": {
+                "icon": {
+                    "has_mono_file": true,
+                    "color_model": "multi",
+                    "colors": [
+                        "#B71D20",
+                        "#FFBE0B",
+                        "#557C39"
+                    ]
+                },
+                "logo": {
+                    "has_mono_file": true,
+                    "color_model": "multi",
+                    "colors": [
+                        "#B71D20",
+                        "#FFBE0B",
+                        "#557C39"
+                    ]
+                }
+            }
+        }
+    },
+    {
         "name": "Etihad Airways",
         "iata": "EY",
         "icao": "ETD",

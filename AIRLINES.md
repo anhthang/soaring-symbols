@@ -36,6 +36,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Cathay Pacific](https://www.cathaypacific.com) 🇭🇰 | CX | CPA | HK | oneworld | ![#005D63](https://place-hold.it/10x10/005D63/005D63.png) | ✓ | ✓ | ✓ | ✓ |  |  |
 | [Copa Airlines](https://www.copaair.com) 🇵🇦 | CM | CMP | PA | Star Alliance | ![#0032A0](https://place-hold.it/10x10/0032A0/0032A0.png) | ✓ | ✓ | ✓ | ✓ |  |  |
 | [Emirates](https://www.emirates.com) 🇦🇪 | EK | UAE | AE |  | ![#D71921](https://place-hold.it/10x10/D71921/D71921.png) | ✓ | ✓ | ✓ | ✓ |  |  |
+| [Ethiopian Airlines](https://www.ethiopianairlines.com) 🇪🇹 | ET | ETH | ET | Star Alliance | ![#B71D20](https://place-hold.it/10x10/B71D20/B71D20.png) | ✓ | ✓ | ✓ | ✓ |  |  |
 | [Etihad Airways](https://www.etihad.com) 🇦🇪 | EY | ETD | AE |  | ![#BD8B13](https://place-hold.it/10x10/BD8B13/BD8B13.png) |  |  | ✓ | ✓ |  |  |
 | [Eurowings](https://www.eurowings.com) | EW | EWG | DE |  | ![#7C2045](https://place-hold.it/10x10/7C2045/7C2045.png) | ✓ | ✓ | ✓ | ✓ |  |  |
 | [Fiji Airways](https://www.fijiairways.com) 🇫🇯 | FJ | FJI | FJ | oneworld | ![#473729](https://place-hold.it/10x10/473729/473729.png) | ✓ | ✓ |  |  |  |  |
