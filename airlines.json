@@ -1235,6 +1235,35 @@
         }
     },
     {
+        "name": "Myanmar National Airlines",
+        "iata": "UB",
+        "icao": "UBA",
+        "country": "MM",
+        "flag_carrier": true,
+        "website": "https://www.flymna.com",
+        "branding": {
+            "primary_color": "#FDB515",
+            "assets": {
+                "icon": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#FDB515"
+                    ]
+                },
+                "logo": {
+                    "has_mono_file": true,
+                    "color_model": "multi",
+                    "colors": [
+                        "#582900",
+                        "#A59C87",
+                        "#FDB515"
+                    ]
+                }
+            }
+        }
+    },
+    {
         "name": "Oman Air",
         "iata": "WY",
         "icao": "OMA",

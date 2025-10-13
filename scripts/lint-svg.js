@@ -235,6 +235,8 @@ const main = () => {
     console.log('===================================')
     console.log('=      SVG Linter & Fixer         =')
     console.log('===================================')
+    console.log()
+
     if (DRY_RUN) {
         console.log('--- 🔬 DRY RUN MODE: No files will be changed. ---\n')
     }
@@ -261,7 +263,7 @@ const main = () => {
 
                 const relativePath = path.join(dir, file).replace(/\\/g, '/')
                 if (EXCLUDE_FILES.includes(`assets/${relativePath}`)) {
-                    console.log(`\n🟡 Skipping excluded file: ${relativePath}`)
+                    console.log(`🟡 Skipping excluded file: ${relativePath}\n`)
                     return
                 }
 
@@ -293,7 +295,7 @@ const main = () => {
         }
     }
 
-    console.log('\n--- ✨ Linter finished! ---')
+    console.log('--- ✨ Linter finished! ---')
     console.log(`Checked ${filesChecked} files.`)
     if (filesWithIssues > 0) {
         console.log(`Found issues in ${filesWithIssues} file(s).`)

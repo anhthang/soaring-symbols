@@ -50,6 +50,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [LOT Polish Airlines](https://www.lot.com) 🇵🇱 | PL | LO | LOT | Star Alliance | ![#252668](https://place-hold.it/10x10/252668/252668.png) | ✅ | ✅ |  |
 | [Lufthansa](https://www.lufthansa.com) 🇩🇪 | DE | LH | DLH | Star Alliance | ![#05164D](https://place-hold.it/10x10/05164D/05164D.png) | ✅ | ✅ |  |
 | [Malaysia Airlines](https://www.malaysiaairlines.com) 🇲🇾 | MY | MH | MAS | oneworld | ![#174887](https://place-hold.it/10x10/174887/174887.png) | ✅ | ✅ |  |
+| [Myanmar National Airlines](https://www.flymna.com) 🇲🇲 | MM | UB | UBA |  | ![#fdb515](https://place-hold.it/10x10/fdb515/fdb515.png) | ✅ | ✅ |  |
 | [Oman Air](https://www.omanair.com) 🇴🇲 | OM | WY | OMA | oneworld | ![#B39759](https://place-hold.it/10x10/B39759/B39759.png) | ✅ | ✅ |  |
 | [Peach Aviation](https://www.flypeach.com) | JP | MM | APJ |  | ![#9B308C](https://place-hold.it/10x10/9B308C/9B308C.png) |  | ✅ |  |
 | [Philippine Airlines](https://www.philippineairlines.com) 🇵🇭 | PH | PR | PAL |  | ![#001F60](https://place-hold.it/10x10/001F60/001F60.png) | ✅ | ✅ |  |
