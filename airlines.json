@@ -14,7 +14,7 @@
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#93A5CF",
+                        "#93a5cf",
                         "#002677"
                     ]
                 },
@@ -22,8 +22,38 @@
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#93A5CF",
+                        "#93a5cf",
                         "#002677"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "name": "Aer Lingus",
+        "iata": "EI",
+        "icao": "EIN",
+        "country": "IE",
+        "flag_carrier": true,
+        "website": "https://www.aerlingus.com",
+        "branding": {
+            "primary_color": "#006472",
+            "assets": {
+                "icon": {
+                    "has_mono_file": false,
+                    "color_model": "multi",
+                    "colors": [
+                        "#82c341",
+                        "#3cb14a"
+                    ]
+                },
+                "logo": {
+                    "has_mono_file": false,
+                    "color_model": "multi",
+                    "colors": [
+                        "#82c341",
+                        "#3cb14a",
+                        "#006472"
                     ]
                 }
             }
@@ -38,20 +68,20 @@
         "website": "https://www.aeromexico.com",
         "alliance": "SkyTeam",
         "branding": {
-            "primary_color": "#020C41",
+            "primary_color": "#020c41",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#020C41"
+                        "#020c41"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#020C41"
+                        "#020c41"
                     ]
                 }
             }
@@ -65,22 +95,22 @@
         "flag_carrier": true,
         "website": "https://www.airalbania.com.al",
         "branding": {
-            "primary_color": "#CE1F2E",
+            "primary_color": "#ce1f2e",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#231F20",
-                        "#CE1F2E"
+                        "#231f20",
+                        "#ce1f2e"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#231F20",
-                        "#CE1F2E"
+                        "#231f20",
+                        "#ce1f2e"
                     ]
                 }
             }
@@ -94,13 +124,13 @@
         "flag_carrier": true,
         "website": "https://airastana.com",
         "branding": {
-            "primary_color": "#A48C5D",
+            "primary_color": "#a48c5d",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#A48C5D"
+                        "#a48c5d"
                     ]
                 }
             }
@@ -115,20 +145,20 @@
         "website": "https://www.aircanada.com",
         "alliance": "Star Alliance",
         "branding": {
-            "primary_color": "#F01428",
+            "primary_color": "#f01428",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#F01428"
+                        "#f01428"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#F01428",
+                        "#f01428",
                         "#000000"
                     ]
                 }
@@ -142,13 +172,13 @@
         "country": "IT",
         "website": "https://www.airdolomiti.eu",
         "branding": {
-            "primary_color": "#009EB3",
+            "primary_color": "#009eb3",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#009EB3"
+                        "#009eb3"
                     ]
                 }
             }
@@ -162,20 +192,20 @@
         "website": "https://www.aireuropa.com",
         "alliance": "SkyTeam",
         "branding": {
-            "primary_color": "#006FDE",
+            "primary_color": "#006fde",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#006FDE"
+                        "#006fde"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#006FDE"
+                        "#006fde"
                     ]
                 }
             }
@@ -196,14 +226,14 @@
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#F00"
+                        "#f00"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#F00",
+                        "#f00",
                         "#051039"
                     ]
                 }
@@ -219,21 +249,21 @@
         "website": "https://www.airindia.com",
         "alliance": "Star Alliance",
         "branding": {
-            "primary_color": "#DA0E29",
+            "primary_color": "#da0e29",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "single",
                     "colors": [
-                        "#FED9A0"
+                        "#fed9a0"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#DA0E29",
-                        "#FED9A0"
+                        "#da0e29",
+                        "#fed9a0"
                     ]
                 }
             }
@@ -248,20 +278,20 @@
         "website": "https://www.airmauritius.com",
         "alliance": "Vanilla Alliance",
         "branding": {
-            "primary_color": "#BE2239",
+            "primary_color": "#be2239",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#BE2239"
+                        "#be2239"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#BE2239"
+                        "#be2239"
                     ]
                 }
             }
@@ -303,20 +333,20 @@
         "flag_carrier": true,
         "website": "https://www.airserbia.com",
         "branding": {
-            "primary_color": "#0E203F",
+            "primary_color": "#0e203f",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#0E203F"
+                        "#0e203f"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#0E203F"
+                        "#0e203f"
                     ]
                 }
             }
@@ -329,21 +359,21 @@
         "country": "CA",
         "website": "https://airtransat.com",
         "branding": {
-            "primary_color": "#172B54",
+            "primary_color": "#172b54",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#172B54"
+                        "#172b54"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#172B54",
-                        "#00B3F0"
+                        "#172b54",
+                        "#00b3f0"
                     ]
                 }
             }
@@ -356,13 +386,13 @@
         "country": "MY",
         "website": "https://www.airasia.com",
         "branding": {
-            "primary_color": "#FF0000",
+            "primary_color": "#ff0000",
             "assets": {
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#FF0000"
+                        "#ff0000"
                     ]
                 }
             }
@@ -395,21 +425,21 @@
         "country": "IN",
         "website": "https://www.akasaair.com",
         "branding": {
-            "primary_color": "#FF6300",
+            "primary_color": "#ff6300",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#FF6300"
+                        "#ff6300"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#5C0FD9",
-                        "#FF6300"
+                        "#5c0fd9",
+                        "#ff6300"
                     ]
                 }
             }
@@ -423,13 +453,13 @@
         "website": "https://www.alaskaair.com",
         "alliance": "oneworld",
         "branding": {
-            "primary_color": "#01426A",
+            "primary_color": "#01426a",
             "assets": {
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#01426A"
+                        "#01426a"
                     ]
                 }
             }
@@ -443,22 +473,22 @@
         "website": "https://flyasiana.com",
         "alliance": "Star Alliance",
         "branding": {
-            "primary_color": "#4A4F54",
+            "primary_color": "#4a4f54",
             "guidelines": "https://flyasiana.com/C/VN/EN/contents/ci",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#4A4F54"
+                        "#4a4f54"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#E60013",
-                        "#4A4F54"
+                        "#e60013",
+                        "#4a4f54"
                     ]
                 }
             }
@@ -473,20 +503,20 @@
         "website": "https://www.avianca.com",
         "alliance": "Star Alliance",
         "branding": {
-            "primary_color": "#FF0000",
+            "primary_color": "#ff0000",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#FF0000"
+                        "#ff0000"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#FF0000"
+                        "#ff0000"
                     ]
                 }
             }
@@ -500,26 +530,26 @@
         "flag_carrier": true,
         "website": "https://azal.az",
         "branding": {
-            "primary_color": "#082E6A",
+            "primary_color": "#082e6a",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#082E6A",
-                        "#0098DA",
-                        "#51C2E1",
-                        "#9FD7E0"
+                        "#082e6a",
+                        "#0098da",
+                        "#51c2e1",
+                        "#9fd7e0"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#082E6A",
-                        "#0098DA",
-                        "#51C2E1",
-                        "#9FD7E0"
+                        "#082e6a",
+                        "#0098da",
+                        "#51c2e1",
+                        "#9fd7e0"
                     ]
                 }
             }
@@ -532,24 +562,24 @@
         "country": "VN",
         "website": "https://www.bambooairways.com",
         "branding": {
-            "primary_color": "#64AE53",
+            "primary_color": "#64ae53",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "multi",
                     "colors": [
-                        "#00558E",
-                        "#4EBCEC",
-                        "#64AE53"
+                        "#00558e",
+                        "#4ebcec",
+                        "#64ae53"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "multi",
                     "colors": [
-                        "#00558E",
-                        "#4EBCEC",
-                        "#64AE53"
+                        "#00558e",
+                        "#4ebcec",
+                        "#64ae53"
                     ]
                 }
             }
@@ -562,24 +592,24 @@
         "country": "TH",
         "website": "https://www.bangkokair.com",
         "branding": {
-            "primary_color": "#000F8F",
+            "primary_color": "#000f8f",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#E1001E",
-                        "#74613C",
-                        "#000F8F"
+                        "#e1001e",
+                        "#74613c",
+                        "#000f8f"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#000F8F",
-                        "#E1001E",
-                        "#74613C"
+                        "#000f8f",
+                        "#e1001e",
+                        "#74613c"
                     ]
                 }
             }
@@ -594,21 +624,21 @@
         "website": "https://www.britishairways.com",
         "alliance": "oneworld",
         "branding": {
-            "primary_color": "#2E5C99",
+            "primary_color": "#2e5c99",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "single",
                     "colors": [
-                        "#CE210F"
+                        "#ce210f"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#2E5C99",
-                        "#CE210F"
+                        "#2e5c99",
+                        "#ce210f"
                     ]
                 }
             }
@@ -636,7 +666,7 @@
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#E5002B",
+                        "#e5002b",
                         "#051446"
                     ]
                 }
@@ -652,20 +682,20 @@
         "website": "https://www.cathaypacific.com",
         "alliance": "oneworld",
         "branding": {
-            "primary_color": "#005D63",
+            "primary_color": "#005d63",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#005D63"
+                        "#005d63"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#005D63"
+                        "#005d63"
                     ]
                 }
             }
@@ -680,20 +710,20 @@
         "website": "https://www.copaair.com",
         "alliance": "Star Alliance",
         "branding": {
-            "primary_color": "#0032A0",
+            "primary_color": "#0032a0",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#0032A0"
+                        "#0032a0"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#0032A0"
+                        "#0032a0"
                     ]
                 }
             }
@@ -707,20 +737,20 @@
         "flag_carrier": true,
         "website": "https://www.emirates.com",
         "branding": {
-            "primary_color": "#D71921",
+            "primary_color": "#d71921",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#D71921"
+                        "#d71921"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#D71921"
+                        "#d71921"
                     ]
                 }
             }
@@ -735,24 +765,24 @@
         "alliance": "Star Alliance",
         "website": "https://www.ethiopianairlines.com",
         "branding": {
-            "primary_color": "#B71D20",
+            "primary_color": "#b71d20",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#B71D20",
-                        "#FFBE0B",
-                        "#557C39"
+                        "#b71d20",
+                        "#ffbe0b",
+                        "#557c39"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#B71D20",
-                        "#FFBE0B",
-                        "#557C39"
+                        "#b71d20",
+                        "#ffbe0b",
+                        "#557c39"
                     ]
                 }
             }
@@ -766,13 +796,13 @@
         "flag_carrier": true,
         "website": "https://www.etihad.com",
         "branding": {
-            "primary_color": "#BD8B13",
+            "primary_color": "#bd8b13",
             "assets": {
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#BD8B13"
+                        "#bd8b13"
                     ]
                 }
             }
@@ -785,25 +815,25 @@
         "country": "DE",
         "website": "https://www.eurowings.com",
         "branding": {
-            "primary_color": "#7C2045",
+            "primary_color": "#7c2045",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#7CC5D3",
-                        "#7C2045"
+                        "#7cc5d3",
+                        "#7c2045"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#7C2045",
-                        "#7CC5D3",
-                        "#2090B6",
-                        "#C1BEB9",
-                        "#A22455"
+                        "#7c2045",
+                        "#7cc5d3",
+                        "#2090b6",
+                        "#c1beb9",
+                        "#a22455"
                     ]
                 }
             }
@@ -837,24 +867,24 @@
         "country": "MY",
         "website": "https://www.fireflyz.com.my",
         "branding": {
-            "primary_color": "#EF5713",
+            "primary_color": "#ef5713",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#EF5713",
-                        "#FC9200",
-                        "#FFC200"
+                        "#ef5713",
+                        "#fc9200",
+                        "#ffc200"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#EF5713",
-                        "#FC9200",
-                        "#FFC200"
+                        "#ef5713",
+                        "#fc9200",
+                        "#ffc200"
                     ]
                 }
             }
@@ -867,13 +897,13 @@
         "country": "SA",
         "website": "https://www.flynas.com",
         "branding": {
-            "primary_color": "#00B7AC",
+            "primary_color": "#00b7ac",
             "assets": {
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#00B7AC"
+                        "#00b7ac"
                     ]
                 }
             }
@@ -894,7 +924,7 @@
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#008B99",
+                        "#008b99",
                         "#002560"
                     ]
                 },
@@ -902,9 +932,37 @@
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#008B99",
+                        "#008b99",
                         "#002560",
-                        "#4C4847"
+                        "#4c4847"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "name": "HK Express",
+        "iata": "UO",
+        "icao": "HKE",
+        "country": "HK",
+        "website": "https://www.hkexpress.com",
+        "branding": {
+            "primary_color": "#702b91",
+            "assets": {
+                "icon": {
+                    "has_mono_file": true,
+                    "color_model": "multi",
+                    "colors": [
+                        "#702b91",
+                        "#21b9da"
+                    ]
+                },
+                "logo": {
+                    "has_mono_file": true,
+                    "color_model": "multi",
+                    "colors": [
+                        "#702b91",
+                        "#21b9da"
                     ]
                 }
             }
@@ -937,20 +995,20 @@
         "country": "IN",
         "website": "https://www.goindigo.in",
         "branding": {
-            "primary_color": "#001B94",
+            "primary_color": "#001b94",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#001B94"
+                        "#001b94"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#001B94"
+                        "#001b94"
                     ]
                 }
             }
@@ -965,20 +1023,20 @@
         "website": "https://www.jal.co.jp",
         "alliance": "oneworld",
         "branding": {
-            "primary_color": "#E50012",
+            "primary_color": "#e50012",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#E50012"
+                        "#e50012"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#E50012",
+                        "#e50012",
                         "#000000"
                     ]
                 }
@@ -992,13 +1050,13 @@
         "country": "AU",
         "website": "https://www.jetstar.com",
         "branding": {
-            "primary_color": "#FF5111",
+            "primary_color": "#ff5111",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#FF5111"
+                        "#ff5111"
                     ]
                 },
                 "logo": {
@@ -1006,7 +1064,7 @@
                     "color_model": "multi",
                     "colors": [
                         "#000000",
-                        "#FF5111"
+                        "#ff5111"
                     ]
                 }
             }
@@ -1021,20 +1079,20 @@
         "website": "https://www.kenya-airways.com",
         "alliance": "SkyTeam",
         "branding": {
-            "primary_color": "#ED1C24",
+            "primary_color": "#ed1c24",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#ED1C24"
+                        "#ed1c24"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#ED1C24"
+                        "#ed1c24"
                     ]
                 }
             }
@@ -1049,20 +1107,20 @@
         "website": "https://www.klm.com",
         "alliance": "SkyTeam",
         "branding": {
-            "primary_color": "#009FD9",
+            "primary_color": "#009fd9",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#009FD9"
+                        "#009fd9"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#009FD9"
+                        "#009fd9"
                     ]
                 }
             }
@@ -1103,20 +1161,20 @@
         "flag_carrier": true,
         "website": "https://www.kuwaitairways.com",
         "branding": {
-            "primary_color": "#1C285B",
+            "primary_color": "#1c285b",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#1C285B"
+                        "#1c285b"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#1C285B"
+                        "#1c285b"
                     ]
                 }
             }
@@ -1129,22 +1187,22 @@
         "country": "CL",
         "website": "https://www.latamairlines.com",
         "branding": {
-            "primary_color": "#1B0088",
+            "primary_color": "#1b0088",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#ED1650",
-                        "#1B0088"
+                        "#ed1650",
+                        "#1b0088"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#1B0088",
-                        "#ED1650"
+                        "#1b0088",
+                        "#ed1650"
                     ]
                 }
             }
@@ -1187,20 +1245,20 @@
         "website": "https://www.lufthansa.com",
         "alliance": "Star Alliance",
         "branding": {
-            "primary_color": "#05164D",
+            "primary_color": "#05164d",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#05164D"
+                        "#05164d"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#05164D"
+                        "#05164d"
                     ]
                 }
             }
@@ -1242,13 +1300,13 @@
         "flag_carrier": true,
         "website": "https://www.flymna.com",
         "branding": {
-            "primary_color": "#FDB515",
+            "primary_color": "#fdb515",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#FDB515"
+                        "#fdb515"
                     ]
                 },
                 "logo": {
@@ -1256,8 +1314,8 @@
                     "color_model": "multi",
                     "colors": [
                         "#582900",
-                        "#A59C87",
-                        "#FDB515"
+                        "#a59c87",
+                        "#fdb515"
                     ]
                 }
             }
@@ -1272,22 +1330,22 @@
         "website": "https://www.omanair.com",
         "alliance": "oneworld",
         "branding": {
-            "primary_color": "#B39759",
+            "primary_color": "#b39759",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#B39759",
-                        "#A6A8AB"
+                        "#b39759",
+                        "#a6a8ab"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#B39759",
-                        "#A6A8AB"
+                        "#b39759",
+                        "#a6a8ab"
                     ]
                 }
             }
@@ -1300,13 +1358,13 @@
         "country": "JP",
         "website": "https://www.flypeach.com",
         "branding": {
-            "primary_color": "#9B308C",
+            "primary_color": "#9b308c",
             "assets": {
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#9B308C"
+                        "#9b308c"
                     ]
                 }
             }
@@ -1320,25 +1378,25 @@
         "flag_carrier": true,
         "website": "https://www.philippineairlines.com",
         "branding": {
-            "primary_color": "#001F60",
+            "primary_color": "#001f60",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#001F60",
-                        "#FFCC05",
-                        "#EE2A29"
+                        "#001f60",
+                        "#ffcc05",
+                        "#ee2a29"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#001F60",
-                        "#FFCC05",
-                        "#EE2A29",
-                        "#1E2D5F"
+                        "#001f60",
+                        "#ffcc05",
+                        "#ee2a29",
+                        "#1e2d5f"
                     ]
                 }
             }
@@ -1373,7 +1431,7 @@
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#818A8F",
+                        "#818a8f",
                         "#662046"
                     ]
                 },
@@ -1381,8 +1439,8 @@
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#818A8F",
-                        "#5E6A71",
+                        "#818a8f",
+                        "#5e6a71",
                         "#662046"
                     ]
                 }
@@ -1425,29 +1483,29 @@
         "website": "https://www.royalairmaroc.com",
         "alliance": "SkyTeam",
         "branding": {
-            "primary_color": "#C20831",
+            "primary_color": "#c20831",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#C20831"
+                        "#c20831"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#C20831"
+                        "#c20831"
                     ]
                 },
                 "tail": {
                     "has_mono_file": false,
                     "color_model": "multi",
                     "colors": [
-                        "#F7F7F7",
-                        "#00875D",
-                        "#C20831"
+                        "#f7f7f7",
+                        "#00875d",
+                        "#c20831"
                     ]
                 }
             }
@@ -1460,13 +1518,13 @@
         "country": "BN",
         "website": "https://www.flyroyalbrunei.com",
         "branding": {
-            "primary_color": "#FFE600",
+            "primary_color": "#ffe600",
             "assets": {
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "multi",
                     "colors": [
-                        "#FFE600",
+                        "#ffe600",
                         "#000000"
                     ]
                 }
@@ -1494,7 +1552,7 @@
                     "color_model": "multi",
                     "colors": [
                         "#073590",
-                        "#F1C931"
+                        "#f1c931"
                     ]
                 }
             }
@@ -1509,13 +1567,13 @@
         "website": "https://www.saudia.com",
         "alliance": "SkyTeam",
         "branding": {
-            "primary_color": "#0A6937",
+            "primary_color": "#0a6937",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#0A6937"
+                        "#0a6937"
                     ]
                 }
             }
@@ -1550,13 +1608,13 @@
         "website": "https://www.flyscoot.com",
         "alliance": "Value Alliance",
         "branding": {
-            "primary_color": "#FFE900",
+            "primary_color": "#ffe900",
             "assets": {
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "multi",
                     "colors": [
-                        "#FFE900",
+                        "#ffe900",
                         "#000000"
                     ]
                 }
@@ -1572,21 +1630,21 @@
         "website": "https://www.singaporeair.com",
         "alliance": "Star Alliance",
         "branding": {
-            "primary_color": "#232F67",
+            "primary_color": "#232f67",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#232F67"
+                        "#232f67"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#F99F1C",
-                        "#232F67"
+                        "#f99f1c",
+                        "#232f67"
                     ]
                 }
             }
@@ -1599,21 +1657,21 @@
         "country": "US",
         "website": "https://www.southwest.com",
         "branding": {
-            "primary_color": "#304CB2",
+            "primary_color": "#304cb2",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#CCCCCC"
+                        "#cccccc"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "multi",
                     "colors": [
-                        "#304CB2",
-                        "#CCCCCC"
+                        "#304cb2",
+                        "#cccccc"
                     ]
                 }
             }
@@ -1626,23 +1684,23 @@
         "country": "TW",
         "website": "https://www.starlux-airlines.com",
         "branding": {
-            "primary_color": "#996A4E",
+            "primary_color": "#996a4e",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#996A4E",
-                        "#84754E"
+                        "#996a4e",
+                        "#84754e"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#3F464A",
-                        "#84754E",
-                        "#996A4E"
+                        "#3f464a",
+                        "#84754e",
+                        "#996a4e"
                     ]
                 }
             }
@@ -1655,21 +1713,21 @@
         "country": "VN",
         "website": "https://www.sunphuquocairways.com",
         "branding": {
-            "primary_color": "#CA1C2A",
+            "primary_color": "#ca1c2a",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#F1C217"
+                        "#f1c217"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#CA1C2A",
-                        "#F1C217"
+                        "#ca1c2a",
+                        "#f1c217"
                     ]
                 }
             }
@@ -1684,20 +1742,20 @@
         "website": "https://www.swiss.com",
         "alliance": "Star Alliance",
         "branding": {
-            "primary_color": "#CF0A2C",
+            "primary_color": "#cf0a2c",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#CF0A2C"
+                        "#cf0a2c"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#CF0A2C"
+                        "#cf0a2c"
                     ]
                 }
             }
@@ -1712,27 +1770,27 @@
         "website": "https://www.tapairportugal.com",
         "alliance": "Star Alliance",
         "branding": {
-            "primary_color": "#BFD730",
+            "primary_color": "#bfd730",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "multi",
                     "colors": [
-                        "#ED1C24",
-                        "#B82025",
-                        "#BFD730",
-                        "#72BF44"
+                        "#ed1c24",
+                        "#b82025",
+                        "#bfd730",
+                        "#72bf44"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "multi",
                     "colors": [
-                        "#ED1C24",
-                        "#B82025",
-                        "#BFD730",
-                        "#72BF44",
-                        "#1D1D1B"
+                        "#ed1c24",
+                        "#b82025",
+                        "#bfd730",
+                        "#72bf44",
+                        "#1d1d1b"
                     ]
                 }
             }
@@ -1767,26 +1825,49 @@
         }
     },
     {
+        "name": "Thai Airways",
+        "iata": "TG",
+        "icao": "THA",
+        "country": "TH",
+        "flag_carrier": true,
+        "website": "https://www.thaiairways.com",
+        "alliance": "Star Alliance",
+        "branding": {
+            "primary_color": "#306",
+            "assets": {
+                "icon": {
+                    "has_mono_file": false,
+                    "color_model": "multi",
+                    "colors": [
+                        "#fc0",
+                        "#306",
+                        "#c09"
+                    ]
+                }
+            }
+        }
+    },
+    {
         "name": "Transavia",
         "iata": "HV",
         "icao": "TRA",
         "country": "NL",
         "website": "https://www.transavia.com",
         "branding": {
-            "primary_color": "#00D66C",
+            "primary_color": "#00d66c",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#00D66C"
+                        "#00d66c"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#00D66C"
+                        "#00d66c"
                     ]
                 }
             }
@@ -1801,24 +1882,24 @@
         "website": "https://www.turkishairlines.com",
         "alliance": "Star Alliance",
         "branding": {
-            "primary_color": "#C90019",
+            "primary_color": "#c90019",
             "guidelines": "https://www.turkishairlines.com/en-int/press-room/logo-archive",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#FFFFFF",
-                        "#C90019"
+                        "#ffffff",
+                        "#c90019"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#FFFFFF",
-                        "#C90019",
-                        "#1A171B"
+                        "#ffffff",
+                        "#c90019",
+                        "#1a171b"
                     ]
                 }
             }
@@ -1832,20 +1913,20 @@
         "website": "https://www.united.com",
         "alliance": "Star Alliance",
         "branding": {
-            "primary_color": "#1414D2",
+            "primary_color": "#1414d2",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#1414D2"
+                        "#1414d2"
                     ]
                 },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#1414D2"
+                        "#1414d2"
                     ]
                 }
             }
@@ -1858,13 +1939,13 @@
         "country": "VN",
         "website": "https://www.vietjetair.com",
         "branding": {
-            "primary_color": "#E12127",
+            "primary_color": "#e12127",
             "assets": {
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#E12127"
+                        "#e12127"
                     ]
                 }
             }
@@ -1879,21 +1960,21 @@
         "website": "https://www.vietnamairlines.com",
         "alliance": "SkyTeam",
         "branding": {
-            "primary_color": "#D99E09",
+            "primary_color": "#d99e09",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#D99E09"
+                        "#d99e09"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#D99E09",
-                        "#005E80"
+                        "#d99e09",
+                        "#005e80"
                     ]
                 }
             }
@@ -1907,23 +1988,23 @@
         "website": "https://www.virginatlantic.com",
         "alliance": "SkyTeam",
         "branding": {
-            "primary_color": "#DA0530",
+            "primary_color": "#da0530",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#DA0530",
-                        "#FFFFFF"
+                        "#da0530",
+                        "#ffffff"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#DA0530",
-                        "#FFFFFF",
-                        "#5B056A"
+                        "#da0530",
+                        "#ffffff",
+                        "#5b056a"
                     ]
                 }
             }
@@ -1936,21 +2017,21 @@
         "country": "AU",
         "website": "https://www.virginaustralia.com",
         "branding": {
-            "primary_color": "#E31E23",
+            "primary_color": "#e31e23",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#E31E23"
+                        "#e31e23"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#E10A0A",
-                        "#FFFFFF",
+                        "#e10a0a",
+                        "#ffffff",
                         "#414042"
                     ]
                 }
@@ -1964,24 +2045,24 @@
         "country": "CA",
         "website": "https://www.westjet.com",
         "branding": {
-            "primary_color": "#00AAA6",
+            "primary_color": "#00aaa6",
             "assets": {
                 "icon": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#00AAA6",
-                        "#003C71",
-                        "#FFF"
+                        "#00aaa6",
+                        "#003c71",
+                        "#fff"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#003C71",
-                        "#00AAA6",
-                        "#FFFFFF"
+                        "#003c71",
+                        "#00aaa6",
+                        "#ffffff"
                     ]
                 }
             }
@@ -1994,13 +2075,13 @@
         "country": "HU",
         "website": "https://www.wizzair.com",
         "branding": {
-            "primary_color": "#C6007E",
+            "primary_color": "#c6007e",
             "assets": {
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#C6007E"
+                        "#c6007e"
                     ]
                 }
             }
@@ -2014,20 +2095,20 @@
         "website": "https://www.xiamenair.com",
         "alliance": "SkyTeam",
         "branding": {
-            "primary_color": "#008CD5",
+            "primary_color": "#008cd5",
             "assets": {
                 "icon": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
-                        "#008CD5"
+                        "#008cd5"
                     ]
                 },
                 "logo": {
                     "has_mono_file": true,
                     "color_model": "multi",
                     "colors": [
-                        "#008CD5",
+                        "#008cd5",
                         "#004384"
                     ]
                 }

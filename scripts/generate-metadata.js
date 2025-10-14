@@ -9,7 +9,7 @@ const extractColorsFromSvg = (filePath) => {
     const content = fs.readFileSync(filePath, 'utf8')
     const colorRegex = /fill="(#[0-9A-Fa-f]{6}|#[0-9A-Fa-f]{3})"/gi
     const matches = [...content.matchAll(colorRegex)]
-    const colors = [...new Set(matches.map((match) => match[1].toUpperCase()))]
+    const colors = [...new Set(matches.map((match) => match[1]))]
     return colors.length > 0 ? colors : null
 }
 
@@ -76,7 +76,10 @@ sorted.forEach((airline) => {
         }
     })
 
-    airline.branding.assets = assets
+    Object.assign(airline.branding, {
+        primary_color: airline.branding.primary_color.toLowerCase(),
+        assets,
+    })
 
     const {
         name,
