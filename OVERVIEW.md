@@ -15,7 +15,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Air France](https://airfrance.com) 🇫🇷 | FR | AF | AFR | SkyTeam | ![#051039](https://place-hold.it/10x10/051039/051039.png) | ✅ | ✅ |  |
 | [Air India](https://www.airindia.com) 🇮🇳 | IN | AI | AIC | Star Alliance | ![#da0e29](https://place-hold.it/10x10/da0e29/da0e29.png) | ✅ | ✅ |  |
 | [Air Mauritius](https://www.airmauritius.com) 🇲🇺 | MU | MK | MAU | Vanilla Alliance | ![#be2239](https://place-hold.it/10x10/be2239/be2239.png) | ✅ | ✅ |  |
-| [Air New Zealand](https://www.airnewzealand.co.nz) 🇳🇿 | NZ | NZ | ANZ | Star Alliance |  | ✅ | ✅ |  |
+| [Air New Zealand](https://www.airnewzealand.co.nz) 🇳🇿 | NZ | NZ | ANZ | Star Alliance | ![#000000](https://place-hold.it/10x10/000000/000000.png) | ✅ | ✅ |  |
 | [Air Serbia](https://www.airserbia.com) 🇷🇸 | RS | JU | ASL |  | ![#0e203f](https://place-hold.it/10x10/0e203f/0e203f.png) | ✅ | ✅ |  |
 | [Air Transat](https://airtransat.com) | CA | TS | TSC |  | ![#172b54](https://place-hold.it/10x10/172b54/172b54.png) | ✅ | ✅ |  |
 | [AirAsia](https://www.airasia.com) | MY | AK | AXM |  | ![#ff0000](https://place-hold.it/10x10/ff0000/ff0000.png) |  | ✅ |  |
@@ -40,7 +40,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [flynas](https://www.flynas.com) | SA | XY | KNE |  | ![#00b7ac](https://place-hold.it/10x10/00b7ac/00b7ac.png) |  | ✅ |  |
 | [Garuda Indonesia](https://www.garuda-indonesia.com) 🇮🇩 | ID | GA | GIA | SkyTeam | ![#002560](https://place-hold.it/10x10/002560/002560.png) | ✅ | ✅ |  |
 | [HK Express](https://www.hkexpress.com) | HK | UO | HKE |  | ![#702b91](https://place-hold.it/10x10/702b91/702b91.png) | ✅ | ✅ |  |
-| [Iberia](https://www.iberia.com) 🇪🇸 | ES | IB | IBE | oneworld |  | ✅ | ✅ |  |
+| [Iberia](https://www.iberia.com) 🇪🇸 | ES | IB | IBE | oneworld |  | ☑️ | ☑️ |  |
 | [IndiGo](https://www.goindigo.in) | IN | 6E | IGO |  | ![#001b94](https://place-hold.it/10x10/001b94/001b94.png) | ✅ | ✅ |  |
 | [Japan Airlines](https://www.jal.co.jp) 🇯🇵 | JP | JL | JAL | oneworld | ![#e50012](https://place-hold.it/10x10/e50012/e50012.png) | ✅ | ✅ |  |
 | [Jetstar](https://www.jetstar.com) | AU | JQ | JST |  | ![#ff5111](https://place-hold.it/10x10/ff5111/ff5111.png) | ✅ | ✅ |  |
@@ -54,9 +54,10 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Malaysia Airlines](https://www.malaysiaairlines.com) 🇲🇾 | MY | MH | MAS | oneworld | ![#174887](https://place-hold.it/10x10/174887/174887.png) | ✅ | ✅ |  |
 | [Myanmar National Airlines](https://www.flymna.com) 🇲🇲 | MM | UB | UBA |  | ![#fdb515](https://place-hold.it/10x10/fdb515/fdb515.png) | ✅ | ✅ |  |
 | [Oman Air](https://www.omanair.com) 🇴🇲 | OM | WY | OMA | oneworld | ![#b39759](https://place-hold.it/10x10/b39759/b39759.png) | ✅ | ✅ |  |
+| [Paranair](https://www.paranair.com) | PY | ZP | AZP |  | ![#0037a2](https://place-hold.it/10x10/0037a2/0037a2.png) | ✅ | ✅ |  |
 | [Peach Aviation](https://www.flypeach.com) | JP | MM | APJ |  | ![#9b308c](https://place-hold.it/10x10/9b308c/9b308c.png) |  | ✅ |  |
 | [Philippine Airlines](https://www.philippineairlines.com) 🇵🇭 | PH | PR | PAL |  | ![#001f60](https://place-hold.it/10x10/001f60/001f60.png) | ✅ | ✅ |  |
-| [Qantas](https://www.qantas.com) 🇦🇺 | AU | QF | QFA | oneworld |  |  |  |  |
+| [Qantas](https://www.qantas.com) 🇦🇺 | AU | QF | QFA | oneworld |  | ☑️ | ☑️ |  |
 | [Qatar Airways](https://www.qatarairways.com) 🇶🇦 | QA | QR | QTR | oneworld | ![#662046](https://place-hold.it/10x10/662046/662046.png) | ✅ | ✅ |  |
 | [Riyadh Air](https://www.riyadhair.com) 🇸🇦 | SA | RX | RXI |  | ![#240852](https://place-hold.it/10x10/240852/240852.png) | ✅ | ✅ |  |
 | [Royal Air Maroc](https://www.royalairmaroc.com) 🇲🇦 | MA | AT | RAM | SkyTeam | ![#c20831](https://place-hold.it/10x10/c20831/c20831.png) | ✅ | ✅ | ☑️ |

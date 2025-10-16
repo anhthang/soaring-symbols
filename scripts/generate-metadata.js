@@ -73,6 +73,10 @@ sorted.forEach((airline) => {
                 assets[assetType].color_model = color_model
                 assets[assetType].colors = colors
             }
+        } else if (monoAssetExists) {
+            assets[assetType] = {
+                has_mono_file: true
+            }
         }
     })
 
@@ -110,7 +114,10 @@ sorted.forEach((airline) => {
         }
 
         const isComplete =
-            assetInfo.has_mono_file || assetInfo.color_model === 'single'
+            (assetInfo.has_mono_file &&
+                Array.isArray(assetInfo.colors) &&
+                assetInfo.colors.length) ||
+            assetInfo.color_model === 'single'
 
         if (isComplete) {
             includedStates.push('✅')
