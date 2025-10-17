@@ -900,6 +900,13 @@
         "branding": {
             "primary_color": "#00b7ac",
             "assets": {
+                "icon": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#00b7ac"
+                    ]
+                },
                 "logo": {
                     "has_mono_file": false,
                     "color_model": "single",
@@ -1791,6 +1798,26 @@
                     "color_model": "single",
                     "colors": [
                         "#cf0a2c"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "name": "T'way Air",
+        "iata": "TW",
+        "icao": "TWB",
+        "country": "KR",
+        "website": "https://www.twayair.com",
+        "branding": {
+            "primary_color": "#d22c25",
+            "assets": {
+                "logo": {
+                    "has_mono_file": true,
+                    "color_model": "multi",
+                    "colors": [
+                        "#d22c25",
+                        "#82ab42"
                     ]
                 }
             }

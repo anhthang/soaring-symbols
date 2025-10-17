@@ -37,7 +37,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Eurowings](https://www.eurowings.com) | DE | EW | EWG |  | ![#7c2045](https://place-hold.it/10x10/7c2045/7c2045.png) | ✅ | ✅ |  |
 | [Fiji Airways](https://www.fijiairways.com) 🇫🇯 | FJ | FJ | FJI | oneworld | ![#473729](https://place-hold.it/10x10/473729/473729.png) | ✅ |  |  |
 | [Firefly](https://www.fireflyz.com.my) | MY | FY | FFM |  | ![#ef5713](https://place-hold.it/10x10/ef5713/ef5713.png) | ✅ | ✅ |  |
-| [flynas](https://www.flynas.com) | SA | XY | KNE |  | ![#00b7ac](https://place-hold.it/10x10/00b7ac/00b7ac.png) |  | ✅ |  |
+| [flynas](https://www.flynas.com) | SA | XY | KNE |  | ![#00b7ac](https://place-hold.it/10x10/00b7ac/00b7ac.png) | ✅ | ✅ |  |
 | [Garuda Indonesia](https://www.garuda-indonesia.com) 🇮🇩 | ID | GA | GIA | SkyTeam | ![#002560](https://place-hold.it/10x10/002560/002560.png) | ✅ | ✅ |  |
 | [HK Express](https://www.hkexpress.com) | HK | UO | HKE |  | ![#702b91](https://place-hold.it/10x10/702b91/702b91.png) | ✅ | ✅ |  |
 | [Iberia](https://www.iberia.com) 🇪🇸 | ES | IB | IBE | oneworld |  | ☑️ | ☑️ |  |
@@ -71,6 +71,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Starlux Airlines](https://www.starlux-airlines.com) | TW | JX | SJX |  | ![#996a4e](https://place-hold.it/10x10/996a4e/996a4e.png) | ✅ | ✅ |  |
 | [Sun PhuQuoc Airways](https://www.sunphuquocairways.com) | VN | 9G | SPQ |  | ![#ca1c2a](https://place-hold.it/10x10/ca1c2a/ca1c2a.png) | ✅ | ✅ |  |
 | [SWISS](https://www.swiss.com) 🇨🇭 | CH | LX | SWR | Star Alliance | ![#cf0a2c](https://place-hold.it/10x10/cf0a2c/cf0a2c.png) | ✅ | ✅ |  |
+| [T'way Air](https://www.twayair.com) | KR | TW | TWB |  | ![#d22c25](https://place-hold.it/10x10/d22c25/d22c25.png) |  | ✅ |  |
 | [TAP Air Portugal](https://www.tapairportugal.com) 🇵🇹 | PT | TP | TAP | Star Alliance | ![#bfd730](https://place-hold.it/10x10/bfd730/bfd730.png) | ☑️ | ☑️ |  |
 | [TAROM](https://www.tarom.ro) 🇷🇴 | RO | RO | ROT | SkyTeam | ![#003366](https://place-hold.it/10x10/003366/003366.png) | ✅ | ✅ |  |
 | [Thai Airways](https://www.thaiairways.com) 🇹🇭 | TH | TG | THA | Star Alliance | ![#306](https://place-hold.it/10x10/306/306.png) | ☑️ |  |  |
