@@ -75,7 +75,7 @@ sorted.forEach((airline) => {
             }
         } else if (monoAssetExists) {
             assets[assetType] = {
-                has_mono_file: true
+                has_mono_file: true,
             }
         }
     })
@@ -94,6 +94,7 @@ sorted.forEach((airline) => {
         alliance,
         flag_carrier,
         branding: { primary_color },
+        subsidiaries,
     } = airline
 
     let airlineName = website ? `[${name}](${website})` : name
@@ -136,6 +137,21 @@ sorted.forEach((airline) => {
     md += `| ${airlineName} | ${country || ''} | ${iata || ''} | ${
         icao || ''
     } | ${alliance || ''} | ${colorSquare} | ${includedStates.join(' | ')} |\n`
+
+    if (Array.isArray(subsidiaries)) {
+        subsidiaries.forEach((sub) => {
+            let subsidiaryAirlineName = sub.name
+            if (sub.flag_carrier) {
+                subsidiaryAirlineName += ` ${getFlagEmoji(sub.country)}`
+            }
+
+            md += `| ${subsidiaryAirlineName} | ${sub.country || ''} | ${
+                sub.iata || ''
+            } | ${sub.icao || ''} | ${
+                sub.alliance || ''
+            } | ${colorSquare} | ${includedStates.join(' | ')} |\n`
+        })
+    }
 })
 
 fs.writeFileSync('airlines.json', JSON.stringify(sorted, null, 4))

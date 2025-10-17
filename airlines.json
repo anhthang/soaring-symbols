@@ -396,7 +396,33 @@
                     ]
                 }
             }
-        }
+        },
+        "subsidiaries": [
+            {
+                "name": "AirAsia Cambodia",
+                "iata": "KT",
+                "icao": "KTC",
+                "country": "KH"
+            },
+            {
+                "name": "Thai AirAsia",
+                "iata": "FD",
+                "icao": "AIQ",
+                "country": "TH"
+            },
+            {
+                "name": "Indonesia AirAsia",
+                "iata": "QZ",
+                "icao": "AWQ",
+                "country": "ID"
+            },
+            {
+                "name": "Philippines AirAsia",
+                "iata": "Z2",
+                "icao": "APG",
+                "country": "PH"
+            }
+        ]
     },
     {
         "name": "airBaltic",
@@ -520,7 +546,29 @@
                     ]
                 }
             }
-        }
+        },
+        "subsidiaries": [
+            {
+                "name": "Avianca Costa Rica",
+                "iata": "LR",
+                "icao": "LRC",
+                "country": "CR",
+                "flag_carrier": true
+            },
+            {
+                "name": "Avianca Ecuador",
+                "iata": "2K",
+                "icao": "GLG",
+                "country": "EC"
+            },
+            {
+                "name": "Avianca El Salvador",
+                "iata": "TA",
+                "icao": "TAI",
+                "country": "SV",
+                "flag_carrier": true
+            }
+        ]
     },
     {
         "name": "Azerbaijan Airlines",
@@ -1076,7 +1124,15 @@
                     ]
                 }
             }
-        }
+        },
+        "subsidiaries": [
+            {
+                "name": "Jetstar Japan",
+                "iata": "GK",
+                "icao": "JJP",
+                "country": "JP"
+            }
+        ]
     },
     {
         "name": "Kenya Airways",
@@ -1214,7 +1270,39 @@
                     ]
                 }
             }
-        }
+        },
+        "subsidiaries": [
+            {
+                "name": "LATAM Airlines Brasil",
+                "iata": "JJ",
+                "icao": "TAM",
+                "country": "BR"
+            },
+            {
+                "name": "LATAM Airlines Colombia",
+                "iata": "4C",
+                "icao": "ARE",
+                "country": "CO"
+            },
+            {
+                "name": "LATAM Airlines Ecuador",
+                "iata": "XL",
+                "icao": "LNE",
+                "country": "EC"
+            },
+            {
+                "name": "LATAM Airlines Perú",
+                "iata": "LP",
+                "icao": "LPE",
+                "country": "PE"
+            },
+            {
+                "name": "LATAM Airlines Paraguay",
+                "iata": "PZ",
+                "icao": "LAP",
+                "country": "PY"
+            }
+        ]
     },
     {
         "name": "LOT Polish Airlines",
@@ -1640,7 +1728,15 @@
                     ]
                 }
             }
-        }
+        },
+        "subsidiaries": [
+            {
+                "name": "SAS Connect",
+                "iata": "SL",
+                "icao": "SZS",
+                "country": "IE"
+            }
+        ]
     },
     {
         "name": "Scoot",
@@ -2148,7 +2244,21 @@
                     ]
                 }
             }
-        }
+        },
+        "subsidiaries": [
+            {
+                "name": "Wizz Air Abu Dhabi",
+                "iata": "5W",
+                "icao": "WAZ",
+                "country": "AE"
+            },
+            {
+                "name": "Wizz Air UK",
+                "iata": "W9",
+                "icao": "WUK",
+                "country": "GB"
+            }
+        ]
     },
     {
         "name": "XiamenAir",
