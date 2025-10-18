@@ -60,6 +60,34 @@
         }
     },
     {
+        "name": "Aerolíneas Argentinas",
+        "iata": "AR",
+        "icao": "ARG",
+        "country": "AR",
+        "flag_carrier": true,
+        "website": "https://www.aerolineas.com.ar",
+        "alliance": "SkyTeam",
+        "branding": {
+            "primary_color": "#0080be",
+            "assets": {
+                "icon": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#0080be"
+                    ]
+                },
+                "logo": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#0080be"
+                    ]
+                }
+            }
+        }
+    },
+    {
         "name": "Aeroméxico",
         "iata": "AM",
         "icao": "AMX",
@@ -111,6 +139,33 @@
                     "colors": [
                         "#231f20",
                         "#ce1f2e"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "name": "Air Algérie",
+        "iata": "AH",
+        "icao": "DAH",
+        "country": "DZ",
+        "flag_carrier": true,
+        "website": "https://airalgerie.dz",
+        "branding": {
+            "primary_color": "#e2231a",
+            "assets": {
+                "icon": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#e2231a"
+                    ]
+                },
+                "logo": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#e2231a"
                     ]
                 }
             }
@@ -515,6 +570,35 @@
                     "colors": [
                         "#e60013",
                         "#4a4f54"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "name": "Atlantic Airways",
+        "iata": "RC",
+        "icao": "FLI",
+        "country": "FO",
+        "flag_carrier": true,
+        "website": "https://www.atlanticairways.com",
+        "branding": {
+            "primary_color": "#004c93",
+            "assets": {
+                "icon": {
+                    "has_mono_file": true,
+                    "color_model": "multi",
+                    "colors": [
+                        "#004c93",
+                        "#db001b"
+                    ]
+                },
+                "logo": {
+                    "has_mono_file": true,
+                    "color_model": "multi",
+                    "colors": [
+                        "#db001b",
+                        "#004c93"
                     ]
                 }
             }
@@ -1040,6 +1124,40 @@
                 },
                 "logo": {
                     "has_mono_file": true
+                }
+            }
+        }
+    },
+    {
+        "name": "Icelandair",
+        "iata": "FI",
+        "icao": "ICE",
+        "country": "IS",
+        "flag_carrier": true,
+        "website": "https://www.icelandair.com",
+        "branding": {
+            "primary_color": "#0c0243",
+            "assets": {
+                "icon": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#0c0243"
+                    ]
+                },
+                "logo": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#0c0243"
+                    ]
+                },
+                "tail": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#0c0243"
+                    ]
                 }
             }
         }
@@ -1973,6 +2091,13 @@
                     ]
                 },
                 "logo": {
+                    "has_mono_file": false,
+                    "color_model": "single",
+                    "colors": [
+                        "#003366"
+                    ]
+                },
+                "tail": {
                     "has_mono_file": false,
                     "color_model": "single",
                     "colors": [
