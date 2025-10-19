@@ -4,7 +4,7 @@ const { JSDOM } = require('jsdom')
 
 // --- CONFIGURATION ---
 const ASSETS_DIR = 'assets'
-const DRY_RUN = false
+const DRY_RUN = !process.argv.includes('--fix')
 
 const EXCLUDE_FILES = [
     'assets/british-airways/icon.svg',

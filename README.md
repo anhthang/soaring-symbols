@@ -94,6 +94,7 @@ const all = listAirlines()
 
 // Lookup by IATA code
 const vna = getAirline('VN')
+const vna = getAirline('HVN')
 const vna = getAirline('Vietnam Airlines')
 const vna = getAirline('vietnam-airlines')
 
