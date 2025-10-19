@@ -3,8 +3,7 @@ const sortBy = require('lodash.sortby')
 const { join } = require('path')
 const { toSlug } = require('./utils.js')
 
-const airlinesPath = join(__dirname, '../airlines.json')
-const airlines = JSON.parse(readFileSync(airlinesPath, 'utf-8'))
+const airlines = require('../airlines.json')
 
 const extractColorsFromSvg = (filePath) => {
     const content = readFileSync(filePath, 'utf8')
@@ -153,6 +152,6 @@ sorted.forEach((airline) => {
 })
 
 writeFileSync('airlines.json', JSON.stringify(sorted, null, 4))
-writeFileSync('OVERVIEW.md', md)
+writeFileSync('AIRLINES.md', md)
 
-console.log('✅ Successfully generated airlines.json and OVERVIEW.md')
+console.log('✅ Successfully generated airlines.json and AIRLINES.md')

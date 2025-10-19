@@ -49,7 +49,7 @@
     "build": "node scripts/validate.js",
     "test": "node scripts/validate.js",
     "lint:svg": "node scripts/lint-svg.js",
-    "generate": "node scripts/generate-metadata.js"
+    "generate": "node scripts/generate.js"
   },
   "devDependencies": {
     "@types/jsdom": "^27.0.0",
