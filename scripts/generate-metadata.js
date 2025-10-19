@@ -1,12 +1,13 @@
-const fs = require('fs')
+const { readFileSync, existsSync, writeFileSync } = require('fs')
 const sortBy = require('lodash.sortby')
-const { default: slugify } = require('slugify')
-const path = require('path')
+const { join } = require('path')
+const { toSlug } = require('./utils.js')
 
-const airlines = require('../airlines.json')
+const airlinesPath = join(__dirname, '../airlines.json')
+const airlines = JSON.parse(readFileSync(airlinesPath, 'utf-8'))
 
 const extractColorsFromSvg = (filePath) => {
-    const content = fs.readFileSync(filePath, 'utf8')
+    const content = readFileSync(filePath, 'utf8')
     const colorRegex = /fill="(#[0-9A-Fa-f]{6}|#[0-9A-Fa-f]{3})"/gi
     const matches = [...content.matchAll(colorRegex)]
     const colors = [...new Set(matches.map((match) => match[1]))]
@@ -18,7 +19,7 @@ const determineColorModel = (colors) => {
     return colors.length > 1 ? 'multi' : 'single'
 }
 
-const assetsDir = path.join(__dirname, '..', 'assets')
+const assetsDir = join(__dirname, '..', 'assets')
 
 const sorted = sortBy(airlines, (a) => a.name.toLowerCase())
 
@@ -48,20 +49,17 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 const assetTypes = ['icon', 'logo', 'tail']
 
 sorted.forEach((airline) => {
-    const slug = slugify(airline.name, {
-        lower: true,
-        strict: true,
-    })
+    const slug = toSlug(airline.name)
 
-    const airlineDir = path.join(assetsDir, slug)
+    const airlineDir = join(assetsDir, slug)
     const assets = {}
     const includedStates = []
 
     assetTypes.forEach((assetType) => {
-        const colorAssetPath = path.join(airlineDir, `${assetType}.svg`)
-        const monoAssetPath = path.join(airlineDir, `${assetType}-mono.svg`)
-        const colorAssetExists = fs.existsSync(colorAssetPath)
-        const monoAssetExists = fs.existsSync(monoAssetPath)
+        const colorAssetPath = join(airlineDir, `${assetType}.svg`)
+        const monoAssetPath = join(airlineDir, `${assetType}-mono.svg`)
+        const colorAssetExists = existsSync(colorAssetPath)
+        const monoAssetExists = existsSync(monoAssetPath)
 
         if (colorAssetExists) {
             const colors = extractColorsFromSvg(colorAssetPath)
@@ -154,7 +152,7 @@ sorted.forEach((airline) => {
     }
 })
 
-fs.writeFileSync('airlines.json', JSON.stringify(sorted, null, 4))
-fs.writeFileSync('OVERVIEW.md', md)
+writeFileSync('airlines.json', JSON.stringify(sorted, null, 4))
+writeFileSync('OVERVIEW.md', md)
 
 console.log('✅ Successfully generated airlines.json and OVERVIEW.md')
