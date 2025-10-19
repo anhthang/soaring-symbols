@@ -2,8 +2,8 @@
 
 This document outlines the guidelines for contributing logos and icons to the Soaring Symbols project, a curated collection of airline logos in SVG format.
 
-> [\!IMPORTANT]
-> This project, "Soaring Symbols", provides a collection of airline logos/icons in SVG format for informational and reference purposes only. While every effort has been made to ensure the accuracy of the logos and information presented, we do not claim ownership of any trademarks or copyrighted materials. The logos remain the intellectual property of their respective airlines.
+> [!IMPORTANT]
+> "Soaring Symbols" provides airline logos/icons in SVG for informational and reference purposes only. We do not claim ownership of any trademarks or copyrighted materials. The logos remain the intellectual property of their respective airlines.
 
 ---
 
@@ -15,7 +15,7 @@ We welcome contributions from the community to enrich the Soaring Symbols collec
 
 This project uses a "color-first" approach, where the default asset is the full-color version.
 
-- **Folder Structure**: Each airline's assets must be placed in their own folder under `assets/`. The folder name must be a slugified, lowercase version of the airline's name (e.g., `assets/qatar-airways/`).
+- **Folder Structure**: Each airline's assets must be placed in their own folder under `assets/`. The folder name must be a slugified, lowercase version of the airline's name (e.g., `assets/vietnam-airways/`).
 - **Color Assets (Default)**: The standard color version of an asset should be named simply `icon.svg` or `logo.svg`.
 - **Monochrome Assets (Optional)**: A monochrome version is only required for multi-color assets. It should be named with a `-mono` suffix (e.g., `icon-mono.svg` or `logo-mono.svg`).
 
@@ -23,7 +23,7 @@ This project uses a "color-first" approach, where the default asset is the full-
 
 ```plaintext
 assets/
-└── qatar-airways/
+└── vietnam-airways/
     ├── icon.svg         # Color version (default)
     ├── icon-mono.svg    # Mono version (optional)
     ├── logo.svg         # Color version (default)
@@ -81,6 +81,12 @@ After you run the script, the `branding.assets` object will be populated with th
 | `color_model`   | `"single"` or `"multi"`, based on the number of colors found in the SVG. |
 | `colors`        | An array of the hexadecimal color codes found in the SVG file.           |
 
+Additional behavior:
+
+- If `has_mono_file` is `false` but `color_model` is `"single"`, this means the color SVG uses a single solid color — the colored SVG can be treated as a monochrome asset (it can be filled or used anywhere a mono version is expected).
+
+This behavior is detected automatically by the `generate.js` script when it inspects the airline's assets.
+
 ### 4. Pull Requests
 
 1. Prepare your SVG files according to the naming and specification guidelines.
@@ -97,26 +103,31 @@ This is what a complete entry for an airline looks like after the `generate.js` 
 
 ```json
 {
-    "name": "Qatar Airways",
-    "iata": "QR",
-    "icao": "QTR",
-    "country": "QA",
+    "name": "Vietnam Airlines",
+    "iata": "VN",
+    "icao": "HVN",
+    "country": "VN",
     "flag_carrier": true,
-    "website": "https://www.qatarairways.com",
-    "alliance": "oneworld",
+    "website": "https://www.vietnamairlines.com",
+    "alliance": "SkyTeam",
     "branding": {
-        "primary_color": "#662046",
-        "guidelines": "https://www.qatarairways.com/content/dam/tradepartners/pdf-files/Brand-Elements_Section-1.pdf",
+        "primary_color": "#d99e09",
+        "guidelines": "https://www.vietnamairlines.com/~/media/FilesDownload/AboutUs/Corporate-Identity/GSM-2017-Web1.pdf",
         "assets": {
             "icon": {
-                "has_mono_file": true,
-                "color_model": "multi",
-                "colors": ["#818A8F", "#662046"]
+                "has_mono_file": false,
+                "color_model": "single",
+                "colors": [
+                    "#d99e09"
+                ]
             },
             "logo": {
                 "has_mono_file": true,
                 "color_model": "multi",
-                "colors": ["#818A8F", "#5E6A71", "#662046"]
+                "colors": [
+                    "#d99e09",
+                    "#005e80"
+                ]
             }
         }
     }

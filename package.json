@@ -1,28 +1,59 @@
 {
   "name": "soaring-symbols",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A Curated Collection of Airline Logos & Icons in SVG",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "module": "index.js",
+  "types": "index.d.ts",
+  "author": {
+    "name": "Anh Thang Bui",
+    "email": "buianhthang89@gmail.com",
+    "url": "https://anhthang.org"
   },
+  "license": "MIT",
+  "homepage": "https://github.com/anhthang/soaring-symbols",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/anhthang/soaring-symbols.git"
   },
-  "keywords": [
-    "airline",
-    "logo",
-    "icon"
-  ],
-  "author": "Anh Thang Bui",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/anhthang/soaring-symbols/issues"
   },
-  "homepage": "https://github.com/anhthang/soaring-symbols#readme",
+  "keywords": [
+    "airline",
+    "logo",
+    "icon",
+    "soaring",
+    "symbols",
+    "svg",
+    "aircraft",
+    "aviation",
+    "flight",
+    "travel"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./assets/*": "./assets/*"
+  },
+  "files": [
+    "assets/",
+    "airlines.json",
+    "index.js",
+    "index.d.ts",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "prepublishOnly": "node scripts/validate.js",
+    "build": "node scripts/validate.js",
+    "test": "node scripts/validate.js",
+    "lint:svg": "node scripts/lint-svg.js",
+    "generate": "node scripts/generate.js"
+  },
   "devDependencies": {
-    "jsdom": "^27.0.0",
+    "@types/jsdom": "^27.0.0",
+    "jsdom": "^27.0.1",
     "lodash.sortby": "^4.7.0",
     "slugify": "^1.6.6"
   }

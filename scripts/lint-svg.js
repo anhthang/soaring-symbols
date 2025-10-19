@@ -1,10 +1,10 @@
-const fs = require('fs')
-const path = require('path')
+const { readFileSync, readdirSync, writeFileSync } = require('fs')
+const { basename, dirname, join } = require('path')
 const { JSDOM } = require('jsdom')
 
 // --- CONFIGURATION ---
 const ASSETS_DIR = 'assets'
-const DRY_RUN = false
+const DRY_RUN = !process.argv.includes('--fix')
 
 const EXCLUDE_FILES = [
     'assets/british-airways/icon.svg',
@@ -23,7 +23,7 @@ const HEX_REGEX = /^#(?:[0-9A-F]{3}){1,2}$/i
  * @returns {string}
  */
 const getAirlineNameFromFilePath = (filePath) => {
-    const dirName = path.basename(path.dirname(filePath))
+    const dirName = basename(dirname(filePath))
     return dirName
         .split('-')
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
@@ -102,7 +102,7 @@ const reorderSvgRootAttributes = (svgString) => {
  * @returns {object} - An object containing a list of issues and the fixed content.
  */
 const lintSvgFile = (filePath) => {
-    const originalContent = fs.readFileSync(filePath, 'utf8')
+    const originalContent = readFileSync(filePath, 'utf8')
     const dom = new JSDOM(originalContent, { contentType: 'image/svg+xml' })
     const document = dom.window.document
     const svgElement = document.querySelector('svg')
@@ -132,8 +132,8 @@ const lintSvgFile = (filePath) => {
 
     // RULE 2: ViewBox must be correct based on filename
     const isIcon =
-        path.basename(filePath).includes('icon') ||
-        path.basename(filePath).includes('tail')
+        basename(filePath).includes('icon') ||
+        basename(filePath).includes('tail')
     const expectedViewBox = isIcon ? '0 0 24 24' : '0 0 64 64'
     if (svgElement.getAttribute('viewBox') !== expectedViewBox) {
         issues.push(`ViewBox: Should be "${expectedViewBox}".`)
@@ -245,23 +245,22 @@ const main = () => {
     let filesWithIssues = 0
     let filesFixed = 0
 
-    const airlineDirs = fs
-        .readdirSync(ASSETS_DIR, { withFileTypes: true })
+    const airlineDirs = readdirSync(ASSETS_DIR, { withFileTypes: true })
         .filter((dirent) => dirent.isDirectory())
         .map((dirent) => dirent.name)
 
     for (const dir of airlineDirs) {
-        const airlinePath = path.join(ASSETS_DIR, dir)
+        const airlinePath = join(ASSETS_DIR, dir)
         const issuesInDir = []
         let wasFixedInDir = false
 
-        fs.readdirSync(airlinePath)
+        readdirSync(airlinePath)
             .filter((f) => f.endsWith('.svg'))
             .forEach((file) => {
                 filesChecked++
-                const fullPath = path.join(airlinePath, file)
+                const fullPath = join(airlinePath, file)
 
-                const relativePath = path.join(dir, file).replace(/\\/g, '/')
+                const relativePath = join(dir, file).replace(/\\/g, '/')
                 if (EXCLUDE_FILES.includes(`assets/${relativePath}`)) {
                     console.log(`🟡 Skipping excluded file: ${relativePath}\n`)
                     return
@@ -276,7 +275,7 @@ const main = () => {
                     })
 
                     if (!DRY_RUN && result.fixedContent) {
-                        fs.writeFileSync(fullPath, result.fixedContent)
+                        writeFileSync(fullPath, result.fixedContent)
                         wasFixedInDir = true
                         filesFixed++
                     }
