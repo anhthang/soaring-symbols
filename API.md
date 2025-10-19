@@ -1,4 +1,4 @@
-# API Reference
+# Soaring Symbols: API Reference
 
 This document details the functions exported by the `soaring-symbols` package and the data structures they return.
 

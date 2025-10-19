@@ -41,6 +41,7 @@
     "index.js",
     "index.d.ts",
     "scripts/",
+    "API.md",
     "README.md",
     "LICENSE"
   ],

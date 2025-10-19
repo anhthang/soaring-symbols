@@ -89,7 +89,7 @@ const assets = getAssets('VN')
 */
 ```
 
-For a full list of functions and the data structures they return, please see the **[API Reference (API.md)](./API.md)**.
+For a full list of functions and the data structures they return, please see the [API Reference](./API.md).
 
 ## Contributing
 
