@@ -11,6 +11,20 @@ The initial phase will focus on building a core collection of high-quality SVG l
 
 The inclusion of monochrome versions will depend on the airline's brand guidelines and the feasibility of converting their original logos to a simple, one-color format.
 
+## TODO / Roadmap
+
+- [ ] Publish assets to Iconify
+  - [ ] Provide an Iconify collection (prefix: `soaring-symbols`) for easy consumption across frameworks.
+  - [ ] Automate updates from `assets/` via a script.
+
+- [ ] Raycast Extension
+  - [ ] Build a Raycast extension to search airlines and copy SVG or asset paths quickly.
+  - [ ] Include filters (IATA/ICAO/country) and variant selection (color/mono).
+
+- [ ] Nuxt Homepage
+  - [ ] Launch a Nuxt-powered homepage showcasing the catalog, search, and usage examples.
+  - [ ] Include live previews, install instructions, and API docs (pulling from `API.md`).
+
 ## Installation
 
 ```bash
@@ -49,24 +63,8 @@ const vna = getAirline('VN')
     "alliance": "SkyTeam",
     "branding": {
         "primary_color": "#d99e09",
-        "guidelines": "https://www.vietnamairlines.com/~/media/FilesDownload/AboutUs/Corporate-Identity/GSM-2017-Web1.pdf",
-        "assets": {
-            "icon": {
-                "has_mono_file": false,
-                "color_model": "single",
-                "colors": [
-                    "#d99e09"
-                ]
-            },
-            "logo": {
-                "has_mono_file": true,
-                "color_model": "multi",
-                "colors": [
-                    "#d99e09",
-                    "#005e80"
-                ]
-            }
-        }
+        "tagline": "Reach Further",
+        "guidelines": "https://www.vietnamairlines.com/~/media/FilesDownload/AboutUs/Corporate-Identity/GSM-2017-Web1.pdf"
     },
     "slug": "vietnam-airlines"
 }
@@ -79,11 +77,20 @@ const assets = getAssets('VN')
 {
     "icon": {
         "color": "assets/vietnam-airlines/icon.svg",
-        "monochrome": null
+        "monochrome": null,
+        "color_model": "single",
+        "colors": [
+            "#d99e09"
+        ]
     },
     "logo": {
         "color": "assets/vietnam-airlines/logo.svg",
-        "monochrome": "assets/vietnam-airlines/logo-mono.svg"
+        "monochrome": "assets/vietnam-airlines/logo-mono.svg",
+        "color_model": "multi",
+        "colors": [
+            "#d99e09",
+            "#005e80"
+        ]
     }
 }
 */

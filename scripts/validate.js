@@ -2,7 +2,7 @@
 const fs = require('fs')
 const path = require('path')
 const airlines = require('../airlines.json')
-const { toSlug } = require('./utils')
+const { toSlug } = require('../utils')
 
 function exists(p) {
     try {

@@ -1,18 +1,8 @@
 // index.d.ts
-export interface BrandingVariantMeta {
-    has_mono_file?: boolean
-    color_model?: 'single' | 'multi'
-    colors?: string[]
-}
-
 export interface AirlineBranding {
     primary_color?: string
+    tagline?: string
     guidelines?: string
-    assets?: {
-        icon?: BrandingVariantMeta
-        logo?: BrandingVariantMeta
-        tail?: BrandingVariantMeta
-    }
 }
 
 export interface Airline {
@@ -34,6 +24,8 @@ export interface AirlineMeta extends Airline {
 export type AssetPaths = {
     color: string
     monochrome: string | null
+    color_model?: 'single' | 'multi'
+    colors?: string[]
 }
 
 export type ResolvedAssets = {

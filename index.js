@@ -1,5 +1,5 @@
 const airlines = require('./airlines.json')
-const { toSlug } = require('./scripts/utils')
+const { toSlug, getAirlineAssets } = require('./utils')
 
 // assets/<slug>/<variant>.svg or <variant>-mono.svg
 const ASSETS_BASE = 'assets'
@@ -21,26 +21,26 @@ for (const a of airlines) {
 }
 
 // Build path for a variant, respecting has_mono_file
-function buildVariantPaths(slug, variant, hasMono) {
+function buildVariantPaths(slug, variant, assetsMeta) {
+    const { color_model, colors, has_mono_file } = assetsMeta || {}
+
     const baseDir = `${ASSETS_BASE}/${slug}`
     const color = `${baseDir}/${variant}.svg`
-    const monochrome = hasMono ? `${baseDir}/${variant}-mono.svg` : null
-    return { color, monochrome }
+    const monochrome = has_mono_file ? `${baseDir}/${variant}-mono.svg` : null
+
+    return { color, monochrome, color_model, colors }
 }
 
 function resolveAssets(a) {
-    const assetsMeta = a.branding?.assets || {}
+    const assetsMeta = getAirlineAssets(a.slug)
     const out = {}
 
     for (const variant of ['icon', 'logo', 'tail']) {
         const vm = assetsMeta[variant]
         if (!vm) continue
-        out[variant] = buildVariantPaths(
-            a.slug,
-            variant,
-            Boolean(vm.has_mono_file)
-        )
+        out[variant] = buildVariantPaths(a.slug, variant, vm)
     }
+
     return out
 }
 
