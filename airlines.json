@@ -9,7 +9,8 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#002677"
-        }
+        },
+        "slug": "aegean-airlines"
     },
     {
         "name": "Aer Lingus",
@@ -20,7 +21,8 @@
         "website": "https://www.aerlingus.com",
         "branding": {
             "primary_color": "#006472"
-        }
+        },
+        "slug": "aer-lingus"
     },
     {
         "name": "Aerolíneas Argentinas",
@@ -32,7 +34,8 @@
         "alliance": "SkyTeam",
         "branding": {
             "primary_color": "#0080be"
-        }
+        },
+        "slug": "aerolineas-argentinas"
     },
     {
         "name": "Aeroméxico",
@@ -44,7 +47,8 @@
         "alliance": "SkyTeam",
         "branding": {
             "primary_color": "#020c41"
-        }
+        },
+        "slug": "aeromexico"
     },
     {
         "name": "Air Albania",
@@ -55,7 +59,8 @@
         "website": "https://www.airalbania.com.al",
         "branding": {
             "primary_color": "#ce1f2e"
-        }
+        },
+        "slug": "air-albania"
     },
     {
         "name": "Air Algérie",
@@ -66,7 +71,8 @@
         "website": "https://airalgerie.dz",
         "branding": {
             "primary_color": "#e2231a"
-        }
+        },
+        "slug": "air-algerie"
     },
     {
         "name": "Air Astana",
@@ -77,7 +83,8 @@
         "website": "https://airastana.com",
         "branding": {
             "primary_color": "#a48c5d"
-        }
+        },
+        "slug": "air-astana"
     },
     {
         "name": "Air Canada",
@@ -89,7 +96,8 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#f01428"
-        }
+        },
+        "slug": "air-canada"
     },
     {
         "name": "Air Dolomiti",
@@ -99,7 +107,8 @@
         "website": "https://www.airdolomiti.eu",
         "branding": {
             "primary_color": "#009eb3"
-        }
+        },
+        "slug": "air-dolomiti"
     },
     {
         "name": "Air Europa",
@@ -110,7 +119,8 @@
         "alliance": "SkyTeam",
         "branding": {
             "primary_color": "#006fde"
-        }
+        },
+        "slug": "air-europa"
     },
     {
         "name": "Air France",
@@ -122,7 +132,8 @@
         "alliance": "SkyTeam",
         "branding": {
             "primary_color": "#051039"
-        }
+        },
+        "slug": "air-france"
     },
     {
         "name": "Air India",
@@ -134,7 +145,8 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#da0e29"
-        }
+        },
+        "slug": "air-india"
     },
     {
         "name": "Air Mauritius",
@@ -146,7 +158,8 @@
         "alliance": "Vanilla Alliance",
         "branding": {
             "primary_color": "#be2239"
-        }
+        },
+        "slug": "air-mauritius"
     },
     {
         "name": "Air New Zealand",
@@ -158,7 +171,8 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#000000"
-        }
+        },
+        "slug": "air-new-zealand"
     },
     {
         "name": "Air Serbia",
@@ -169,7 +183,8 @@
         "website": "https://www.airserbia.com",
         "branding": {
             "primary_color": "#0e203f"
-        }
+        },
+        "slug": "air-serbia"
     },
     {
         "name": "Air Transat",
@@ -179,7 +194,8 @@
         "website": "https://airtransat.com",
         "branding": {
             "primary_color": "#172b54"
-        }
+        },
+        "slug": "air-transat"
     },
     {
         "name": "AirAsia",
@@ -215,7 +231,8 @@
                 "icao": "APG",
                 "country": "PH"
             }
-        ]
+        ],
+        "slug": "airasia"
     },
     {
         "name": "airBaltic",
@@ -226,7 +243,8 @@
         "website": "https://www.airbaltic.com",
         "branding": {
             "primary_color": "#152649"
-        }
+        },
+        "slug": "airbaltic"
     },
     {
         "name": "Akasa Air",
@@ -236,7 +254,8 @@
         "website": "https://www.akasaair.com",
         "branding": {
             "primary_color": "#ff6300"
-        }
+        },
+        "slug": "akasa-air"
     },
     {
         "name": "Alaska Airlines",
@@ -247,7 +266,8 @@
         "alliance": "oneworld",
         "branding": {
             "primary_color": "#01426a"
-        }
+        },
+        "slug": "alaska-airlines"
     },
     {
         "name": "Asiana Airlines",
@@ -259,7 +279,8 @@
         "branding": {
             "primary_color": "#4a4f54",
             "guidelines": "https://flyasiana.com/C/VN/EN/contents/ci"
-        }
+        },
+        "slug": "asiana-airlines"
     },
     {
         "name": "Atlantic Airways",
@@ -270,7 +291,8 @@
         "website": "https://www.atlanticairways.com",
         "branding": {
             "primary_color": "#004c93"
-        }
+        },
+        "slug": "atlantic-airways"
     },
     {
         "name": "avianca",
@@ -304,7 +326,8 @@
                 "country": "SV",
                 "flag_carrier": true
             }
-        ]
+        ],
+        "slug": "avianca"
     },
     {
         "name": "Azerbaijan Airlines",
@@ -315,7 +338,8 @@
         "website": "https://azal.az",
         "branding": {
             "primary_color": "#082e6a"
-        }
+        },
+        "slug": "azerbaijan-airlines"
     },
     {
         "name": "Bamboo Airways",
@@ -326,7 +350,8 @@
         "branding": {
             "primary_color": "#64ae53",
             "guidelines": "https://www.bambooairways.com/documents/d/global/bamboo-airway-guideline-new"
-        }
+        },
+        "slug": "bamboo-airways"
     },
     {
         "name": "Bangkok Airways",
@@ -336,7 +361,8 @@
         "website": "https://www.bangkokair.com",
         "branding": {
             "primary_color": "#000f8f"
-        }
+        },
+        "slug": "bangkok-airways"
     },
     {
         "name": "British Airways",
@@ -348,7 +374,8 @@
         "alliance": "oneworld",
         "branding": {
             "primary_color": "#2e5c99"
-        }
+        },
+        "slug": "british-airways"
     },
     {
         "name": "Brussels Airlines",
@@ -360,7 +387,8 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#051446"
-        }
+        },
+        "slug": "brussels-airlines"
     },
     {
         "name": "Cathay Pacific",
@@ -372,7 +400,8 @@
         "alliance": "oneworld",
         "branding": {
             "primary_color": "#005d63"
-        }
+        },
+        "slug": "cathay-pacific"
     },
     {
         "name": "Copa Airlines",
@@ -384,7 +413,8 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#0032a0"
-        }
+        },
+        "slug": "copa-airlines"
     },
     {
         "name": "Emirates",
@@ -395,7 +425,8 @@
         "website": "https://www.emirates.com",
         "branding": {
             "primary_color": "#d71921"
-        }
+        },
+        "slug": "emirates"
     },
     {
         "name": "Ethiopian Airlines",
@@ -407,7 +438,8 @@
         "website": "https://www.ethiopianairlines.com",
         "branding": {
             "primary_color": "#b71d20"
-        }
+        },
+        "slug": "ethiopian-airlines"
     },
     {
         "name": "Etihad Airways",
@@ -418,7 +450,8 @@
         "website": "https://www.etihad.com",
         "branding": {
             "primary_color": "#bd8b13"
-        }
+        },
+        "slug": "etihad-airways"
     },
     {
         "name": "Eurowings",
@@ -428,7 +461,8 @@
         "website": "https://www.eurowings.com",
         "branding": {
             "primary_color": "#7c2045"
-        }
+        },
+        "slug": "eurowings"
     },
     {
         "name": "Fiji Airways",
@@ -440,7 +474,8 @@
         "alliance": "oneworld",
         "branding": {
             "primary_color": "#473729"
-        }
+        },
+        "slug": "fiji-airways"
     },
     {
         "name": "Firefly",
@@ -450,7 +485,8 @@
         "website": "https://www.fireflyz.com.my",
         "branding": {
             "primary_color": "#ef5713"
-        }
+        },
+        "slug": "firefly"
     },
     {
         "name": "flynas",
@@ -460,7 +496,8 @@
         "website": "https://www.flynas.com",
         "branding": {
             "primary_color": "#00b7ac"
-        }
+        },
+        "slug": "flynas"
     },
     {
         "name": "Garuda Indonesia",
@@ -472,7 +509,8 @@
         "alliance": "SkyTeam",
         "branding": {
             "primary_color": "#002560"
-        }
+        },
+        "slug": "garuda-indonesia"
     },
     {
         "name": "HK Express",
@@ -482,7 +520,8 @@
         "website": "https://www.hkexpress.com",
         "branding": {
             "primary_color": "#702b91"
-        }
+        },
+        "slug": "hk-express"
     },
     {
         "name": "Iberia",
@@ -494,7 +533,8 @@
         "alliance": "oneworld",
         "branding": {
             "primary_color": ""
-        }
+        },
+        "slug": "iberia"
     },
     {
         "name": "Icelandair",
@@ -505,7 +545,8 @@
         "website": "https://www.icelandair.com",
         "branding": {
             "primary_color": "#0c0243"
-        }
+        },
+        "slug": "icelandair"
     },
     {
         "name": "IndiGo",
@@ -515,7 +556,8 @@
         "website": "https://www.goindigo.in",
         "branding": {
             "primary_color": "#001b94"
-        }
+        },
+        "slug": "indigo"
     },
     {
         "name": "Japan Airlines",
@@ -527,7 +569,8 @@
         "alliance": "oneworld",
         "branding": {
             "primary_color": "#e50012"
-        }
+        },
+        "slug": "japan-airlines"
     },
     {
         "name": "Jetstar",
@@ -545,7 +588,8 @@
                 "icao": "JJP",
                 "country": "JP"
             }
-        ]
+        ],
+        "slug": "jetstar"
     },
     {
         "name": "Kenya Airways",
@@ -557,7 +601,8 @@
         "alliance": "SkyTeam",
         "branding": {
             "primary_color": "#ed1c24"
-        }
+        },
+        "slug": "kenya-airways"
     },
     {
         "name": "KLM",
@@ -569,7 +614,8 @@
         "alliance": "SkyTeam",
         "branding": {
             "primary_color": "#009fd9"
-        }
+        },
+        "slug": "klm"
     },
     {
         "name": "Korean Air",
@@ -580,7 +626,8 @@
         "website": "https://www.koreanair.com",
         "branding": {
             "primary_color": "#051766"
-        }
+        },
+        "slug": "korean-air"
     },
     {
         "name": "Kuwait Airways",
@@ -591,7 +638,8 @@
         "website": "https://www.kuwaitairways.com",
         "branding": {
             "primary_color": "#1c285b"
-        }
+        },
+        "slug": "kuwait-airways"
     },
     {
         "name": "LATAM Airlines",
@@ -633,7 +681,8 @@
                 "icao": "LAP",
                 "country": "PY"
             }
-        ]
+        ],
+        "slug": "latam-airlines"
     },
     {
         "name": "LOT Polish Airlines",
@@ -645,7 +694,8 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#252668"
-        }
+        },
+        "slug": "lot-polish-airlines"
     },
     {
         "name": "Lufthansa",
@@ -657,7 +707,8 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#05164d"
-        }
+        },
+        "slug": "lufthansa"
     },
     {
         "name": "Malaysia Airlines",
@@ -669,7 +720,8 @@
         "alliance": "oneworld",
         "branding": {
             "primary_color": "#174887"
-        }
+        },
+        "slug": "malaysia-airlines"
     },
     {
         "name": "Myanmar National Airlines",
@@ -680,7 +732,8 @@
         "website": "https://www.flymna.com",
         "branding": {
             "primary_color": "#fdb515"
-        }
+        },
+        "slug": "myanmar-national-airlines"
     },
     {
         "name": "Oman Air",
@@ -692,7 +745,8 @@
         "alliance": "oneworld",
         "branding": {
             "primary_color": "#b39759"
-        }
+        },
+        "slug": "oman-air"
     },
     {
         "name": "Paranair",
@@ -702,7 +756,8 @@
         "website": "https://www.paranair.com",
         "branding": {
             "primary_color": "#0037a2"
-        }
+        },
+        "slug": "paranair"
     },
     {
         "name": "Peach Aviation",
@@ -712,7 +767,8 @@
         "website": "https://www.flypeach.com",
         "branding": {
             "primary_color": "#9b308c"
-        }
+        },
+        "slug": "peach-aviation"
     },
     {
         "name": "Philippine Airlines",
@@ -723,7 +779,8 @@
         "website": "https://www.philippineairlines.com",
         "branding": {
             "primary_color": "#001f60"
-        }
+        },
+        "slug": "philippine-airlines"
     },
     {
         "name": "Qantas",
@@ -735,7 +792,8 @@
         "alliance": "oneworld",
         "branding": {
             "primary_color": ""
-        }
+        },
+        "slug": "qantas"
     },
     {
         "name": "Qatar Airways",
@@ -748,7 +806,8 @@
         "branding": {
             "primary_color": "#662046",
             "guidelines": "https://www.qatarairways.com/content/dam/tradepartners/pdf-files/Brand-Elements_Section-1.pdf"
-        }
+        },
+        "slug": "qatar-airways"
     },
     {
         "name": "Riyadh Air",
@@ -759,7 +818,8 @@
         "website": "https://www.riyadhair.com",
         "branding": {
             "primary_color": "#240852"
-        }
+        },
+        "slug": "riyadh-air"
     },
     {
         "name": "Royal Air Maroc",
@@ -771,7 +831,8 @@
         "alliance": "SkyTeam",
         "branding": {
             "primary_color": "#c20831"
-        }
+        },
+        "slug": "royal-air-maroc"
     },
     {
         "name": "Royal Brunei Airlines",
@@ -781,7 +842,8 @@
         "website": "https://www.flyroyalbrunei.com",
         "branding": {
             "primary_color": "#ffe600"
-        }
+        },
+        "slug": "royal-brunei-airlines"
     },
     {
         "name": "Ryanair",
@@ -791,7 +853,8 @@
         "website": "https://www.ryanair.com",
         "branding": {
             "primary_color": "#073590"
-        }
+        },
+        "slug": "ryanair"
     },
     {
         "name": "Saudia",
@@ -803,7 +866,8 @@
         "alliance": "SkyTeam",
         "branding": {
             "primary_color": "#0a6937"
-        }
+        },
+        "slug": "saudia"
     },
     {
         "name": "Scandinavian Airlines",
@@ -823,7 +887,8 @@
                 "icao": "SZS",
                 "country": "IE"
             }
-        ]
+        ],
+        "slug": "scandinavian-airlines"
     },
     {
         "name": "Scoot",
@@ -834,7 +899,8 @@
         "alliance": "Value Alliance",
         "branding": {
             "primary_color": "#ffe900"
-        }
+        },
+        "slug": "scoot"
     },
     {
         "name": "Singapore Airlines",
@@ -846,7 +912,8 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#232f67"
-        }
+        },
+        "slug": "singapore-airlines"
     },
     {
         "name": "Southwest Airlines",
@@ -856,7 +923,8 @@
         "website": "https://www.southwest.com",
         "branding": {
             "primary_color": "#304cb2"
-        }
+        },
+        "slug": "southwest-airlines"
     },
     {
         "name": "Starlux Airlines",
@@ -866,7 +934,8 @@
         "website": "https://www.starlux-airlines.com",
         "branding": {
             "primary_color": "#996a4e"
-        }
+        },
+        "slug": "starlux-airlines"
     },
     {
         "name": "Sun PhuQuoc Airways",
@@ -876,7 +945,8 @@
         "website": "https://www.sunphuquocairways.com",
         "branding": {
             "primary_color": "#ca1c2a"
-        }
+        },
+        "slug": "sun-phuquoc-airways"
     },
     {
         "name": "SWISS",
@@ -888,7 +958,8 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#cf0a2c"
-        }
+        },
+        "slug": "swiss"
     },
     {
         "name": "T'way Air",
@@ -898,7 +969,8 @@
         "website": "https://www.twayair.com",
         "branding": {
             "primary_color": "#d22c25"
-        }
+        },
+        "slug": "tway-air"
     },
     {
         "name": "TAP Air Portugal",
@@ -910,7 +982,8 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#bfd730"
-        }
+        },
+        "slug": "tap-air-portugal"
     },
     {
         "name": "TAROM",
@@ -922,7 +995,8 @@
         "alliance": "SkyTeam",
         "branding": {
             "primary_color": "#003366"
-        }
+        },
+        "slug": "tarom"
     },
     {
         "name": "Thai Airways",
@@ -934,7 +1008,8 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#306"
-        }
+        },
+        "slug": "thai-airways"
     },
     {
         "name": "Transavia",
@@ -944,7 +1019,8 @@
         "website": "https://www.transavia.com",
         "branding": {
             "primary_color": "#00d66c"
-        }
+        },
+        "slug": "transavia"
     },
     {
         "name": "Turkish Airlines",
@@ -957,7 +1033,8 @@
         "branding": {
             "primary_color": "#c90019",
             "guidelines": "https://www.turkishairlines.com/en-int/press-room/logo-archive"
-        }
+        },
+        "slug": "turkish-airlines"
     },
     {
         "name": "United Airlines",
@@ -968,7 +1045,8 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#1414d2"
-        }
+        },
+        "slug": "united-airlines"
     },
     {
         "name": "VietJet Air",
@@ -979,7 +1057,8 @@
         "branding": {
             "primary_color": "#e12127",
             "tagline": "Enjoy Flying!"
-        }
+        },
+        "slug": "vietjet-air"
     },
     {
         "name": "Vietnam Airlines",
@@ -993,7 +1072,8 @@
             "primary_color": "#d99e09",
             "tagline": "Reach Further",
             "guidelines": "https://www.vietnamairlines.com/~/media/FilesDownload/AboutUs/Corporate-Identity/GSM-2017-Web1.pdf"
-        }
+        },
+        "slug": "vietnam-airlines"
     },
     {
         "name": "Virgin Atlantic",
@@ -1004,7 +1084,8 @@
         "alliance": "SkyTeam",
         "branding": {
             "primary_color": "#da0530"
-        }
+        },
+        "slug": "virgin-atlantic"
     },
     {
         "name": "Virgin Australia",
@@ -1014,7 +1095,8 @@
         "website": "https://www.virginaustralia.com",
         "branding": {
             "primary_color": "#e31e23"
-        }
+        },
+        "slug": "virgin-australia"
     },
     {
         "name": "WestJet",
@@ -1024,7 +1106,8 @@
         "website": "https://www.westjet.com",
         "branding": {
             "primary_color": "#00aaa6"
-        }
+        },
+        "slug": "westjet"
     },
     {
         "name": "Wizz Air",
@@ -1048,7 +1131,8 @@
                 "icao": "WUK",
                 "country": "GB"
             }
-        ]
+        ],
+        "slug": "wizz-air"
     },
     {
         "name": "XiamenAir",
@@ -1059,6 +1143,7 @@
         "alliance": "SkyTeam",
         "branding": {
             "primary_color": "#008cd5"
-        }
+        },
+        "slug": "xiamenair"
     }
 ]

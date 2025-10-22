@@ -49,6 +49,8 @@ sorted.forEach((airline) => {
         subsidiaries,
     } = airline
 
+    airline.slug = slug
+
     let airlineName = website ? `[${name}](${website})` : name
 
     if (flag_carrier) {

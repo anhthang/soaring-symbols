@@ -1,7 +1,7 @@
 {
   "name": "soaring-symbols",
   "version": "0.1.0-alpha.1",
-  "description": "A Curated Collection of Airline Logos & Icons in SVG",
+  "description": "A curated collection of airline branding assets — logos, icons, and tail designs in SVG format.",
   "main": "index.js",
   "module": "index.js",
   "types": "index.d.ts",

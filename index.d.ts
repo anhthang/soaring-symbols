@@ -7,18 +7,18 @@ export interface AirlineBranding {
 
 export interface Airline {
     name: string
-    iata?: string // 2-letter IATA code (e.g., "VN")
-    icao?: string // 3-letter ICAO code (e.g., "HVN")
-    country?: string // ISO 3166-1 alpha-2 code (e.g., "VN")
+    iata: string // 2-letter IATA code (e.g., "VN")
+    icao: string // 3-letter ICAO code (e.g., "HVN")
+    country: string // ISO 3166-1 alpha-2 code (e.g., "VN")
     flag_carrier?: boolean // true if national flag carrier
     website?: string // Official website URL
     alliance?: string // e.g., "oneworld" | "SkyTeam" | "Star Alliance"
+    slug: string
 }
 
 export interface AirlineMeta extends Airline {
     branding?: AirlineBranding
     subsidiaries?: Airline[]
-    slug?: string
 }
 
 export type AssetPaths = {
