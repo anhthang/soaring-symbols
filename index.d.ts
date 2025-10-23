@@ -3,6 +3,11 @@ export interface AirlineBranding {
     primary_color?: string
     tagline?: string
     guidelines?: string
+    colors: {
+        icon?: string[]
+        logo?: string[]
+        tail?: string[]
+    }
 }
 
 export interface Airline {

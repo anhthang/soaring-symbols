@@ -50,6 +50,7 @@ sorted.forEach((airline) => {
     } = airline
 
     airline.slug = slug
+    airline.branding.colors = {}
 
     let airlineName = website ? `[${name}](${website})` : name
 
@@ -67,6 +68,8 @@ sorted.forEach((airline) => {
             includedStates.push('')
             return
         }
+
+        airline.branding.colors[type] = assetInfo.colors
 
         const isComplete =
             (assetInfo.has_mono_file &&
