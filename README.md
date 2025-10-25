@@ -13,14 +13,6 @@ The inclusion of monochrome versions will depend on the airline's brand guidelin
 
 ## TODO / Roadmap
 
-- [ ] Publish assets to Iconify
-  - [ ] Provide an Iconify collection (prefix: `soaring-symbols`) for easy consumption across frameworks.
-  - [ ] Automate updates from `assets/` via a script.
-
-- [ ] Raycast Extension
-  - [ ] Build a Raycast extension to search airlines and copy SVG or asset paths quickly.
-  - [ ] Include filters (IATA/ICAO/country) and variant selection (color/mono).
-
 - [ ] Nuxt Homepage
   - [ ] Launch a Nuxt-powered homepage showcasing the catalog, search, and usage examples.
   - [ ] Include live previews, install instructions, and API docs (pulling from `API.md`).
@@ -40,6 +32,13 @@ pnpm add soaring-symbols
 # Using bun
 bun add soaring-symbols
 ```
+
+## Ecosystem
+
+| Tool / Integration | Author |
+| :-- | :-- |
+| [npm Package](https://www.npmjs.com/package/soaring-symbols) <img src="https://cdn.simpleicons.org/npm/000/CB3837" alt="npm" align=left width=24 height=24 /> | [anhthang]|
+| [Raycast Extension](https://www.raycast.com/anhthang/soaring-symbols) <img src="https://cdn.simpleicons.org/raycast/000/FF6363" alt="Raycast" align=left width=24 height=24 /> | [anhthang]|
 
 ## Usage
 
@@ -107,3 +106,5 @@ Whether through adding new logos, improving existing ones, or suggesting feature
 ## License
 
 This repository is licensed under the MIT License — see [LICENSE](./LICENSE) for details.
+
+[anhthang]: https://github.com/anhthang

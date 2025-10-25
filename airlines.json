@@ -31,6 +31,7 @@
         "website": "https://www.aerlingus.com",
         "branding": {
             "primary_color": "#006472",
+            "tagline": "You're Very Welcome",
             "colors": {
                 "icon": [
                     "#82c341",
@@ -55,6 +56,7 @@
         "alliance": "SkyTeam",
         "branding": {
             "primary_color": "#0080be",
+            "tagline": "Soaring in the sky",
             "colors": {
                 "icon": [
                     "#0080be"
@@ -76,6 +78,7 @@
         "alliance": "SkyTeam",
         "branding": {
             "primary_color": "#020c41",
+            "tagline": "Being close, getting far",
             "colors": {
                 "icon": [
                     "#020c41"
@@ -338,6 +341,7 @@
         "website": "https://www.airasia.com",
         "branding": {
             "primary_color": "#ff0000",
+            "tagline": "Now Everyone Can Fly",
             "colors": {
                 "logo": [
                     "#ff0000"
@@ -397,6 +401,7 @@
         "website": "https://www.akasaair.com",
         "branding": {
             "primary_color": "#ff6300",
+            "tagline": "It’s Your Sky",
             "colors": {
                 "icon": [
                     "#ff6300"
@@ -418,6 +423,7 @@
         "alliance": "oneworld",
         "branding": {
             "primary_color": "#01426a",
+            "tagline": "Fly smart. Land happy",
             "colors": {
                 "logo": [
                     "#01426a"
@@ -547,6 +553,7 @@
         "website": "https://www.bambooairways.com",
         "branding": {
             "primary_color": "#64ae53",
+            "tagline": "More than just a flight",
             "guidelines": "https://www.bambooairways.com/documents/d/global/bamboo-airway-guideline-new",
             "colors": {
                 "icon": [
@@ -571,6 +578,7 @@
         "website": "https://www.bangkokair.com",
         "branding": {
             "primary_color": "#000f8f",
+            "tagline": "Asia’s Boutique Airline",
             "colors": {
                 "icon": [
                     "#e1001e",
@@ -681,6 +689,7 @@
         "website": "https://www.emirates.com",
         "branding": {
             "primary_color": "#d71921",
+            "tagline": "Fly Better",
             "colors": {
                 "icon": [
                     "#d71921"
@@ -757,6 +766,22 @@
             }
         },
         "slug": "eurowings"
+    },
+    {
+        "name": "Ewa Air",
+        "iata": "ZD",
+        "icao": "EWR",
+        "country": "FR",
+        "website": "https://ewa-air.com",
+        "branding": {
+            "primary_color": "#e1251b",
+            "colors": {
+                "logo": [
+                    "#e1251b"
+                ]
+            }
+        },
+        "slug": "ewa-air"
     },
     {
         "name": "Fiji Airways",
@@ -1257,6 +1282,7 @@
         "website": "https://www.philippineairlines.com",
         "branding": {
             "primary_color": "#001f60",
+            "tagline": "The Heart of the Filipino",
             "colors": {
                 "icon": [
                     "#001f60",
@@ -1283,7 +1309,14 @@
         "alliance": "oneworld",
         "branding": {
             "primary_color": "",
-            "colors": {}
+            "colors": {
+                "icon": [
+                    "#fff"
+                ],
+                "logo": [
+                    "#fff"
+                ]
+            }
         },
         "slug": "qantas"
     },
@@ -1641,6 +1674,7 @@
         "alliance": "Star Alliance",
         "branding": {
             "primary_color": "#306",
+            "tagline": "Grace to Growth",
             "colors": {
                 "icon": [
                     "#fc0",

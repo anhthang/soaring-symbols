@@ -45,6 +45,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Ethiopian Airlines](https://www.ethiopianairlines.com) 🇪🇹 | ET | ET | ETH | Star Alliance | ![#b71d20](https://place-hold.it/10x10/b71d20/b71d20.png) | ✅ | ✅ |  |
 | [Etihad Airways](https://www.etihad.com) 🇦🇪 | AE | EY | ETD |  | ![#bd8b13](https://place-hold.it/10x10/bd8b13/bd8b13.png) |  | ✅ |  |
 | [Eurowings](https://www.eurowings.com) | DE | EW | EWG |  | ![#7c2045](https://place-hold.it/10x10/7c2045/7c2045.png) | ✅ | ✅ |  |
+| [Ewa Air](https://ewa-air.com) | FR | ZD | EWR |  | ![#e1251b](https://place-hold.it/10x10/e1251b/e1251b.png) |  | ✅ |  |
 | [Fiji Airways](https://www.fijiairways.com) 🇫🇯 | FJ | FJ | FJI | oneworld | ![#473729](https://place-hold.it/10x10/473729/473729.png) | ✅ |  |  |
 | [Firefly](https://www.fireflyz.com.my) | MY | FY | FFM |  | ![#ef5713](https://place-hold.it/10x10/ef5713/ef5713.png) | ✅ | ✅ |  |
 | [flynas](https://www.flynas.com) | SA | XY | KNE |  | ![#00b7ac](https://place-hold.it/10x10/00b7ac/00b7ac.png) | ✅ | ✅ |  |
@@ -74,7 +75,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Paranair](https://www.paranair.com) | PY | ZP | AZP |  | ![#0037a2](https://place-hold.it/10x10/0037a2/0037a2.png) | ✅ | ✅ |  |
 | [Peach Aviation](https://www.flypeach.com) | JP | MM | APJ |  | ![#9b308c](https://place-hold.it/10x10/9b308c/9b308c.png) |  | ✅ |  |
 | [Philippine Airlines](https://www.philippineairlines.com) 🇵🇭 | PH | PR | PAL |  | ![#001f60](https://place-hold.it/10x10/001f60/001f60.png) | ✅ | ✅ |  |
-| [Qantas](https://www.qantas.com) 🇦🇺 | AU | QF | QFA | oneworld |  | ☑️ | ☑️ |  |
+| [Qantas](https://www.qantas.com) 🇦🇺 | AU | QF | QFA | oneworld |  | ✅ | ✅ |  |
 | [Qatar Airways](https://www.qatarairways.com) 🇶🇦 | QA | QR | QTR | oneworld | ![#662046](https://place-hold.it/10x10/662046/662046.png) | ✅ | ✅ |  |
 | [Riyadh Air](https://www.riyadhair.com) 🇸🇦 | SA | RX | RXI |  | ![#240852](https://place-hold.it/10x10/240852/240852.png) | ✅ | ✅ |  |
 | [Royal Air Maroc](https://www.royalairmaroc.com) 🇲🇦 | MA | AT | RAM | SkyTeam | ![#c20831](https://place-hold.it/10x10/c20831/c20831.png) | ✅ | ✅ | ☑️ |
