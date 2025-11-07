@@ -55,6 +55,7 @@
   ],
   "scripts": {
     "clean": "rm -rf dist",
+    "prebuild": "npm run lint:svg && npm run generate",
     "build": "npm run clean && node scripts/build.js",
     "prepublishOnly": "npm run build",
     "test": "npm run build && node scripts/test.js",

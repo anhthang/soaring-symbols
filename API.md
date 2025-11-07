@@ -36,6 +36,33 @@ Retrieves an object containing relative paths and metadata for an airline's visu
 const assets = getAssets('VN')
 ```
 
+### `getAssetContent(identifier)`
+
+Retrieves an object containing the actual SVG content for an airline's visual assets. Uses the same `identifier` lookup as `getAirline()`.
+
+- **Argument:** `identifier` (string)
+- **Returns:** `AssetContent` (see [Asset Content Model](#asset-content-model)) or `undefined` if not found.
+
+```js
+const content = getAssetContent('VN')
+
+// Result structure
+{
+    "icon": {
+        "color": "<svg>...</svg>", // SVG content
+        "monochrome": null,        // SVG content or null if not available
+        "color_model": "single",
+        "colors": ["#d99e09"]
+    },
+    "logo": {
+        "color": "<svg>...</svg>",
+        "monochrome": "<svg>...</svg>",
+        "color_model": "multi",
+        "colors": ["#d99e09", "#005e80"]
+    }
+}
+```
+
 ## Data Models
 
 ### Airline Data Model
@@ -88,7 +115,18 @@ If a monochrome variant (`-mono.svg`) does not exist for an asset, its `monochro
 }
 ```
 
-### Asset Metadata Fields
+### Asset Content Model
+
+The object returned by `getAssetContent()` follows a similar structure to `getAssets()`, but instead of paths, it contains the actual SVG content:
+
+| Field         | Type                  | Description                                                                     |
+| ------------- | --------------------- | ------------------------------------------------------------------------------- |
+| `color`       | `string`              | Full SVG content of the color variant.                                          |
+| `monochrome`  | `string \| null`      | Full SVG content of the monochrome variant, if available.                       |
+| `color_model` | `"single" \| "multi"` | `"single"` if the SVG uses one color; `"multi"` if it contains multiple colors. |
+| `colors`      | `string[]`            | Array of hex colors extracted from the SVG.                                     |
+
+### Asset Path Fields
 
 Each asset entry in `AssetPaths` contains these fields:
 

@@ -43,7 +43,7 @@ bun add soaring-symbols
 ## Usage
 
 ```js
-import { listAirlines, getAirline, getAssets } from 'soaring-symbols'
+import { listAirlines, getAirline, getAssets, getAssetContent } from 'soaring-symbols'
 
 // Get a list of all airlines
 const all = listAirlines()
@@ -90,6 +90,26 @@ const assets = getAssets('VN')
             "#d99e09",
             "#005e80"
         ]
+    }
+}
+*/
+
+// Get SVG content for an airline
+const content = getAssetContent('VN')
+
+/* output example - SVG content is truncated for brevity
+{
+    "icon": {
+        "color": "<svg>...</svg>",
+        "monochrome": null,
+        "color_model": "single",
+        "colors": ["#d99e09"]
+    },
+    "logo": {
+        "color": "<svg>...</svg>",
+        "monochrome": "<svg>...</svg>",
+        "color_model": "multi",
+        "colors": ["#d99e09", "#005e80"]
     }
 }
 */
