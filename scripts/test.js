@@ -1,5 +1,9 @@
-import assert from 'assert'
-import { listAirlines, getAirline, getAssets } from '../index.js'
+import { createRequire } from 'module'
+const require = createRequire(import.meta.url)
+
+// Use require for airlines.json import issues
+const { listAirlines, getAirline, getAssets } = require('../dist/index.cjs')
+const assert = require('assert')
 
 async function run() {
   // Basic sanity checks

@@ -60,15 +60,7 @@ async function buildCJS() {
     // Convert ESM to CJS
     const cjsContent = content
         .replace(
-            /import\s*{\s*createRequire\s*}\s*from\s*['"]module['"]/,
-            ''
-        )
-        .replace(
-            /const\s*require\s*=\s*createRequire\(.*\)\s*\n/,
-            ''
-        )
-        .replace(
-            /const\s*airlines\s*=\s*require\(['"]\.\/airlines\.json['"]\)/,
+            'import airlines from \'./airlines.json\' assert { type: \'json\' }',
             'const airlines = require(\'./airlines.json\')'
         )
         .replace(
