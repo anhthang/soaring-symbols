@@ -2,6 +2,7 @@ import { promises as fs } from 'fs'
 import path from 'path'
 
 const inputFile = './index.js'
+const distDir = './dist'
 
 // Helper to recursively copy a directory
 async function copyDir(src, dest) {
@@ -22,7 +23,6 @@ async function copyDir(src, dest) {
 
 // Copy required files and directories
 async function copyFiles() {
-    const distDir = './dist'
     await fs.mkdir(distDir, { recursive: true })
 
     // Copy required files and directories
@@ -50,27 +50,52 @@ async function copyFiles() {
 // ESM version (as-is, just copy to dist)
 async function buildESM() {
     const content = await fs.readFile(inputFile, 'utf-8')
-    await fs.mkdir('./dist', { recursive: true })
-    await fs.writeFile('./dist/index.js', content)
+    await fs.mkdir(distDir, { recursive: true })
+    await fs.writeFile(path.join(distDir, 'index.js'), content)
+}
+
+// Transform the ESM code to CJS format
+function transformToCJS(content) {
+    return (
+        content
+            // Replace imports with requires
+            .replace(
+                /import\s*{\s*readFileSync\s*}\s*from\s*['"]fs['"]/,
+                "const { readFileSync } = require('fs')"
+            )
+            .replace(
+                /import\s*{\s*join\s*}\s*from\s*['"]path['"]/,
+                "const { join } = require('path')"
+            )
+            .replace(
+                /import\s*{\s*toSlug,\s*getAirlineAssets\s*}\s*from\s*['"](\.\/utils\/index\.js)['"]/,
+                "const { toSlug, getAirlineAssets } = require('./utils')"
+            )
+            .replace(
+                /import\s+airlines\s+from\s+['"]\.\/airlines\.json['"]\s+assert\s*{\s*type:\s*['"]json['"]\s*}/,
+                "const airlines = require('./airlines.json')"
+            )
+            // Remove fileURLToPath import and __dirname setup since CJS has __dirname built-in
+            .replace(
+                /import\s*{\s*fileURLToPath\s*}\s*from\s*['"]url['"];?\s*/,
+                ''
+            )
+            .replace(
+                /const\s+__dirname\s*=\s*fileURLToPath\s*\(\s*new\s+URL\s*\(\s*['"]\.\.?\s*['"]\s*,\s*import\.meta\.url\s*\)\s*\)\s*;?/,
+                ''
+            )
+            // Replace export statements
+            .replace(/export\s*{\s*([^}]+)\s*}/, 'module.exports = { $1 }')
+            .replace(/export\s+default\s*{[^}]+}/, '')
+    )
 }
 
 // CJS version
 async function buildCJS() {
     const content = await fs.readFile(inputFile, 'utf-8')
-    // Convert ESM to CJS
-    const cjsContent = content
-        .replace(
-            'import airlines from \'./airlines.json\' assert { type: \'json\' }',
-            'const airlines = require(\'./airlines.json\')'
-        )
-        .replace(
-            'import { toSlug, getAirlineAssets } from \'./utils/index.js\'',
-            'const { toSlug, getAirlineAssets } = require(\'./utils\')'
-        )
-        .replace(/export\s*{[^}]+}/, 'module.exports = { listAirlines, getAirline, getAssets }')
-        .replace(/export\s*default\s*{[^}]+}/, '')
-
-    await fs.writeFile('./dist/index.cjs', cjsContent)
+    const cjsContent = transformToCJS(content)
+    await fs.mkdir(distDir, { recursive: true })
+    await fs.writeFile(path.join(distDir, 'index.cjs'), cjsContent)
 }
 
 // Run all builds

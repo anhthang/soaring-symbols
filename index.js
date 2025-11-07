@@ -1,5 +1,10 @@
-import airlines from './airlines.json' assert { type: 'json' }
+import { readFileSync } from 'fs'
+import { join } from 'path'
+import { fileURLToPath } from 'url'
 import { toSlug, getAirlineAssets } from './utils/index.js'
+import airlines from './airlines.json' assert { type: 'json' }
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url))
 
 // assets/<slug>/<variant>.svg or <variant>-mono.svg
 const ASSETS_BASE = 'assets'
@@ -85,10 +90,62 @@ function getAssets(key) {
     return resolveAssets(airline)
 }
 
-export { listAirlines, getAirline, getAssets }
+/**
+ * Get airline asset content (SVG strings) by key (IATA, ICAO, name, or slug).
+ * Returns null if airline not found or no assets available.
+ */
+function getAssetContent(key) {
+    const airline = getAirline(key)
+    if (!airline) return null
+
+    const paths = getAssets(key)
+    if (!paths) return null
+
+    const result = {}
+
+    for (const [variant, data] of Object.entries(paths)) {
+        const {
+            color: colorPath,
+            monochrome: monoPath,
+            color_model,
+            colors,
+        } = data
+        let color = null
+        let monochrome = null
+
+        try {
+            if (colorPath) {
+                const fullPath = join(__dirname, colorPath)
+                color = readFileSync(fullPath, 'utf8')
+            }
+            if (monoPath) {
+                const fullPath = join(__dirname, monoPath)
+                monochrome = readFileSync(fullPath, 'utf8')
+            }
+            if (color || monochrome) {
+                result[variant] = {
+                    color,
+                    monochrome,
+                    color_model,
+                    colors,
+                }
+            }
+        } catch (err) {
+            console.warn(
+                `Warning: Could not read SVG file for ${airline.name} ${variant}:`,
+                err.message
+            )
+        }
+    }
+
+    return Object.keys(result).length > 0 ? result : null
+}
+
+export { listAirlines, getAirline, getAssets, getAssetContent }
 
 export default {
     listAirlines,
     getAirline,
     getAssets,
+    getAssetContent,
 }

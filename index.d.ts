@@ -39,14 +39,29 @@ export type ResolvedAssets = {
     tail?: AssetPaths
 }
 
+export type AssetContent = {
+    color: string | null // SVG content string
+    monochrome: string | null // SVG content string
+    color_model?: 'single' | 'multi'
+    colors?: string[]
+}
+
+export type ResolvedAssetContent = {
+    icon?: AssetContent
+    logo?: AssetContent
+    tail?: AssetContent
+}
+
 export function listAirlines(): AirlineMeta[]
 export function getAirline(key: string): AirlineMeta | null
 export function getAssets(key: string): ResolvedAssets | null
+export function getAssetContent(key: string): ResolvedAssetContent | null
 
 declare const _default: {
     listAirlines: typeof listAirlines
     getAirline: typeof getAirline
     getAssets: typeof getAssets
+    getAssetContent: typeof getAssetContent
 }
 
 export default _default
