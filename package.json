@@ -1,6 +1,6 @@
 {
   "name": "soaring-symbols",
-  "version": "0.1.0-alpha.5",
+  "version": "0.1.0-alpha.6",
   "description": "A curated collection of airline branding assets — logos, icons, and tail designs in SVG format.",
   "license": "MIT",
   "author": {
@@ -18,11 +18,12 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
+    "./utils": {
+      "import": "./dist/utils/index.js",
+      "require": "./dist/utils/index.cjs"
+    },
     "./package.json": "./package.json",
-    "./assets/*": {
-      "import": "./dist/assets/*",
-      "require": "./dist/assets/*"
-    }
+    "./assets/*": "./dist/assets/*"
   },
   "homepage": "https://github.com/anhthang/soaring-symbols",
   "repository": {

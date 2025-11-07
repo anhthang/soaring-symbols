@@ -1,12 +1,8 @@
 import { readFileSync, existsSync } from 'fs'
-import { join, dirname } from 'path'
-import { fileURLToPath } from 'url'
+import { join } from 'path'
 import slugify from 'slugify'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-export function toSlug(name) {
+const toSlug = (name) => {
     return slugify(name, {
         lower: true,
         strict: true,
@@ -27,10 +23,10 @@ const determineColorModel = (colors) => {
 }
 
 const assetTypes = ['icon', 'logo', 'tail']
-const assetsDir = join(__dirname, '..', 'assets')
 
 const getAirlineAssets = (slug) => {
-    const airlineDir = join(assetsDir, slug)
+    // In the dist folder, assets are at the same level
+    const airlineDir = join('assets', slug)
 
     const assets = {}
     assetTypes.forEach((assetType) => {
