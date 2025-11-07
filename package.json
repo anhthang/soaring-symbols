@@ -1,6 +1,6 @@
 {
   "name": "soaring-symbols",
-  "version": "0.1.0-alpha.6",
+  "version": "0.1.0-alpha.7",
   "description": "A curated collection of airline branding assets — logos, icons, and tail designs in SVG format.",
   "license": "MIT",
   "author": {
@@ -11,7 +11,7 @@
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
-  "types": "./index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -57,7 +57,7 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && node scripts/build.js",
     "prepublishOnly": "npm run build",
-    "test": "node scripts/validate.js",
+    "test": "node scripts/test.js",
     "lint:svg": "node scripts/lint-svg.js",
     "generate": "node scripts/generate.js"
   },
