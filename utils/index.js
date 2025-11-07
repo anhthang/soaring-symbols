@@ -1,8 +1,12 @@
-const { readFileSync, existsSync } = require('fs')
-const { join } = require('path')
-const slugify = require('slugify').default
+import { readFileSync, existsSync } from 'fs'
+import { join, dirname } from 'path'
+import { fileURLToPath } from 'url'
+import slugify from 'slugify'
 
-function toSlug(name) {
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+export function toSlug(name) {
     return slugify(name, {
         lower: true,
         strict: true,
@@ -55,7 +59,9 @@ const getAirlineAssets = (slug) => {
     return assets
 }
 
-module.exports = {
+export { toSlug, getAirlineAssets }
+
+export default {
     toSlug,
     getAirlineAssets,
 }

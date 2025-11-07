@@ -2,15 +2,28 @@
   "name": "soaring-symbols",
   "version": "0.1.0-alpha.4",
   "description": "A curated collection of airline branding assets — logos, icons, and tail designs in SVG format.",
-  "main": "index.js",
-  "module": "index.js",
-  "types": "index.d.ts",
+  "license": "MIT",
   "author": {
     "name": "Anh Thang Bui",
     "email": "buianhthang89@gmail.com",
     "url": "https://anhthang.org"
   },
-  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json",
+    "./assets/*": {
+      "import": "./dist/assets/*",
+      "require": "./dist/assets/*"
+    }
+  },
   "homepage": "https://github.com/anhthang/soaring-symbols",
   "repository": {
     "type": "git",
@@ -20,6 +33,7 @@
     "url": "https://github.com/anhthang/soaring-symbols/issues"
   },
   "keywords": [
+    "aviation",
     "airline",
     "logo",
     "icon",
@@ -31,27 +45,17 @@
     "flight",
     "travel"
   ],
-  "exports": {
-    ".": {
-      "types": "./index.d.ts",
-      "import": "./index.js"
-    },
-    "./assets/*": "./assets/*"
-  },
   "files": [
-    "assets/",
-    "airlines.json",
-    "index.js",
-    "index.d.ts",
-    "scripts/",
-    "utils/",
+    "dist/",
+    "AIRLINES.md",
     "API.md",
-    "README.md",
-    "LICENSE"
+    "LICENSE",
+    "README.md"
   ],
   "scripts": {
-    "prepublishOnly": "node scripts/validate.js",
-    "build": "node scripts/validate.js",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && node scripts/build.js",
+    "prepublishOnly": "npm run build",
     "test": "node scripts/validate.js",
     "lint:svg": "node scripts/lint-svg.js",
     "generate": "node scripts/generate.js"

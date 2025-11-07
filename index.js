@@ -1,5 +1,5 @@
-const airlines = require('./airlines.json')
-const { toSlug, getAirlineAssets } = require('./utils')
+import airlines from './airlines.json' assert { type: 'json' }
+import { toSlug, getAirlineAssets } from './utils/index.js'
 
 // assets/<slug>/<variant>.svg or <variant>-mono.svg
 const ASSETS_BASE = 'assets'
@@ -85,10 +85,10 @@ function getAssets(key) {
     return resolveAssets(airline)
 }
 
-module.exports = {
+export { listAirlines, getAirline, getAssets }
+
+export default {
     listAirlines,
     getAirline,
     getAssets,
 }
-
-module.exports.default = module.exports
