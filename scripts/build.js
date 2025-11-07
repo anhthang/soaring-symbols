@@ -60,16 +60,23 @@ async function buildCJS() {
     // Convert ESM to CJS
     const cjsContent = content
         .replace(
-            'import airlines from \'./airlines.json\' assert { type: \'json\' }',
+            /import\s*{\s*createRequire\s*}\s*from\s*['"]module['"]/,
+            ''
+        )
+        .replace(
+            /const\s*require\s*=\s*createRequire\(.*\)\s*\n/,
+            ''
+        )
+        .replace(
+            /const\s*airlines\s*=\s*require\(['"]\.\/airlines\.json['"]\)/,
             'const airlines = require(\'./airlines.json\')'
         )
         .replace(
             'import { toSlug, getAirlineAssets } from \'./utils/index.js\'',
             'const { toSlug, getAirlineAssets } = require(\'./utils\')'
         )
-        .replace('export {', 'module.exports = {')
-        .replace('export default {', 'module.exports = {')
-        .replace('export default module.exports', '')
+        .replace(/export\s*{[^}]+}/, 'module.exports = { listAirlines, getAirline, getAssets }')
+        .replace(/export\s*default\s*{[^}]+}/, '')
 
     await fs.writeFile('./dist/index.cjs', cjsContent)
 }

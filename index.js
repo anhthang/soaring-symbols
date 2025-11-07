@@ -1,5 +1,8 @@
-import airlines from './airlines.json' assert { type: 'json' }
+import { createRequire } from 'module'
 import { toSlug, getAirlineAssets } from './utils/index.js'
+
+const require = createRequire(import.meta.url)
+const airlines = require('./airlines.json')
 
 // assets/<slug>/<variant>.svg or <variant>-mono.svg
 const ASSETS_BASE = 'assets'
