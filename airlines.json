@@ -681,6 +681,29 @@
         "slug": "copa-airlines"
     },
     {
+        "name": "Delta Air Lines",
+        "iata": "DL",
+        "icao": "DAL",
+        "country": "US",
+        "website": "https://www.delta.com",
+        "alliance": "SkyTeam",
+        "branding": {
+            "primary_color": "#003366",
+            "colors": {
+                "icon": [
+                    "#98002e",
+                    "#C01933"
+                ],
+                "logo": [
+                    "#98002e",
+                    "#C01933",
+                    "#003366"
+                ]
+            }
+        },
+        "slug": "delta-air-lines"
+    },
+    {
         "name": "Emirates",
         "iata": "EK",
         "icao": "UAE",
