@@ -41,7 +41,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Brussels Airlines](https://www.brusselsairlines.com) 🇧🇪 | BE | SN | BEL | Star Alliance | ![#051446](https://place-hold.it/10x10/051446/051446.png) | ✅ | ✅ |  |
 | [Cathay Pacific](https://www.cathaypacific.com) 🇭🇰 | HK | CX | CPA | oneworld | ![#005d63](https://place-hold.it/10x10/005d63/005d63.png) | ✅ | ✅ |  |
 | [Copa Airlines](https://www.copaair.com) 🇵🇦 | PA | CM | CMP | Star Alliance | ![#0032a0](https://place-hold.it/10x10/0032a0/0032a0.png) | ✅ | ✅ |  |
-| [Delta Air Lines](https://www.delta.com) | US | DL | DAL | SkyTeam | ![#003366](https://place-hold.it/10x10/003a70/003a70.png) | ☑️ | ☑️ |  |
+| [Delta Air Lines](https://www.delta.com) | US | DL | DAL | SkyTeam | ![#003d79](https://place-hold.it/10x10/003d79/003d79.png) | ☑️ | ☑️ |  |
 | [Emirates](https://www.emirates.com) 🇦🇪 | AE | EK | UAE |  | ![#d71921](https://place-hold.it/10x10/d71921/d71921.png) | ✅ | ✅ |  |
 | [Ethiopian Airlines](https://www.ethiopianairlines.com) 🇪🇹 | ET | ET | ETH | Star Alliance | ![#b71d20](https://place-hold.it/10x10/b71d20/b71d20.png) | ✅ | ✅ |  |
 | [Etihad Airways](https://www.etihad.com) 🇦🇪 | AE | EY | ETD |  | ![#bd8b13](https://place-hold.it/10x10/bd8b13/bd8b13.png) |  | ✅ |  |

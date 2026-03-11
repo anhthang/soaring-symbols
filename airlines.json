@@ -688,16 +688,16 @@
         "website": "https://www.delta.com",
         "alliance": "SkyTeam",
         "branding": {
-            "primary_color": "#003366",
+            "primary_color": "#003d79",
             "colors": {
                 "icon": [
                     "#98002e",
-                    "#C01933"
+                    "#e31837"
                 ],
                 "logo": [
                     "#98002e",
-                    "#C01933",
-                    "#003366"
+                    "#e31837",
+                    "#003d79"
                 ]
             }
         },
