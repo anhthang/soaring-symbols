@@ -433,6 +433,24 @@
         "slug": "alaska-airlines"
     },
     {
+        "name": "All Nippon Airways",
+        "iata": "NH",
+        "icao": "ANA",
+        "country": "JP",
+        "website": "https://www.ana.co.jp",
+        "alliance": "Star Alliance",
+        "branding": {
+            "primary_color": "#00146e",
+            "colors": {
+                "logo": [
+                    "#00146e",
+                    "#00aff0"
+                ]
+            }
+        },
+        "slug": "all-nippon-airways"
+    },
+    {
         "name": "Asiana Airlines",
         "iata": "OZ",
         "icao": "AAR",
