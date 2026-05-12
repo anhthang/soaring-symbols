@@ -802,6 +802,27 @@
         "slug": "fiji-airways"
     },
     {
+        "name": "Finnair",
+        "iata": "AY",
+        "icao": "FIN",
+        "country": "FI",
+        "flag_carrier": true,
+        "website": "http://www.finnair.com",
+        "alliance": "oneworld",
+        "branding": {
+            "primary_color": "#0c0243",
+            "colors": {
+                "icon": [
+                    "#0c0243"
+                ],
+                "logo": [
+                    "#0c0243"
+                ]
+            }
+        },
+        "slug": "finnair"
+    },
+    {
         "name": "Firefly",
         "iata": "FY",
         "icao": "FFM",

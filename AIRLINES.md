@@ -47,6 +47,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Eurowings](https://www.eurowings.com) | DE | EW | EWG |  | ![#7c2045](https://place-hold.it/10x10/7c2045/7c2045.png) | ✅ | ✅ |  |
 | [Ewa Air](https://ewa-air.com) | FR | ZD | EWR |  | ![#e1251b](https://place-hold.it/10x10/e1251b/e1251b.png) |  | ✅ |  |
 | [Fiji Airways](https://www.fijiairways.com) 🇫🇯 | FJ | FJ | FJI | oneworld | ![#473729](https://place-hold.it/10x10/473729/473729.png) | ✅ |  |  |
+| [Finnair](http://www.finnair.com) 🇫🇮 | FI | AY | FIN | oneworld | ![#0c0243](https://place-hold.it/10x10/0c0243/0c0243.png) | ✅ | ✅ |  |
 | [Firefly](https://www.fireflyz.com.my) | MY | FY | FFM |  | ![#ef5713](https://place-hold.it/10x10/ef5713/ef5713.png) | ✅ | ✅ |  |
 | [flynas](https://www.flynas.com) | SA | XY | KNE |  | ![#00b7ac](https://place-hold.it/10x10/00b7ac/00b7ac.png) | ✅ | ✅ |  |
 | [Garuda Indonesia](https://www.garuda-indonesia.com) 🇮🇩 | ID | GA | GIA | SkyTeam | ![#002560](https://place-hold.it/10x10/002560/002560.png) | ✅ | ✅ |  |
