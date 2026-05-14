@@ -1,6 +1,6 @@
 import { validateRequiredAttrs, validateNoScripts, validateNoTransforms, validateGeometry } from './scripts/lint/validators.js'
 
-export function runSvgChecks(svg, type, bbox = null) {
+export function runSvgValidations(svg, type, bbox = null) {
     return [
         { label: 'Required attributes', ...validateRequiredAttrs(svg, type) },
         { label: 'No embedded scripts', ...validateNoScripts(svg) },

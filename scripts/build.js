@@ -114,7 +114,7 @@ async function buildChecker() {
     // CJS: strip remaining export keywords, append module.exports
     const bundledCJS =
         bundledESM.replace(/^export function (\w+)/gm, 'function $1') +
-        '\nmodule.exports = { runSvgChecks }\n'
+        '\nmodule.exports = { runSvgValidations }\n'
 
     await fs.writeFile(path.join(distDir, 'svg-validator.js'), bundledESM)
     await fs.writeFile(path.join(distDir, 'svg-validator.cjs'), bundledCJS)

@@ -62,7 +62,7 @@ export function validateNoTransforms(svg) {
 
 // Check: geometry — fills viewBox, fits within it, and is centered.
 // Requires a pre-computed bbox (e.g. from getBBox() in the browser).
-// Returns an array of SvgCheck-shaped objects (may be 1–3 items).
+// Returns an array of SvgValidation-shaped objects (may be 1–3 items).
 export function validateGeometry(type, bbox) {
     if (!bbox) return []
 
