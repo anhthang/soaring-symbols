@@ -1,8 +1,11 @@
 // Validates assets/<slug>/<variant>.svg and optional <variant>-mono.svg based on airlines.json
-const fs = require('fs')
-const path = require('path')
+import fs from 'fs'
+import path from 'path'
+import { createRequire } from 'module'
+import { toSlug } from '../utils/index.js'
+
+const require = createRequire(import.meta.url)
 const airlines = require('../airlines.json')
-const { toSlug } = require('../utils')
 
 function exists(p) {
     try {

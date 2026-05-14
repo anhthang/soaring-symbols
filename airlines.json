@@ -443,8 +443,8 @@
             "primary_color": "#00146e",
             "colors": {
                 "logo": [
-                    "#00146e",
-                    "#00aff0"
+                    "#00aff0",
+                    "#00146e"
                 ]
             }
         },
@@ -1348,14 +1348,7 @@
         "alliance": "oneworld",
         "branding": {
             "primary_color": "",
-            "colors": {
-                "icon": [
-                    "#fff"
-                ],
-                "logo": [
-                    "#fff"
-                ]
-            }
+            "colors": {}
         },
         "slug": "qantas"
     },
