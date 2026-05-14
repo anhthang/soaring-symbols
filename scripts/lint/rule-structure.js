@@ -1,3 +1,5 @@
+import { validateViewBox, validateNoTransforms } from './validators.js'
+
 // RULE: <title> must exist and be the first child
 export function ruleTitle({ svgElement, document, airlineName, issues }) {
     let titleElement = svgElement.querySelector('title')
@@ -14,8 +16,8 @@ export function ruleTitle({ svgElement, document, airlineName, issues }) {
 
 // RULE: viewBox must match expected size (64×64 for logos, 24×24 for icons/tails)
 export function ruleViewBox({ svgElement, isIcon, issues }) {
-    const expected = isIcon ? '0 0 24 24' : '0 0 64 64'
-    if (svgElement.getAttribute('viewBox') !== expected) {
+    const { pass, expected } = validateViewBox(svgElement, isIcon ? 'icon' : 'logo')
+    if (!pass) {
         issues.push(`ViewBox: Should be "${expected}".`)
         svgElement.setAttribute('viewBox', expected)
     }
@@ -32,11 +34,8 @@ export function ruleRequiredAttrs({ svgElement, issues }) {
 
 // RULE: No transform attributes allowed on any element
 export function ruleNoTransforms({ svgElement, issues }) {
-    const els = Array.from(svgElement.querySelectorAll('[transform]'))
-    if (els.length > 0) {
-        const details = els
-            .map((el) => `<${el.tagName.toLowerCase()} transform="${el.getAttribute('transform')}">`)
-            .join(', ')
-        issues.push(`Structure: Transform attributes found: ${details}`)
+    const { pass, detail } = validateNoTransforms(svgElement)
+    if (!pass) {
+        issues.push(`Structure: Transform attributes found: ${detail}`)
     }
 }

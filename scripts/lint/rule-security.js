@@ -1,8 +1,10 @@
+import { validateNoScripts } from './validators.js'
+
 // RULE: No embedded <script> elements allowed
 export function ruleNoScripts({ svgElement, issues }) {
-    const scripts = svgElement.querySelectorAll('script')
-    if (scripts.length > 0) {
+    const { pass } = validateNoScripts(svgElement)
+    if (!pass) {
         issues.push('Security: Embedded <script> element found and removed.')
-        scripts.forEach((el) => el.remove())
+        svgElement.querySelectorAll('script').forEach((el) => el.remove())
     }
 }

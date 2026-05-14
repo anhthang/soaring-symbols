@@ -29,6 +29,7 @@ async function copyFiles() {
     const filesToCopy = [
         { src: './airlines.json', dest: 'airlines.json' },
         { src: './index.d.ts', dest: 'index.d.ts' },
+        { src: './svg-validator.d.ts', dest: 'svg-validator.d.ts' },
     ]
 
     const dirsToCopy = [
@@ -98,10 +99,31 @@ async function buildCJS() {
     await fs.writeFile(path.join(distDir, 'index.cjs'), cjsContent)
 }
 
+// SVG Validator: browser-compatible SVG validation (no Node.js deps).
+// lint/validators.js is inlined so the distributed svg-validator is a single self-contained file.
+async function buildChecker() {
+    const checksRaw = await fs.readFile('./scripts/lint/validators.js', 'utf-8')
+    const checkerRaw = await fs.readFile('./svg-validator.js', 'utf-8')
+
+    // Strip the export keyword from validate functions (they become private helpers)
+    // and remove the import line from svg-validator.js before bundling
+    const inlinedChecks = checksRaw.replace(/^export function /gm, 'function ')
+    const checkerBody = checkerRaw.replace(/^import.*validators\.js.*\n/m, '')
+    const bundledESM = inlinedChecks + '\n' + checkerBody
+
+    // CJS: strip remaining export keywords, append module.exports
+    const bundledCJS =
+        bundledESM.replace(/^export function (\w+)/gm, 'function $1') +
+        '\nmodule.exports = { runSvgChecks }\n'
+
+    await fs.writeFile(path.join(distDir, 'svg-validator.js'), bundledESM)
+    await fs.writeFile(path.join(distDir, 'svg-validator.cjs'), bundledCJS)
+}
+
 // Run all builds
 async function build() {
     await copyFiles() // First copy all required files
-    await Promise.all([buildESM(), buildCJS()])
+    await Promise.all([buildESM(), buildCJS(), buildChecker()])
 }
 
 build().catch((err) => {

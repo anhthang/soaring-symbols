@@ -18,6 +18,11 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
+    "./svg-validator": {
+      "types": "./dist/svg-validator.d.ts",
+      "import": "./dist/svg-validator.js",
+      "require": "./dist/svg-validator.cjs"
+    },
     "./utils": {
       "import": "./dist/utils/index.js",
       "require": "./dist/utils/index.js"
