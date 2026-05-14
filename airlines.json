@@ -433,6 +433,24 @@
         "slug": "alaska-airlines"
     },
     {
+        "name": "All Nippon Airways",
+        "iata": "NH",
+        "icao": "ANA",
+        "country": "JP",
+        "website": "https://www.ana.co.jp",
+        "alliance": "Star Alliance",
+        "branding": {
+            "primary_color": "#00146e",
+            "colors": {
+                "logo": [
+                    "#00146e",
+                    "#00aff0"
+                ]
+            }
+        },
+        "slug": "all-nippon-airways"
+    },
+    {
         "name": "Asiana Airlines",
         "iata": "OZ",
         "icao": "AAR",
@@ -800,6 +818,27 @@
             }
         },
         "slug": "fiji-airways"
+    },
+    {
+        "name": "Finnair",
+        "iata": "AY",
+        "icao": "FIN",
+        "country": "FI",
+        "flag_carrier": true,
+        "website": "http://www.finnair.com",
+        "alliance": "oneworld",
+        "branding": {
+            "primary_color": "#0c0243",
+            "colors": {
+                "icon": [
+                    "#0c0243"
+                ],
+                "logo": [
+                    "#0c0243"
+                ]
+            }
+        },
+        "slug": "finnair"
     },
     {
         "name": "Firefly",

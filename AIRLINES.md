@@ -28,6 +28,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [airBaltic](https://www.airbaltic.com) 🇱🇻 | LV | BT | BTI |  | ![#152649](https://place-hold.it/10x10/152649/152649.png) |  | ✅ |  |
 | [Akasa Air](https://www.akasaair.com) | IN | QP | AKJ |  | ![#ff6300](https://place-hold.it/10x10/ff6300/ff6300.png) | ✅ | ✅ |  |
 | [Alaska Airlines](https://www.alaskaair.com) | US | AS | ASA | oneworld | ![#01426a](https://place-hold.it/10x10/01426a/01426a.png) |  | ✅ |  |
+| [All Nippon Airways](https://www.ana.co.jp) | JP | NH | ANA | Star Alliance | ![#00aff0](https://place-hold.it/10x10/00aff0/00aff0.png) |  | ☑️ |  |
 | [Asiana Airlines](https://flyasiana.com) | KR | OZ | AAR | Star Alliance | ![#4a4f54](https://place-hold.it/10x10/4a4f54/4a4f54.png) | ✅ | ✅ |  |
 | [Atlantic Airways](https://www.atlanticairways.com) 🇫🇴 | FO | RC | FLI |  | ![#004c93](https://place-hold.it/10x10/004c93/004c93.png) | ✅ | ✅ |  |
 | [avianca](https://www.avianca.com) 🇨🇴 | CO | AV | AVA | Star Alliance | ![#ff0000](https://place-hold.it/10x10/ff0000/ff0000.png) | ✅ | ✅ |  |
@@ -47,6 +48,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Eurowings](https://www.eurowings.com) | DE | EW | EWG |  | ![#7c2045](https://place-hold.it/10x10/7c2045/7c2045.png) | ✅ | ✅ |  |
 | [Ewa Air](https://ewa-air.com) | FR | ZD | EWR |  | ![#e1251b](https://place-hold.it/10x10/e1251b/e1251b.png) |  | ✅ |  |
 | [Fiji Airways](https://www.fijiairways.com) 🇫🇯 | FJ | FJ | FJI | oneworld | ![#473729](https://place-hold.it/10x10/473729/473729.png) | ✅ |  |  |
+| [Finnair](http://www.finnair.com) 🇫🇮 | FI | AY | FIN | oneworld | ![#0c0243](https://place-hold.it/10x10/0c0243/0c0243.png) | ✅ | ✅ |  |
 | [Firefly](https://www.fireflyz.com.my) | MY | FY | FFM |  | ![#ef5713](https://place-hold.it/10x10/ef5713/ef5713.png) | ✅ | ✅ |  |
 | [flynas](https://www.flynas.com) | SA | XY | KNE |  | ![#00b7ac](https://place-hold.it/10x10/00b7ac/00b7ac.png) | ✅ | ✅ |  |
 | [Garuda Indonesia](https://www.garuda-indonesia.com) 🇮🇩 | ID | GA | GIA | SkyTeam | ![#002560](https://place-hold.it/10x10/002560/002560.png) | ✅ | ✅ |  |
