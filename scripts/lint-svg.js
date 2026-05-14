@@ -147,7 +147,26 @@ const lintSvgFile = (filePath) => {
         }
     })
 
-    // RULE 4: Hex color codes must be lowercase
+    // RULE 4: No embedded scripts
+    const scriptElements = svgElement.querySelectorAll('script')
+    if (scriptElements.length > 0) {
+        issues.push('Security: Embedded <script> element found and removed.')
+        scriptElements.forEach((el) => el.remove())
+    }
+
+    // RULE 5: No transform attributes
+    const transformedEls = Array.from(svgElement.querySelectorAll('[transform]'))
+    if (transformedEls.length > 0) {
+        const details = transformedEls
+            .map(
+                (el) =>
+                    `<${el.tagName.toLowerCase()} transform="${el.getAttribute('transform')}">`
+            )
+            .join(', ')
+        issues.push(`Structure: Transform attributes found: ${details}`)
+    }
+
+    // RULE 6: Hex color codes must be lowercase
     const elementsWithFill = document.querySelectorAll('[fill]')
     elementsWithFill.forEach((el) => {
         const fill = el.getAttribute('fill')
@@ -159,7 +178,7 @@ const lintSvgFile = (filePath) => {
         }
     })
 
-    // RULE 5: Fill attribute placement must be correct
+    // RULE 7: Fill attribute placement must be correct
     const allColors = [
         ...new Set(
             [...document.querySelectorAll('[fill]')]
@@ -210,7 +229,7 @@ const lintSvgFile = (filePath) => {
         issues.length > 0 ? svgElement.outerHTML : originalContent
     let hasStructuralFixes = issues.length > 0
 
-    // RULE 6: 'fill' attribute must come before 'd' on path elements
+    // RULE 8: 'fill' attribute must come before 'd' on path elements
     const pathReorderResult = reorderPathAttributes(fixedContent)
     if (pathReorderResult.reordered) {
         if (!hasStructuralFixes)
@@ -219,7 +238,7 @@ const lintSvgFile = (filePath) => {
         hasStructuralFixes = true
     }
 
-    // RULE 7: Root SVG attributes must be in the correct order
+    // RULE 9: Root SVG attributes must be in the correct order
     const svgRootReorderResult = reorderSvgRootAttributes(fixedContent)
     if (svgRootReorderResult.reordered) {
         if (!hasStructuralFixes)
