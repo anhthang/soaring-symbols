@@ -50,9 +50,9 @@ export function validateRequiredAttrs(svg, type) {
     const detail = pass
         ? 'all present'
         : items
-            .filter((c) => !c.pass)
-            .map((c) => `${c.label}: ${c.detail}`)
-            .join(' · ')
+              .filter((c) => !c.pass)
+              .map((c) => `${c.label}: ${c.detail}`)
+              .join(' · ')
 
     return { pass, detail }
 }
@@ -74,11 +74,11 @@ export function validateNoTransforms(svg) {
     const detail = pass
         ? 'clean'
         : els
-            .map(
-                (el) =>
-                    `<${el.tagName.toLowerCase()} transform="${el.getAttribute('transform')}">`
-            )
-            .join(', ')
+              .map(
+                  (el) =>
+                      `<${el.tagName.toLowerCase()} transform="${el.getAttribute('transform')}">`,
+              )
+              .join(', ')
 
     return { pass, detail }
 }
@@ -114,7 +114,7 @@ export function validateGeometry(type, bbox) {
                 label: 'Centered',
                 pass: false,
                 detail: `center (${r(bbox.x + bbox.width / 2)}, ${r(bbox.y + bbox.height / 2)}), expected (${size / 2}, ${size / 2})`,
-            }
+            },
         )
     } else {
         const tolerance = 0.5

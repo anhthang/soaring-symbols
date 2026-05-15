@@ -67,7 +67,8 @@
     "lint:svg": "node scripts/lint-svg.js",
     "generate": "node scripts/generate.js",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{js,ts}\""
   },
   "dependencies": {
     "slugify": "^1.6.6"

@@ -67,7 +67,8 @@ const lintSvgFile = (filePath) => {
     }
 
     const isIcon =
-        basename(filePath).includes('icon') || basename(filePath).includes('tail')
+        basename(filePath).includes('icon') ||
+        basename(filePath).includes('tail')
 
     const ctx = {
         filePath,
@@ -89,7 +90,8 @@ const lintSvgFile = (filePath) => {
     for (const rule of STRING_RULES) {
         const result = rule(fixedContent, ctx)
         if (result.changed) {
-            if (!hasStructuralFixes && result.message) ctx.issues.push(result.message)
+            if (!hasStructuralFixes && result.message)
+                ctx.issues.push(result.message)
             fixedContent = result.content
             hasStructuralFixes = true
         }
@@ -142,7 +144,7 @@ const main = () => {
                 if (result.issues.length > 0) {
                     filesWithIssues++
                     result.issues.forEach((issue) =>
-                        issuesInDir.push(`${file}: ${issue}`)
+                        issuesInDir.push(`${file}: ${issue}`),
                     )
 
                     if (!DRY_RUN && result.fixedContent) {

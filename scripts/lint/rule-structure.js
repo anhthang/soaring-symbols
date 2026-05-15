@@ -10,7 +10,7 @@ export function ruleTitle({ svgElement, document, airlineName, issues }) {
         svgElement.prepend(titleElement)
     } else if (svgElement.firstElementChild !== titleElement) {
         issues.push(
-            'Accessibility: <title> must be the first element inside <svg>.'
+            'Accessibility: <title> must be the first element inside <svg>.',
         )
         svgElement.prepend(titleElement)
     }
@@ -20,7 +20,7 @@ export function ruleTitle({ svgElement, document, airlineName, issues }) {
 export function ruleViewBox({ svgElement, isIcon, issues }) {
     const { pass, expected } = validateViewBox(
         svgElement,
-        isIcon ? 'icon' : 'logo'
+        isIcon ? 'icon' : 'logo',
     )
     if (!pass) {
         issues.push(`ViewBox: Should be "${expected}".`)

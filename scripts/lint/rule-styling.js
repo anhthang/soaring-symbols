@@ -7,7 +7,7 @@ export function ruleHexColors({ document, issues }) {
         const fill = el.getAttribute('fill')
         if (fill.match(HEX_REGEX) && fill !== fill.toLowerCase()) {
             issues.push(
-                `Style: Uppercase hex found "${fill}", should be "${fill.toLowerCase()}".`
+                `Style: Uppercase hex found "${fill}", should be "${fill.toLowerCase()}".`,
             )
             el.setAttribute('fill', fill.toLowerCase())
         }
@@ -23,7 +23,7 @@ export function ruleFillPlacement({ filePath, svgElement, document, issues }) {
         ...new Set(
             [...elementsWithFill]
                 .map((el) => el.getAttribute('fill').toLowerCase())
-                .filter((f) => f.match(HEX_REGEX))
+                .filter((f) => f.match(HEX_REGEX)),
         ),
     ]
     const isSingleColor = allColors.length <= 1
@@ -41,7 +41,7 @@ export function ruleFillPlacement({ filePath, svgElement, document, issues }) {
         } else {
             if (existingFill?.toLowerCase() !== targetColor) {
                 issues.push(
-                    `Fill: Root <svg> should have fill="${targetColor}".`
+                    `Fill: Root <svg> should have fill="${targetColor}".`,
                 )
                 svgElement.setAttribute('fill', targetColor)
             }
@@ -50,7 +50,7 @@ export function ruleFillPlacement({ filePath, svgElement, document, issues }) {
         elementsWithFill.forEach((el) => {
             if (el.tagName.toLowerCase() !== 'svg') {
                 issues.push(
-                    `Fill: Redundant fill on <${el.tagName.toLowerCase()}> should be removed.`
+                    `Fill: Redundant fill on <${el.tagName.toLowerCase()}> should be removed.`,
                 )
                 el.removeAttribute('fill')
             }
@@ -58,7 +58,7 @@ export function ruleFillPlacement({ filePath, svgElement, document, issues }) {
     } else {
         if (svgElement.hasAttribute('fill')) {
             issues.push(
-                'Fill: Root <svg> should not have a fill attribute in multi-color icons.'
+                'Fill: Root <svg> should not have a fill attribute in multi-color icons.',
             )
             svgElement.removeAttribute('fill')
         }
@@ -74,7 +74,7 @@ export function rulePathAttrOrder(svgString) {
             changed = true
 
             return `<path${before} ${fillAttr} ${dAttr}${after}`
-        }
+        },
     )
 
     return {
@@ -98,7 +98,7 @@ export function ruleSvgAttrOrder(svgString) {
     }
 
     const orderedAttrs = SVG_ATTR_ORDER.filter((k) => k in attributes).map(
-        (k) => `${k}="${attributes[k]}"`
+        (k) => `${k}="${attributes[k]}"`,
     )
     const otherAttrs = Object.keys(attributes)
         .filter((k) => !SVG_ATTR_ORDER.includes(k))

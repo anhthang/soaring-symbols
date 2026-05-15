@@ -43,13 +43,13 @@ for (const a of airlines) {
             if (vm.has_mono_file) {
                 if (!monoExists) {
                     console.error(
-                        `[validate] Missing ${slug} ${variant} mono: ${monoPath}`
+                        `[validate] Missing ${slug} ${variant} mono: ${monoPath}`,
                     )
                     errors++
                 }
             } else {
                 console.error(
-                    `[validate] Missing ${slug} ${variant} color: ${colorPath}`
+                    `[validate] Missing ${slug} ${variant} color: ${colorPath}`,
                 )
                 errors++
             }
@@ -57,7 +57,7 @@ for (const a of airlines) {
             // color exists — ensure mono file exists when metadata expects it
             if (vm.has_mono_file && !monoExists) {
                 console.error(
-                    `[validate] Missing ${slug} ${variant} mono: ${monoPath}`
+                    `[validate] Missing ${slug} ${variant} mono: ${monoPath}`,
                 )
                 errors++
             }

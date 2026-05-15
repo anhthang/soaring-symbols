@@ -19,7 +19,7 @@ const getFlagEmoji = (isoCode) => {
     return isoCode
         .toUpperCase()
         .replace(/./g, (char) =>
-            String.fromCodePoint(127397 + char.charCodeAt(0))
+            String.fromCodePoint(127397 + char.charCodeAt(0)),
         )
 }
 
@@ -89,12 +89,13 @@ sorted.forEach((airline) => {
 
     const colorSquare = primary_color
         ? `![${primary_color}](https://place-hold.it/10x10/${primary_color.replace(
-            '#',
-            ''
-        )}/${primary_color.replace('#', '')}.png)`
+              '#',
+              '',
+          )}/${primary_color.replace('#', '')}.png)`
         : ''
 
-    md += `| ${airlineName} | ${country || ''} | ${iata || ''} | ${icao || ''
+    md += `| ${airlineName} | ${country || ''} | ${iata || ''} | ${
+        icao || ''
     } | ${alliance || ''} | ${colorSquare} | ${includedStates.join(' | ')} |\n`
 
     if (Array.isArray(subsidiaries)) {
@@ -104,8 +105,10 @@ sorted.forEach((airline) => {
                 subsidiaryAirlineName += ` ${getFlagEmoji(sub.country)}`
             }
 
-            md += `| ${subsidiaryAirlineName} | ${sub.country || ''} | ${sub.iata || ''
-            } | ${sub.icao || ''} | ${sub.alliance || ''
+            md += `| ${subsidiaryAirlineName} | ${sub.country || ''} | ${
+                sub.iata || ''
+            } | ${sub.icao || ''} | ${
+                sub.alliance || ''
             } | ${colorSquare} | ${includedStates.join(' | ')} |\n`
         })
     }

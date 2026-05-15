@@ -134,7 +134,7 @@ function getAssetContent(key) {
         } catch (err) {
             console.warn(
                 `Warning: Could not read SVG file for ${airline.name} ${variant}:`,
-                err.message
+                err.message,
             )
         }
     }

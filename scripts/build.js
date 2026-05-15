@@ -62,28 +62,28 @@ function transformToCJS(content) {
             // Replace imports with requires
             .replace(
                 /import\s*{\s*readFileSync\s*}\s*from\s*['"]fs['"]/,
-                'const { readFileSync } = require(\'fs\')'
+                "const { readFileSync } = require('fs')",
             )
             .replace(
                 /import\s*{\s*join\s*}\s*from\s*['"]path['"]/,
-                'const { join } = require(\'path\')'
+                "const { join } = require('path')",
             )
             .replace(
                 /import\s*{\s*toSlug,\s*getAirlineAssets\s*}\s*from\s*['"](\.\/utils\/index\.js)['"]/,
-                'const { toSlug, getAirlineAssets } = require(\'./utils\')'
+                "const { toSlug, getAirlineAssets } = require('./utils')",
             )
             .replace(
                 /import\s+airlines\s+from\s+['"]\.\/airlines\.json['"]\s+assert\s*{\s*type:\s*['"]json['"]\s*}/,
-                'const airlines = require(\'./airlines.json\')'
+                "const airlines = require('./airlines.json')",
             )
             // Remove fileURLToPath import and __dirname setup since CJS has __dirname built-in
             .replace(
                 /import\s*{\s*fileURLToPath\s*}\s*from\s*['"]url['"];?\s*/,
-                ''
+                '',
             )
             .replace(
                 /const\s+__dirname\s*=\s*fileURLToPath\s*\(\s*new\s+URL\s*\(\s*['"]\.\.?\s*['"]\s*,\s*import\.meta\.url\s*\)\s*\)\s*;?/,
-                ''
+                '',
             )
             // Replace export statements
             .replace(/export\s*{\s*([^}]+)\s*}/, 'module.exports = { $1 }')
