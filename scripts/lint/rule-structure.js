@@ -9,14 +9,19 @@ export function ruleTitle({ svgElement, document, airlineName, issues }) {
         titleElement.textContent = airlineName
         svgElement.prepend(titleElement)
     } else if (svgElement.firstElementChild !== titleElement) {
-        issues.push('Accessibility: <title> must be the first element inside <svg>.')
+        issues.push(
+            'Accessibility: <title> must be the first element inside <svg>.'
+        )
         svgElement.prepend(titleElement)
     }
 }
 
 // RULE: viewBox must match expected size (64×64 for logos, 24×24 for icons/tails)
 export function ruleViewBox({ svgElement, isIcon, issues }) {
-    const { pass, expected } = validateViewBox(svgElement, isIcon ? 'icon' : 'logo')
+    const { pass, expected } = validateViewBox(
+        svgElement,
+        isIcon ? 'icon' : 'logo'
+    )
     if (!pass) {
         issues.push(`ViewBox: Should be "${expected}".`)
         svgElement.setAttribute('viewBox', expected)

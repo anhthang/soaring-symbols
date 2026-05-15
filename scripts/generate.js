@@ -68,6 +68,7 @@ sorted.forEach((airline) => {
 
         if (!assetInfo) {
             includedStates.push('')
+
             return
         }
 
@@ -94,7 +95,7 @@ sorted.forEach((airline) => {
         : ''
 
     md += `| ${airlineName} | ${country || ''} | ${iata || ''} | ${icao || ''
-        } | ${alliance || ''} | ${colorSquare} | ${includedStates.join(' | ')} |\n`
+    } | ${alliance || ''} | ${colorSquare} | ${includedStates.join(' | ')} |\n`
 
     if (Array.isArray(subsidiaries)) {
         subsidiaries.forEach((sub) => {
@@ -104,8 +105,8 @@ sorted.forEach((airline) => {
             }
 
             md += `| ${subsidiaryAirlineName} | ${sub.country || ''} | ${sub.iata || ''
-                } | ${sub.icao || ''} | ${sub.alliance || ''
-                } | ${colorSquare} | ${includedStates.join(' | ')} |\n`
+            } | ${sub.icao || ''} | ${sub.alliance || ''
+            } | ${colorSquare} | ${includedStates.join(' | ')} |\n`
         })
     }
 })

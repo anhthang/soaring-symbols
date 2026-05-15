@@ -2,9 +2,19 @@ import { readFileSync, readdirSync, writeFileSync } from 'fs'
 import { basename, dirname, join } from 'path'
 import { JSDOM } from 'jsdom'
 
-import { ruleTitle, ruleViewBox, ruleRequiredAttrs, ruleNoTransforms } from './lint/rule-structure.js'
+import {
+    ruleTitle,
+    ruleViewBox,
+    ruleRequiredAttrs,
+    ruleNoTransforms,
+} from './lint/rule-structure.js'
 import { ruleNoScripts } from './lint/rule-security.js'
-import { ruleHexColors, ruleFillPlacement, rulePathAttrOrder, ruleSvgAttrOrder } from './lint/rule-styling.js'
+import {
+    ruleHexColors,
+    ruleFillPlacement,
+    rulePathAttrOrder,
+    ruleSvgAttrOrder,
+} from './lint/rule-styling.js'
 
 // --- CONFIGURATION ---
 const ASSETS_DIR = 'assets'
@@ -32,13 +42,11 @@ const DOM_RULES = [
 
 // String rules run against the serialized SVG string (regex-based fixes).
 // Each rule: (svgString, ctx) => { content, changed, message? }
-const STRING_RULES = [
-    rulePathAttrOrder,
-    ruleSvgAttrOrder,
-]
+const STRING_RULES = [rulePathAttrOrder, ruleSvgAttrOrder]
 
 const getAirlineName = (filePath) => {
     const dirName = basename(dirname(filePath))
+
     return dirName
         .split('-')
         .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
@@ -52,7 +60,10 @@ const lintSvgFile = (filePath) => {
     const svgElement = document.querySelector('svg')
 
     if (!svgElement) {
-        return { issues: ['Invalid SVG: Missing <svg> element.'], fixedContent: null }
+        return {
+            issues: ['Invalid SVG: Missing <svg> element.'],
+            fixedContent: null,
+        }
     }
 
     const isIcon =
@@ -70,7 +81,8 @@ const lintSvgFile = (filePath) => {
     // Phase 1: DOM rules
     for (const rule of DOM_RULES) rule(ctx)
 
-    let fixedContent = ctx.issues.length > 0 ? svgElement.outerHTML : originalContent
+    let fixedContent =
+        ctx.issues.length > 0 ? svgElement.outerHTML : originalContent
     let hasStructuralFixes = ctx.issues.length > 0
 
     // Phase 2: String rules
@@ -83,7 +95,10 @@ const lintSvgFile = (filePath) => {
         }
     }
 
-    return { issues: ctx.issues, fixedContent: hasStructuralFixes ? fixedContent : null }
+    return {
+        issues: ctx.issues,
+        fixedContent: hasStructuralFixes ? fixedContent : null,
+    }
 }
 
 const main = () => {
@@ -118,6 +133,7 @@ const main = () => {
                 const relativePath = join(dir, file).replace(/\\/g, '/')
                 if (EXCLUDE_FILES.includes(`assets/${relativePath}`)) {
                     console.log(`🟡 Skipping excluded file: ${relativePath}\n`)
+
                     return
                 }
 
@@ -125,7 +141,9 @@ const main = () => {
 
                 if (result.issues.length > 0) {
                     filesWithIssues++
-                    result.issues.forEach((issue) => issuesInDir.push(`${file}: ${issue}`))
+                    result.issues.forEach((issue) =>
+                        issuesInDir.push(`${file}: ${issue}`)
+                    )
 
                     if (!DRY_RUN && result.fixedContent) {
                         writeFileSync(fullPath, result.fixedContent)

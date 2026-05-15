@@ -8,6 +8,7 @@ const r = (n) => Math.round(n * 1000) / 1000
 export function validateTitle(svg) {
     const title = svg.querySelector('title')
     const pass = !!title && !!title.textContent?.trim()
+
     return { pass, detail: title?.textContent?.trim() ?? 'missing' }
 }
 
@@ -15,7 +16,12 @@ export function validateTitle(svg) {
 export function validateViewBox(svg, type) {
     const expected = type === 'icon' ? '0 0 24 24' : '0 0 64 64'
     const viewBox = svg.getAttribute('viewBox')
-    return { pass: viewBox === expected, detail: viewBox ?? 'missing', expected }
+
+    return {
+        pass: viewBox === expected,
+        detail: viewBox ?? 'missing',
+        expected,
+    }
 }
 
 // Check: required attributes — viewBox value, role="img", xmlns, and <title>.
@@ -28,8 +34,16 @@ export function validateRequiredAttrs(svg, type) {
 
     const items = [
         { label: 'viewBox', pass: vb.pass, detail: vb.detail },
-        { label: 'role="img"', pass: role === 'img', detail: role ?? 'missing' },
-        { label: 'xmlns', pass: xmlns === 'http://www.w3.org/2000/svg', detail: xmlns ?? 'missing' },
+        {
+            label: 'role="img"',
+            pass: role === 'img',
+            detail: role ?? 'missing',
+        },
+        {
+            label: 'xmlns',
+            pass: xmlns === 'http://www.w3.org/2000/svg',
+            detail: xmlns ?? 'missing',
+        },
         { label: '<title>', pass: title.pass, detail: title.detail },
     ]
     const pass = items.every((c) => c.pass)
@@ -39,13 +53,18 @@ export function validateRequiredAttrs(svg, type) {
             .filter((c) => !c.pass)
             .map((c) => `${c.label}: ${c.detail}`)
             .join(' · ')
+
     return { pass, detail }
 }
 
 // Check: no embedded <script> elements
 export function validateNoScripts(svg) {
     const count = svg.querySelectorAll('script').length
-    return { pass: count === 0, detail: count === 0 ? 'clean' : 'script element found' }
+
+    return {
+        pass: count === 0,
+        detail: count === 0 ? 'clean' : 'script element found',
+    }
 }
 
 // Check: no [transform] attributes on any element
@@ -55,8 +74,12 @@ export function validateNoTransforms(svg) {
     const detail = pass
         ? 'clean'
         : els
-            .map((el) => `<${el.tagName.toLowerCase()} transform="${el.getAttribute('transform')}">`)
+            .map(
+                (el) =>
+                    `<${el.tagName.toLowerCase()} transform="${el.getAttribute('transform')}">`
+            )
             .join(', ')
+
     return { pass, detail }
 }
 
@@ -91,7 +114,7 @@ export function validateGeometry(type, bbox) {
                 label: 'Centered',
                 pass: false,
                 detail: `center (${r(bbox.x + bbox.width / 2)}, ${r(bbox.y + bbox.height / 2)}), expected (${size / 2}, ${size / 2})`,
-            },
+            }
         )
     } else {
         const tolerance = 0.5
@@ -113,7 +136,8 @@ export function validateGeometry(type, bbox) {
         const cy = bbox.y + bbox.height / 2
         const maxOffset = size * 0.05
         const isCentered =
-            Math.abs(cx - size / 2) <= maxOffset && Math.abs(cy - size / 2) <= maxOffset
+            Math.abs(cx - size / 2) <= maxOffset &&
+            Math.abs(cy - size / 2) <= maxOffset
 
         results.push({
             label: 'Centered',

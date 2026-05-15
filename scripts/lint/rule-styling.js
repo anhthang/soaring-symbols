@@ -6,7 +6,9 @@ export function ruleHexColors({ document, issues }) {
     document.querySelectorAll('[fill]').forEach((el) => {
         const fill = el.getAttribute('fill')
         if (fill.match(HEX_REGEX) && fill !== fill.toLowerCase()) {
-            issues.push(`Style: Uppercase hex found "${fill}", should be "${fill.toLowerCase()}".`)
+            issues.push(
+                `Style: Uppercase hex found "${fill}", should be "${fill.toLowerCase()}".`
+            )
             el.setAttribute('fill', fill.toLowerCase())
         }
     })
@@ -38,20 +40,26 @@ export function ruleFillPlacement({ filePath, svgElement, document, issues }) {
             }
         } else {
             if (existingFill?.toLowerCase() !== targetColor) {
-                issues.push(`Fill: Root <svg> should have fill="${targetColor}".`)
+                issues.push(
+                    `Fill: Root <svg> should have fill="${targetColor}".`
+                )
                 svgElement.setAttribute('fill', targetColor)
             }
         }
 
         elementsWithFill.forEach((el) => {
             if (el.tagName.toLowerCase() !== 'svg') {
-                issues.push(`Fill: Redundant fill on <${el.tagName.toLowerCase()}> should be removed.`)
+                issues.push(
+                    `Fill: Redundant fill on <${el.tagName.toLowerCase()}> should be removed.`
+                )
                 el.removeAttribute('fill')
             }
         })
     } else {
         if (svgElement.hasAttribute('fill')) {
-            issues.push('Fill: Root <svg> should not have a fill attribute in multi-color icons.')
+            issues.push(
+                'Fill: Root <svg> should not have a fill attribute in multi-color icons.'
+            )
             svgElement.removeAttribute('fill')
         }
     }
@@ -64,10 +72,16 @@ export function rulePathAttrOrder(svgString) {
         /<path([^>]*?) (d="[^"]*?")([^>]*?) (fill="[^"]*?")/g,
         (match, before, dAttr, after, fillAttr) => {
             changed = true
+
             return `<path${before} ${fillAttr} ${dAttr}${after}`
         }
     )
-    return { content, changed, message: 'Style: `fill` attribute on <path> moved before `d`.' }
+
+    return {
+        content,
+        changed,
+        message: 'Style: `fill` attribute on <path> moved before `d`.',
+    }
 }
 
 // RULE: Root <svg> attributes must follow the order: role, viewBox, xmlns, fill, ...rest
@@ -83,11 +97,18 @@ export function ruleSvgAttrOrder(svgString) {
         attributes[match[1]] = match[2]
     }
 
-    const orderedAttrs = SVG_ATTR_ORDER.filter((k) => k in attributes).map((k) => `${k}="${attributes[k]}"`)
-    const otherAttrs = Object.keys(attributes).filter((k) => !SVG_ATTR_ORDER.includes(k)).map((k) => `${k}="${attributes[k]}"`)
+    const orderedAttrs = SVG_ATTR_ORDER.filter((k) => k in attributes).map(
+        (k) => `${k}="${attributes[k]}"`
+    )
+    const otherAttrs = Object.keys(attributes)
+        .filter((k) => !SVG_ATTR_ORDER.includes(k))
+        .map((k) => `${k}="${attributes[k]}"`)
     const finalAttrs = [...orderedAttrs, ...otherAttrs].join(' ')
 
-    if (finalAttrs.replace(/\s+/g, '') === attributesString.trim().replace(/\s+/g, '')) {
+    if (
+        finalAttrs.replace(/\s+/g, '') ===
+        attributesString.trim().replace(/\s+/g, '')
+    ) {
         return { content: svgString, changed: false }
     }
 

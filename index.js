@@ -2,7 +2,7 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 import { fileURLToPath } from 'url'
 import { toSlug, getAirlineAssets } from './utils/index.js'
-import airlines from './airlines.json' assert { type: 'json' }
+import airlines from './airlines.json' with { type: 'json' }
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 
@@ -87,6 +87,7 @@ function getAirline(key) {
 function getAssets(key) {
     const airline = getAirline(key)
     if (!airline) return null
+
     return resolveAssets(airline)
 }
 

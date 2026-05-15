@@ -1,4 +1,9 @@
-import { validateRequiredAttrs, validateNoScripts, validateNoTransforms, validateGeometry } from './scripts/lint/validators.js'
+import {
+    validateRequiredAttrs,
+    validateNoScripts,
+    validateNoTransforms,
+    validateGeometry,
+} from './scripts/lint/validators.js'
 
 export function runSvgValidations(svg, type, bbox = null) {
     return [

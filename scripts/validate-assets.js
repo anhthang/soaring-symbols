@@ -10,7 +10,7 @@ const airlines = require('../airlines.json')
 function exists(p) {
     try {
         return fs.existsSync(p)
-    } catch (e) {
+    } catch {
         return false
     }
 }

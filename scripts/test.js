@@ -53,8 +53,7 @@ async function run() {
         // Verify that SVG content is returned for at least one variant
         const hasContent = Object.values(content).some(
             (variant) =>
-                variant.color?.includes('<svg') ||
-                variant.monochrome?.includes('<svg')
+                variant.color?.includes('<svg') || variant.monochrome?.includes('<svg')
         )
         assert(hasContent, 'at least one variant should have SVG content')
     }
