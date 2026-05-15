@@ -30,13 +30,13 @@
     "./package.json": "./package.json",
     "./assets/*": "./dist/assets/*"
   },
-  "homepage": "https://github.com/anhthang/soaring-symbols",
+  "homepage": "https://github.com/soaring-symbols/soaring-symbols",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/anhthang/soaring-symbols.git"
+    "url": "git+ssh://git@github.com/soaring-symbols/soaring-symbols.git"
   },
   "bugs": {
-    "url": "https://github.com/anhthang/soaring-symbols/issues"
+    "url": "https://github.com/soaring-symbols/soaring-symbols/issues"
   },
   "keywords": [
     "aviation",

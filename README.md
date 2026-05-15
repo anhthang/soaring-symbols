@@ -121,7 +121,7 @@ For a full list of functions and the data structures they return, please see the
 
 Contributions are welcome!
 
-Whether through adding new logos, improving existing ones, or suggesting features to enhance usability. Please refer to our [Contribution Guidelines](https://github.com/anhthang/soaring-symbols/blob/main/CONTRIBUTING.md) for detailed instructions on how to contribute effectively.
+Whether through adding new logos, improving existing ones, or suggesting features to enhance usability. Please refer to our [Contribution Guidelines](https://github.com/soaring-symbols/soaring-symbols/blob/main/CONTRIBUTING.md) for detailed instructions on how to contribute effectively.
 
 ## License
 
