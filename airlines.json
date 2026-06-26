@@ -172,6 +172,24 @@
         "slug": "air-canada"
     },
     {
+        "name": "Air China",
+        "iata": "CA",
+        "icao": "CCA",
+        "country": "CN",
+        "flag_carrier": true,
+        "website": "https://www.airchina.com",
+        "alliance": "Star Alliance",
+        "branding": {
+            "primary_color": "#ED1C24",
+            "colors": {
+                "logo": [
+                    "#ed1c24"
+                ]
+            }
+        },
+        "slug": "air-china"
+    },
+    {
         "name": "Air Dolomiti",
         "iata": "EN",
         "icao": "DLA",
@@ -678,6 +696,25 @@
         "slug": "cathay-pacific"
     },
     {
+        "name": "China Southern Airlines",
+        "iata": "CZ",
+        "icao": "CSN",
+        "country": "CN",
+        "flag_carrier": false,
+        "website": "https://www.csair.com",
+        "branding": {
+            "primary_color": "#0093D0",
+            "colors": {
+                "logo": [
+                    "#0093d0",
+                    "#fff",
+                    "#ed1b2f"
+                ]
+            }
+        },
+        "slug": "china-southern-airlines"
+    },
+    {
         "name": "Copa Airlines",
         "iata": "CM",
         "icao": "CMP",
@@ -697,6 +734,25 @@
             }
         },
         "slug": "copa-airlines"
+    },
+    {
+        "name": "Delta Air Lines",
+        "iata": "DL",
+        "icao": "DAL",
+        "country": "US",
+        "flag_carrier": false,
+        "website": "https://www.delta.com",
+        "alliance": "SkyTeam",
+        "branding": {
+            "primary_color": "#E31837",
+            "colors": {
+                "logo": [
+                    "#98002e",
+                    "#e31837"
+                ]
+            }
+        },
+        "slug": "delta-air-lines"
     },
     {
         "name": "Emirates",
@@ -784,6 +840,25 @@
             }
         },
         "slug": "eurowings"
+    },
+    {
+        "name": "EVA Air",
+        "iata": "BR",
+        "icao": "EVA",
+        "country": "TW",
+        "flag_carrier": false,
+        "website": "https://www.evaair.com",
+        "alliance": "Star Alliance",
+        "branding": {
+            "primary_color": "#409E54",
+            "colors": {
+                "logo": [
+                    "#d06537",
+                    "#409e54"
+                ]
+            }
+        },
+        "slug": "eva-air"
     },
     {
         "name": "Ewa Air",
@@ -1004,6 +1079,23 @@
             }
         },
         "slug": "japan-airlines"
+    },
+    {
+        "name": "JetBlue Airways",
+        "iata": "B6",
+        "icao": "JBU",
+        "country": "US",
+        "flag_carrier": false,
+        "website": "https://www.jetblue.com",
+        "branding": {
+            "primary_color": "#003876",
+            "colors": {
+                "logo": [
+                    "#003876"
+                ]
+            }
+        },
+        "slug": "jetblue-airways"
     },
     {
         "name": "Jetstar",
