@@ -182,7 +182,7 @@
         "branding": {
             "primary_color": "#ED1C24",
             "colors": {
-                "logo": [
+                "icon": [
                     "#ed1c24"
                 ]
             }
@@ -705,7 +705,7 @@
         "branding": {
             "primary_color": "#0093D0",
             "colors": {
-                "logo": [
+                "icon": [
                     "#0093d0",
                     "#fff",
                     "#ed1b2f"
@@ -746,7 +746,7 @@
         "branding": {
             "primary_color": "#E31837",
             "colors": {
-                "logo": [
+                "icon": [
                     "#98002e",
                     "#e31837"
                 ]
@@ -852,7 +852,7 @@
         "branding": {
             "primary_color": "#409E54",
             "colors": {
-                "logo": [
+                "icon": [
                     "#d06537",
                     "#409e54"
                 ]

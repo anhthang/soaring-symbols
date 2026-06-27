@@ -12,7 +12,7 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [Air Algérie](https://airalgerie.dz) 🇩🇿 | DZ | AH | DAH |  | ![#e2231a](https://place-hold.it/10x10/e2231a/e2231a.png) | ✅ | ✅ |  |
 | [Air Astana](https://airastana.com) 🇰🇿 | KZ | KC | KZR |  | ![#a48c5d](https://place-hold.it/10x10/a48c5d/a48c5d.png) | ✅ |  |  |
 | [Air Canada](https://www.aircanada.com) 🇨🇦 | CA | AC | ACA | Star Alliance | ![#f01428](https://place-hold.it/10x10/f01428/f01428.png) | ✅ | ✅ |  |
-| [Air China](https://www.airchina.com) 🇨🇳 | CN | CA | CCA | Star Alliance | ![#ED1C24](https://place-hold.it/10x10/ED1C24/ED1C24.png) |  | ✅ |  |
+| [Air China](https://www.airchina.com) 🇨🇳 | CN | CA | CCA | Star Alliance | ![#ED1C24](https://place-hold.it/10x10/ED1C24/ED1C24.png) | ✅ |  |  |
 | [Air Dolomiti](https://www.airdolomiti.eu) | IT | EN | DLA |  | ![#009eb3](https://place-hold.it/10x10/009eb3/009eb3.png) | ✅ |  |  |
 | [Air Europa](https://www.aireuropa.com) | ES | UX | AEA | SkyTeam | ![#006fde](https://place-hold.it/10x10/006fde/006fde.png) | ✅ | ✅ |  |
 | [Air France](https://airfrance.com) 🇫🇷 | FR | AF | AFR | SkyTeam | ![#051039](https://place-hold.it/10x10/051039/051039.png) | ✅ | ✅ |  |
@@ -42,14 +42,14 @@ This file provides an overview of the airlines included in the Soaring Symbols p
 | [British Airways](https://www.britishairways.com) 🇬🇧 | GB | BA | BAW | oneworld | ![#2e5c99](https://place-hold.it/10x10/2e5c99/2e5c99.png) | ✅ | ✅ |  |
 | [Brussels Airlines](https://www.brusselsairlines.com) 🇧🇪 | BE | SN | BEL | Star Alliance | ![#051446](https://place-hold.it/10x10/051446/051446.png) | ✅ | ✅ |  |
 | [Cathay Pacific](https://www.cathaypacific.com) 🇭🇰 | HK | CX | CPA | oneworld | ![#005d63](https://place-hold.it/10x10/005d63/005d63.png) | ✅ | ✅ |  |
-| [China Southern Airlines](https://www.csair.com) | CN | CZ | CSN |  | ![#0093D0](https://place-hold.it/10x10/0093D0/0093D0.png) |  | ☑️ |  |
+| [China Southern Airlines](https://www.csair.com) | CN | CZ | CSN |  | ![#0093D0](https://place-hold.it/10x10/0093D0/0093D0.png) | ☑️ |  |  |
 | [Copa Airlines](https://www.copaair.com) 🇵🇦 | PA | CM | CMP | Star Alliance | ![#0032a0](https://place-hold.it/10x10/0032a0/0032a0.png) | ✅ | ✅ |  |
-| [Delta Air Lines](https://www.delta.com) | US | DL | DAL | SkyTeam | ![#E31837](https://place-hold.it/10x10/E31837/E31837.png) |  | ☑️ |  |
+| [Delta Air Lines](https://www.delta.com) | US | DL | DAL | SkyTeam | ![#E31837](https://place-hold.it/10x10/E31837/E31837.png) | ☑️ |  |  |
 | [Emirates](https://www.emirates.com) 🇦🇪 | AE | EK | UAE |  | ![#d71921](https://place-hold.it/10x10/d71921/d71921.png) | ✅ | ✅ |  |
 | [Ethiopian Airlines](https://www.ethiopianairlines.com) 🇪🇹 | ET | ET | ETH | Star Alliance | ![#b71d20](https://place-hold.it/10x10/b71d20/b71d20.png) | ✅ | ✅ |  |
 | [Etihad Airways](https://www.etihad.com) 🇦🇪 | AE | EY | ETD |  | ![#bd8b13](https://place-hold.it/10x10/bd8b13/bd8b13.png) |  | ✅ |  |
 | [Eurowings](https://www.eurowings.com) | DE | EW | EWG |  | ![#7c2045](https://place-hold.it/10x10/7c2045/7c2045.png) | ✅ | ✅ |  |
-| [EVA Air](https://www.evaair.com) | TW | BR | EVA | Star Alliance | ![#409E54](https://place-hold.it/10x10/409E54/409E54.png) |  | ☑️ |  |
+| [EVA Air](https://www.evaair.com) | TW | BR | EVA | Star Alliance | ![#409E54](https://place-hold.it/10x10/409E54/409E54.png) | ☑️ |  |  |
 | [Ewa Air](https://ewa-air.com) | FR | ZD | EWR |  | ![#e1251b](https://place-hold.it/10x10/e1251b/e1251b.png) |  | ✅ |  |
 | [Fiji Airways](https://www.fijiairways.com) 🇫🇯 | FJ | FJ | FJI | oneworld | ![#473729](https://place-hold.it/10x10/473729/473729.png) | ✅ |  |  |
 | [Finnair](http://www.finnair.com) 🇫🇮 | FI | AY | FIN | oneworld | ![#0c0243](https://place-hold.it/10x10/0c0243/0c0243.png) | ✅ | ✅ |  |
